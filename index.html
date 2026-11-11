@@ -839,13 +839,6 @@ document.addEventListener('keydown',e=>{
  if(e.key===fwd&&!$('#next').disabled){e.preventDefault();$('#next').click()}
  if(e.key===bwd){e.preventDefault();go(cur-1)}
 });
-/* swipe */
-let sx0=null,sy0=null;
-$('#osMain').addEventListener('touchstart',e=>{sx0=e.touches[0].clientX;sy0=e.touches[0].clientY},{passive:true});
-$('#osMain').addEventListener('touchend',e=>{ if(sx0==null)return; const dx=e.changedTouches[0].clientX-sx0, dy=e.changedTouches[0].clientY-sy0; sx0=null;
- if(Math.abs(dx)<60||Math.abs(dx)<Math.abs(dy)*1.5)return; const forward=lang==='ar'?dx>0:dx<0;
- if(forward){ if(!$('#next').disabled&&cur<CH.length-1)$('#next').click() } else go(cur-1)});
-
 function countUp(){ $$('.cnt').forEach((el,i)=>{const v=+el.dataset.v; if(RM){el.textContent=fmt(v);return} const t0=performance.now()+500+i*250,D=2800; const f=n=>{const k=Math.max(0,Math.min(1,(n-t0)/D)),e=1-Math.pow(1-k,2);el.textContent=fmt(Math.round(v*e));if(k<1)requestAnimationFrame(f)}; requestAnimationFrame(f)}) }
 
 /* ---------- project sheet ---------- */
