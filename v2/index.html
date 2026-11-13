@@ -322,8 +322,17 @@ phone:`<svg viewBox="0 0 400 420" aria-hidden="true"><rect x="110" y="20" width=
 <rect x="150" y="238" width="124" height="40" rx="16" fill="#EADFCC"/><text x="262" y="263" text-anchor="end" font-size="12" fill="#14233A" font-family="Thmanyah Sans">دورك بالتفصيل ←</text>
 <rect x="138" y="292" width="100" height="40" rx="16" fill="#14233A"/><text x="226" y="317" text-anchor="end" font-size="12" fill="#FFFDF8" font-family="Thmanyah Sans">جاهزة ✨</text></svg>`,
 desk:`<svg viewBox="0 0 420 420" aria-hidden="true"><ellipse cx="210" cy="370" rx="190" ry="26" fill="#EADFCC"/><rect x="40" y="250" width="340" height="18" rx="6" fill="#C9A27E"/><rect x="60" y="268" width="14" height="100" fill="#B08A64"/><rect x="346" y="268" width="14" height="100" fill="#B08A64"/>
-<rect x="150" y="140" width="150" height="100" rx="8" fill="#14233A"/><rect x="158" y="148" width="134" height="84" rx="4" fill="#16263C"/><text x="225" y="196" text-anchor="middle" font-size="14" fill="#D4A85A" font-family="Thmanyah Serif">أهلًا سارة</text><rect x="130" y="240" width="190" height="10" rx="4" fill="#B8BCC4"/>
-<rect class="hl" x="66" y="196" width="66" height="54" rx="6" fill="#0D7062"/><rect x="66" y="196" width="66" height="14" rx="4" fill="#0B5E53"/><text x="99" y="234" text-anchor="middle" font-size="11" fill="#FFFDF8" font-family="Thmanyah Sans">ترحيب</text>
+<rect x="140" y="112" width="170" height="114" rx="9" fill="#2A2B30"/><circle cx="225" cy="118" r="2" fill="#6B6E76"/>
+<rect x="147" y="122" width="156" height="98" rx="3" fill="#16263C"/>
+<rect x="147" y="122" width="156" height="9" fill="#0F1B2D"/><circle cx="153" cy="126.5" r="1.8" fill="#E07A62"/><circle cx="159" cy="126.5" r="1.8" fill="#D4A85A"/><circle cx="165" cy="126.5" r="1.8" fill="#4FB3A5"/>
+<rect x="160" y="138" width="88" height="56" rx="4" fill="#FFFDF8"/><rect x="160" y="138" width="88" height="8" rx="3" fill="#EADFCC"/>
+<text x="242" y="160" text-anchor="end" font-size="9.5" font-weight="700" fill="#14233A" font-family="Thmanyah Serif">أهلًا سارة</text>
+<rect x="190" y="166" width="52" height="3" rx="1.5" fill="#E6DCC9"/><rect x="200" y="173" width="42" height="3" rx="1.5" fill="#E6DCC9"/><rect x="168" y="181" width="30" height="8" rx="4" fill="#0D7062"/>
+${[0,1,2].map(i=>`<rect x="${262}" y="${140+i*20}" width="14" height="12" rx="3" fill="#${['D4A85A','4FB3A5','AEB8C6'][i]}"/><rect x="${258}" y="${154+i*20}" width="22" height="2" rx="1" fill="#AEB8C6" opacity=".6"/>`).join('')}
+<rect x="190" y="205" width="70" height="10" rx="5" fill="#0F1B2D" opacity=".85"/>${[0,1,2,3,4].map(i=>`<circle cx="${199+i*13}" cy="210" r="3" fill="#${['D4A85A','4FB3A5','E07A62','AEB8C6','F3EEE4'][i]}"/>`).join('')}
+<path d="M236 186 l0 11 l3 -3 l2.5 5 l2 -1 l-2.5 -5 l4 0 z" fill="#FFFDF8" stroke="#14233A" stroke-width=".8"/>
+<path d="M118 228 h214 l14 18 a4 4 0 0 1 -4 5 h-234 a4 4 0 0 1 -4 -5 z" fill="#C9CCD2"/><rect x="134" y="231" width="182" height="8" rx="2" fill="#AEB2BA"/><rect x="200" y="242" width="50" height="5" rx="2.5" fill="#B8BCC4"/>
+<rect x="196" y="226" width="58" height="3" rx="1.5" fill="#9DA1A9"/><rect class="hl" x="66" y="196" width="66" height="54" rx="6" fill="#0D7062"/><rect x="66" y="196" width="66" height="14" rx="4" fill="#0B5E53"/><text x="99" y="234" text-anchor="middle" font-size="11" fill="#FFFDF8" font-family="Thmanyah Sans">ترحيب</text>
 <rect x="318" y="206" width="40" height="44" rx="8" fill="#FFFDF8"/><path d="M330 206 q8 -40 20 -20 q-4 -30 -16 -10" fill="#4FB3A5"/>
 <rect class="hl" x="200" y="252" width="56" height="0" fill="none"/><rect x="250" y="226" width="44" height="22" rx="3" fill="#FFFDF8" transform="rotate(-8 272 237)"/></svg>`,
 calendar:`<svg viewBox="0 0 400 420" aria-hidden="true"><rect x="60" y="60" width="280" height="300" rx="20" fill="#FFFDF8"/><rect x="60" y="60" width="280" height="64" rx="20" fill="#14233A"/><rect x="60" y="100" width="280" height="24" fill="#14233A"/>
@@ -357,11 +366,7 @@ const PROJECTS=[
  {n:'ريم',st:'prototype',cat:'مساعد صوتي ذكي · Retell AI',img:['reem'],d:'المساعد الصوتي الذكي للموارد البشرية، يتحدث مع الموظفين عبر المكالمات.',
   s:['الحاجة إلى وسيلة تواصل سهلة وتفاعلية للإجابة عن الاستفسارات المتكررة.','من ملاحظة أولية إلى تجربة اتصال حقيقية: بُنيت على Retell AI، بشخصية صوتية سعودية وسيناريوهات تواصل واختبار للمكالمات.','تجربة صوتية عملية، وليست نظامًا مؤسسيًا منشورًا على نطاق واسع.']},
  {n:'بيّنة',st:'prototype',cat:'التحقق من الإعلانات الوظيفية',img:['bayyinah'],d:'افهم أدلة إعلان الوظيفة قبل مشاركة بياناتك.',
-  s:['صعوبة تمييز الإعلانات الوظيفية الموثوقة من الإعلانات المشبوهة.','فحص الجهة والقناة والتفويض والطلب، ثم عرض ما يثبته الدليل وما لا يثبته.','تنفيذ أولي قابل للتجربة. لا توجد نتائج تشغيلية مؤكدة للنشر حاليًا.']},
- {n:'أتمتة الإجراءات',st:'side',cat:'Power Automate · Excel',img:[],d:'مشروع جانبي أطوّره باستمرار: تبسيط إجراءات الموارد البشرية بالتذكيرات والمتابعة الآلية.',
-  s:['الاعتماد على المتابعة اليدوية واحتمالية نسيان الإجراءات والمواعيد.','تذكيرات وأدوات متابعة أبنيها في Power Automate وExcel، إجراءً بعد إجراء.','حتى الآن: أتمتة لرسائل أعياد الميلاد، وأدوات لمتابعة فترة التجربة. وما زال التطوير مستمرًا.']},
- {n:'أدوات الأداء',st:'side',cat:'التجربة · الأداء · التقدير',img:[],d:'مشروع جانبي قيد التطوير: أدوات لإدارة تقييم فترة التجربة والأداء والتقدير الوظيفي.',
-  s:['تشتت التقييمات وصعوبة متابعة المواعيد والإجراءات.','نماذج متابعة ولوحات معلومات، مع تصور لمنصة تجمع التقييمات والتنبيهات والتقارير.','بعض أدوات المتابعة مستخدمة، والمنصة المتكاملة ما زالت قيد التطوير.']}
+  s:['صعوبة تمييز الإعلانات الوظيفية الموثوقة من الإعلانات المشبوهة.','فحص الجهة والقناة والتفويض والطلب، ثم عرض ما يثبته الدليل وما لا يثبته.','تنفيذ أولي قابل للتجربة. لا توجد نتائج تشغيلية مؤكدة للنشر حاليًا.']}
 ];
 
 const detail=(o)=>({type:'detail',...o});
@@ -369,22 +374,22 @@ const SC=[
  {id:'sara',name:'هذه سارة',type:'intro'},
  detail({id:'contract',name:'العقد',svg:'contract',
    s:{h:'عقدٌ واضح، من أول مرة.',p:'لم تحتج أن تسأل عن راتبها أو بدلاتها أو تاريخ مباشرتها. كل شيء كان صحيحًا.'},
-   b:{h:'خلفه: مراجعة كل عقد وسجل تعويضات.',p:'أراجع عقود العمل وسجلات التعويضات، حتى يصل كل عقد صحيحًا من البداية.',where:'مخزن الأدوية العربي السعودي'}}),
+   b:{h:'دوري: مراجعة كل عقد وسجل تعويضات.',p:'أراجع عقود العمل وسجلات التعويضات، حتى يصل كل عقد صحيحًا من البداية.',where:'مخزن الأدوية العربي السعودي'}}),
  detail({id:'before',name:'قبل أن تصل',svg:'phone',
    s:{h:'كانت تعرف ماذا ينتظرها.',p:'قبل أن تصل، فهمت دورها وجدول يومها الأول، فجاءت مطمئنة.'},
-   b:{h:'خلفه: تجربة «قبل يومك الأول».',p:'بنيت تجربة تفاعلية تساعد المرشح على فهم الدور قبل توقيع العرض، لأن التهيئة تبدأ قبل اليوم الأول.',where:'مشروع منشور',link:{t:'جرّب التجربة ↗',u:'https://before-day-one.mrthameralshehri.workers.dev'}}}),
+   b:{h:'دوري: بنيت تجربة «قبل يومك الأول».',p:'بنيت تجربة تفاعلية تساعد المرشح على فهم الدور قبل توقيع العرض، لأن التهيئة تبدأ قبل اليوم الأول.',where:'مشروع منشور',link:{t:'جرّب التجربة ↗',u:'https://before-day-one.mrthameralshehri.workers.dev'}}}),
  detail({id:'first',name:'اليوم الأول',svg:'desk',
    s:{h:'يومٌ أول بلا ارتباك.',p:'مكتبها جاهز، وأوراقها مكتملة، وتعرف أين تذهب ومن تقابل.'},
-   b:{h:'خلفه: تهيئة الموظفين الجدد.',num:'+٤٠',unit:'عملية تهيئة موظفين',p:'أجهّز المستندات، وأنسّق متطلبات اليوم الأول مع الجهات المعنية، حتى لا يُترك شيء للصدفة.',where:'مخزن الأدوية العربي السعودي'}}),
+   b:{h:'دوري: تهيئة الموظفين الجدد.',num:'+٤٠',unit:'عملية تهيئة موظفين',p:'أجهّز المستندات، وأنسّق متطلبات اليوم الأول مع الجهات المعنية، حتى لا يُترك شيء للصدفة.',where:'مخزن الأدوية العربي السعودي'}}),
  detail({id:'probation',name:'اليوم التسعون',svg:'calendar',
    s:{h:'بعد تسعين يومًا، لم يتأخر تقييمها.',p:'عرفت أين تقف، وماذا تطوّر، في الوقت المناسب.'},
-   b:{h:'خلفه: متابعة فترة التجربة.',num:'٣٠',unit:'تقييم فترة تجربة مكتمل',p:'أتابع مواعيد انتهاء التجربة مع المدراء، وأبني أدوات تذكير ومتابعة آلية حتى لا يفوت موعد.',where:'مخزن الأدوية العربي السعودي'}}),
+   b:{h:'دوري: متابعة فترة التجربة.',num:'٣٠',unit:'تقييم فترة تجربة مكتمل',p:'أتابع مواعيد انتهاء التجربة مع المدراء، وأبني أدوات تذكير ومتابعة آلية حتى لا يفوت موعد.',where:'مخزن الأدوية العربي السعودي'}}),
  detail({id:'recognition',name:'حين تميّزت',svg:'medal',
    s:{h:'وحين تميّزت، لاحظ أحدهم.',p:'اسمها ظهر ضمن المكرّمين هذا الشهر.'},
-   b:{h:'خلفه: برنامج تقدير الموظفين.',num:'٣٥',unit:'اختيارًا ضمن برنامج التقدير',p:'أنسّق التقييمات الشهرية والترشيحات وسجلات الاختيار، حتى يُرى العمل الجيد بعدالة.',where:'مخزن الأدوية العربي السعودي'}}),
+   b:{h:'دوري: تنسيق برنامج تقدير الموظفين.',num:'٣٥',unit:'اختيارًا ضمن برنامج التقدير',p:'أنسّق التقييمات الشهرية والترشيحات وسجلات الاختيار، حتى يُرى العمل الجيد بعدالة.',where:'مخزن الأدوية العربي السعودي'}}),
  detail({id:'file',name:'ملفها',svg:'folder',
    s:{h:'وملفها مكتمل، حتى لو جاء التدقيق غدًا.',p:'لا ورقة ناقصة، ولا تاريخ منتهٍ.'},
-   b:{h:'قبلها: ملفات لاعتماد سباهي.',num:'+٢٬٠٠٠',unit:'ملف موظف تم تدقيقه',p:'في مستشفى أندلسية دقّقت ملفات الموظفين وحدّثتها وفق معايير المركز السعودي لاعتماد المنشآت الصحية (سباهي)، وجهّزتها للتدقيق قبل زيارة الاعتماد.',where:'مستشفى أندلسية · ٢٠٢٤–٢٠٢٥'}}),
+   b:{h:'وقبلها: جهّزت ملفات لاعتماد سباهي.',num:'+٢٬٠٠٠',unit:'ملف موظف تم تدقيقه',p:'في مستشفى أندلسية دقّقت ملفات الموظفين وحدّثتها وفق معايير المركز السعودي لاعتماد المنشآت الصحية (سباهي)، وجهّزتها للتدقيق قبل زيارة الاعتماد.',where:'مستشفى أندلسية · ٢٠٢٤–٢٠٢٥'}}),
  {id:'who',name:'من خلف التفاصيل',type:'who'},
  {id:'build',name:'ما أبنيه',type:'build'},
  {id:'think',name:'طريقة تفكيري',type:'think',gate:()=>qPick>=0},
@@ -400,21 +405,22 @@ if(done){reached=SC.length-1}
 function rIntro(){return `<div class="layer surface grain"><div class="layer-in">
  <div><span class="k">قصة قصيرة</span><h1>${words('هذه سارة.')}</h1>
  <p class="lead">اليوم أول يوم لها في وظيفتها الجديدة. وصلت، ووجدت كل شيء جاهزًا.</p>
- <p class="lead">لكن خلف هذا اليوم الهادئ… تفاصيل لم ترها.</p>
+ <p class="lead">لكن خلف هذا اليوم الهادئ… عمل لم تره.</p>
+ <p class="lead" style="color:var(--ink);font-size:1.08rem">في كل محطة سترى ما رأته سارة، ثم تكشف العمل الذي كان وراءه، والذي كنت أقوم به.</p>
  <p class="note">سارة شخصية تمثيلية. التفاصيل خلفها حقيقية.</p></div>
  <div class="vis"><div class="float">${SVG.badge}</div></div></div></div>`}
 function rDetail(c){const b=c.b;return `
  <div class="layer surface grain"><div class="layer-in"><div><span class="k">ما رأته سارة</span><h2>${words(c.s.h)}</h2><p class="lead">${c.s.p}</p>
-  <p class="hint ui"><i></i>${matchMedia('(hover:hover)').matches?'مرّر على الرسم لتلمح ما خلفه، ثم اكشفه':'اضغط «اكشف ما خلفه»'}</p></div>
+  <p class="hint ui"><i></i>${matchMedia('(hover:hover)').matches?'مرّر على الرسم لتلمح العمل الذي وراء هذه التفصيلة، ثم اضغط لتكشفه كاملًا':'اضغط الزر بالأسفل لترى العمل الذي وراء هذه التفصيلة'}</p></div>
   <div class="vis reveal-zone"><div class="float">${SVG[c.svg]}</div></div></div></div>
- <div class="layer beneath" aria-hidden="${!revealed[c.id]}"><div class="layer-in"><div><span class="k">ما خلفه</span><h2>${b.h}</h2>
+ <div class="layer beneath" aria-hidden="${!revealed[c.id]}"><div class="layer-in"><div><span class="k">ما لم تره سارة · دوري</span><h2>${b.h}</h2>
   ${b.num?`<div class="num"><b>${b.num}</b><span>${b.unit}</span></div>`:''}
   <p class="lead">${b.p}</p><div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center"><span class="where">${b.where}</span>${b.link?`<a class="btn ghost" style="color:var(--gold)" href="${b.link.u}" target="_blank" rel="noopener">${b.link.t}</a>`:''}</div></div>
   <div class="vis" style="position:relative">${SVG[c.svg]}<span class="stamp">ثامر ✓</span></div></div></div>`}
 function rWho(){return `<div class="layer dark-scene grain"><div class="layer-in">
  <div><span class="k">من خلف التفاصيل</span><h1 style="font-size:clamp(2.1rem,1.4rem + 3vw,3.8rem)">${words('سارة لا تعرف ثامر.')}</h1>
  <p class="lead line2" style="color:var(--ivory);font-size:clamp(1.3rem,1.1rem + .8vw,1.8rem);font-weight:700">لكن يومها كان أفضل بسببه.</p>
- <p class="lead line2">أنا ثامر الشهري، أخصائي موارد بشرية. أعمل على التفاصيل التي لا يراها أحد، ويشعر بها الجميع.</p>
+ <p class="lead line2">أنا ثامر الشهري، أخصائي موارد بشرية. أعمل على التفاصيل التي لا يراها أحد، ويشعر بها الجميع، وأحوّل الإجراءات المعقدة إلى أتمتة سهلة الاستخدام.</p>
  <ol class="tl line2">
   <li><small>٢٠٢٤</small>بكالوريوس الإدارة العامة<br><span>جامعة الملك عبدالعزيز</span></li>
   <li><small>٢٠٢٤ – ٢٠٢٥</small>مستشفى أندلسية<br><span>أخصائي عمليات موارد بشرية (تمهير)، ثم منسق موارد بشرية</span></li>
@@ -487,7 +493,7 @@ function chrome(){
  document.body.classList.toggle('dark',isDark());
  const c=SC[cur], nx=$('#next');
  const needReveal=c.type==='detail'&&!revealed[c.id], gate=c.gate?c.gate():true, last=cur===SC.length-1;
- nx.innerHTML=needReveal?'اكشف ما خلفه 🔍':(!gate?'اختر إجابة أولًا':(last?'أعد القصة ↺':`التالي <span class="arr" aria-hidden="true">→</span>`));
+ nx.innerHTML=needReveal?'اكشف العمل الذي وراءها 🔍':(!gate?'اختر إجابة أولًا':(last?'أعد القصة ↺':`التالي <span class="arr" aria-hidden="true">→</span>`));
  nx.disabled=!gate;
  $('#prev').disabled=cur===0; $('#prev').style.visibility=cur===0?'hidden':'visible';
  const n=a=>a.toLocaleString('ar-SA');
