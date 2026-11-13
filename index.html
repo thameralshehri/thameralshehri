@@ -299,8 +299,8 @@ html[lang=en] .ld .ph2{direction:rtl}
 .arch{background:radial-gradient(120% 90% at 50% 100%,#24405E 0%,#16263C 55%,#0F1B2D 100%)}
 .arch img{object-fit:cover;object-position:50% 100%}
 .panel .id img,.mbar img{background:radial-gradient(circle at 50% 70%,#24405E,#0F1B2D)}
-html[lang=en] .arr,html[lang=en] .flip{transform:none}
-html[lang=ar] .flip{transform:scaleX(-1)}
+html[lang=en] .flip{display:inline-flex;transform:scaleX(-1)}
+html[lang=ar] .flip{display:inline-flex;transform:none}
 html[lang=en] .scene.enter{transform:translateX(40px)}
 /* ===== GATE: choose your path ===== */
 @property --a{syntax:'<angle>';inherits:false;initial-value:0deg}
@@ -424,6 +424,14 @@ html[lang=ar] .bars{direction:rtl}
  .g-f{font-size:.8rem;margin-top:16px}
 }
 /* ===== story visual upgrades ===== */
+@media(max-width:860px){.arch{width:min(190px,52%)!important}}
+
+.mbar .cnt{white-space:nowrap}.mbar>div{min-width:0}.mbar small,.mbar b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}.st{white-space:nowrap}
+
+body,.stage{transition:background-color .6s}
+body.dark,body.dark .stage{background-color:var(--night)}
+body.dark .ctrl{background:rgba(12,22,38,.92)}
+
 .vis{position:relative}
 .halo{position:absolute;left:50%;top:50%;width:min(118%,560px);aspect-ratio:1;transform:translate(-50%,-50%);pointer-events:none;z-index:0}
 .halo>i{position:absolute;inset:0;border-radius:50%}
@@ -800,7 +808,7 @@ const EMB_S=`<svg viewBox="0 0 150 120"><path class="dr" style="--k:0" d="M58 4c
 const EMB_F=`<svg viewBox="0 0 170 120"><circle class="dr" style="--k:0" cx="85" cy="26" r="13"/>${[[18,98],[51,106],[85,110],[119,106],[152,98]].map((p,k)=>`<path class="dr" style="--k:${k+1}" d="M85 39 C 85 70, ${p[0]} 62, ${p[0]} ${p[1]-9}"/><circle class="dr ${k%2?'em':''}" style="--k:${k+1}" cx="${p[0]}" cy="${p[1]}" r="8"/><circle class="fl pn" style="--k:${k}" cx="${p[0]}" cy="${p[1]}" r="2.6"/>`).join('')}</svg>`;
 function bars(n){return `<span class="bars" aria-label="${num(n)}/${num(5)}">${[0,1,2,3,4].map(i=>`<i class="${i<n?'on':''}"></i>`).join('')}</span>`}
 function gateHTML(){const a=A();
- const card=(k,hero)=>{const s=hero?{mode:a?'وضع القصة':'Story mode',t:a?'عِش القصة':'Live the story',d:a?'لو تحب التفاصيل والمعلومة الواضحة، وتمشي خطوة ورا خطوة.':'For those who love details and clear information, one step at a time.',rows:[[a?'المدة':'Time',a?'٣ دقايق تقريبًا':'About 3 minutes'],[a?'المحطات':'Stops',a?`${num(SC.length)} مشهد وتحدي صغير`:`${SC.length} scenes and a small challenge`],[a?'التفاصيل':'Detail',bars(5)],[a?'الترتيب':'Order',bars(5)]],go:a?'ابدأ القصة':'Start the story',emb:EMB_S}
+ const card=(k,hero)=>{const s=hero?{mode:a?'وضع القصة':'Story mode',t:a?'عيش القصة':'Live the story',d:a?'لو تحب التفاصيل والمعلومة الواضحة، وتمشي خطوة ورا خطوة.':'For those who love details and clear information, one step at a time.',rows:[[a?'المدة':'Time',a?'٣ دقايق تقريبًا':'About 3 minutes'],[a?'المحطات':'Stops',a?`${num(SC.length)} مشهد وتحدي صغير`:`${SC.length} scenes and a small challenge`],[a?'التفاصيل':'Detail',bars(5)],[a?'الترتيب':'Order',bars(5)]],go:a?'ابدأ القصة':'Start the story',emb:EMB_S}
   :{mode:a?'وضع الاستكشاف':'Free-roam mode',t:a?'استكشف بحرية':'Explore freely',d:a?'لو تحب تتنقل على كيفك، وتختار بنفسك وش تشوف.':'For those who like to roam and pick what to see.',rows:[[a?'المدة':'Time',a?'على راحتك':'Your pace'],[a?'المحطات':'Stops',a?'٥ أقسام مفتوحة':'5 open sections'],[a?'الحرية':'Freedom',bars(5)],[a?'السرعة':'Speed',bars(4)]],go:a?'ادخل الرئيسية':'Enter home',emb:EMB_F};
   return `<button type="button" class="path ${hero?'hero':'free'}" data-go="${k}"><span class="fr"><span class="in">
    <span class="p-top"><span class="mode"><i></i>${s.mode}</span>${hero?`<span class="crown">${STAR}${a?'الطريق الأجمل':'The finest path'}</span>`:''}</span>
