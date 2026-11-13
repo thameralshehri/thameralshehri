@@ -287,7 +287,8 @@ body.dark .mbar .lang button[aria-pressed=true]{color:var(--night)}
 .panel .top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}
 .panel .top a{font-size:.85rem;color:var(--muted);text-decoration:none;display:inline-flex;gap:.35rem;align-items:center}
 .panel .top a:hover{color:var(--ink)}
-.ld .ph2{font-size:clamp(1rem,.9rem + .5vw,1.3rem);color:var(--muted);margin:-1.4rem 0 2rem;min-height:1.6em;direction:ltr}
+.ld .ph{min-height:0!important;margin:1.2rem 0 .35rem!important}
+.ld .ph2{font-size:clamp(1rem,.9rem + .5vw,1.3rem);color:var(--muted);margin:0 0 2.2rem;min-height:1.6em;direction:ltr}
 html[lang=en] .ld .ph2{direction:rtl}
 .ld .pick{margin-top:1.6rem;display:flex;justify-content:center;align-items:center;gap:.8rem;font-size:.9rem;color:var(--muted)}
 .ld .pick .lang{background:rgba(255,255,255,.6)}
@@ -309,7 +310,6 @@ html[lang=en] .scene.enter{transform:translateX(40px)}
  <p class="ph2" id="ph2" aria-hidden="true"></p>
  <div class="bar" aria-hidden="true"><i id="bar"></i></div>
  <div class="meta"><span id="lmsg"></span><span id="lpct"></span></div>
- <div class="pick"><span id="lpick"></span><div class="lang" role="group" aria-label="Language · اللغة"><span class="th"></span><button type="button" data-l="en" lang="en">EN</button><button type="button" data-l="ar" lang="ar">عربي</button></div></div>
 </div></div>
 
 <header class="mbar"><img src="img/thamer-avatar.webp" alt=""><div><b data-t="name"></b><small data-t="role"></small></div><span class="cnt" id="mcnt"></span>
@@ -613,7 +613,7 @@ function statics(){
  $$('[data-t]').forEach(e=>e.textContent=L(T[e.dataset.t]));
  $$('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===lang));
  $('#homeLink').innerHTML=`${I.home} ${L(T.home)}`; $('#cvBtn').innerHTML=`${L(T.cv)} ${I.down}`; $('#liBtn').innerHTML=`LinkedIn ${I.ext}`;
- $('#lwho').textContent=L(T.name); $('#lpick').textContent=L(T.readIn);
+ $('#lwho').textContent=L(T.name);
  $('#ctrl').setAttribute('aria-label',A()?'التنقل في القصة':'Story navigation');
  $('#panel').setAttribute('aria-label',A()?'ملف ثامر':"Thamer's profile");
 }
