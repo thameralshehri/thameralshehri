@@ -195,7 +195,7 @@ footer{color:var(--muted);padding:20px 0 30px;font-size:.88rem}
 <header class="hdr"><div class="wrap">
  <a class="brand" href="/home/"><img src="/img/thamer-avatar.webp" alt=""><span data-t="name"></span></a>
  <nav class="crumb" id="crumb" aria-label="breadcrumb"></nav>
- <div class="sp"><a class="btn story" href="/" id="storyBtn"></a>
+ <div class="sp"><a class="btn story" href="/#play" id="storyBtn"></a>
  <div class="lang" role="group" aria-label="Language · اللغة"><span class="th"></span><button type="button" data-l="en" lang="en">EN</button><button type="button" data-l="ar" lang="ar">عربي</button></div></div>
 </div></header>
 <main id="main"></main>
@@ -287,7 +287,7 @@ function hub(){return `<section class="hub"><div class="wrap">
   <span class="pick"><i></i>${A()?'اختار من وين تبدأ':'Choose where to start'}</span></div>
  <div class="branches" id="branches"><svg class="wires" id="wires" aria-hidden="true"><defs><linearGradient id="wg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D4A85A"/><stop offset="1" stop-color="#4FB3A5"/></linearGradient></defs></svg>
   <div class="cards">${SECS.map((s,i)=>`<a class="card" href="/home/${s.id}/" data-i="${i}"><span class="no">${num(i+1)}</span><span class="art">${ART[s.id]}</span><b>${L(s.t)}</b><small>${L(s.s)}</small><span class="go">${A()?'ادخل':'Enter'} ${I.arr}</span></a>`).join('')}</div>
-  <a class="story-strip" href="/"><span class="p">${I.play}</span><span><b>${A()?'أو شاهد القصة: ورا التفاصيل':'Or watch the story: Behind the details'}</b><small>${A()?'قصة قصيرة عن أول يوم لسارة، والشغل اللي كان وراه.':"A short story about Sara's first day, and the work behind it."}</small></span></a>
+  <a class="story-strip" href="/#play"><span class="p">${I.play}</span><span><b>${A()?'أو شاهد القصة: ورا التفاصيل':'Or watch the story: Behind the details'}</b><small>${A()?'قصة قصيرة عن أول يوم لسارة، والشغل اللي كان وراه.':"A short story about Sara's first day, and the work behind it."}</small></span></a>
  </div></div></section>`}
 function head(id,k,h,p,dark){return `<div class="page-head rv"><span class="k">${k}</span><h2>${h}</h2>${p?`<p class="lead">${p}</p>`:''}</div>`}
 function about(){const tl=A()?[['٢٠٢٤','بكالوريوس الإدارة العامة','جامعة الملك عبدالعزيز'],['يوليو ٢٠٢٤ – مارس ٢٠٢٥','أخصائي عمليات موارد بشرية (تمهير)','مستشفى أندلسية · دقّقت أكثر من ٢٠٠٠ ملف موظف لاعتماد سباهي'],['مارس – أغسطس ٢٠٢٥','منسق موارد بشرية','مستشفى أندلسية · الإجازات والخطابات وسجلات أكثر من ١٦٠٠ موظف'],['أغسطس ٢٠٢٥ – فبراير ٢٠٢٦','برنامج أمين ٦ التدريبي','هيئة الزكاة والضريبة والجمارك'],['مارس ٢٠٢٦ – الآن','أخصائي موارد بشرية','مخزن الأدوية العربي السعودي']]
@@ -307,7 +307,7 @@ function resume(){return `<section class="page"><div class="wrap">${head('resume
  <div class="cvg"><div class="doc rv"><img src="/img/cv.webp" alt="${A()?'السيرة الذاتية لثامر الشهري':'Thamer Alshehri resume'}"></div><div class="side rv"><a class="btn solid" href="${CV}" download>${A()?'نزّل السيرة الذاتية (PDF)':'Download resume (PDF)'} ${I.down}</a><a class="btn" href="${LI}" target="_blank" rel="noopener">LinkedIn ${I.ext}</a><p class="lead" style="font-size:1rem">${A()?'السيرة بالإنجليزي، ومحدّثة باستمرار.':'In English, and kept up to date.'}</p></div></div></div></section>`}
 function contact(){return `<section class="page dark"><div class="wrap contact"><div class="rv"><span class="k">${A()?'تواصل':'Contact'}</span><h2>${A()?'القصة ما خلصت. إحنا في بدايتها.':'The story is not over. We are at the beginning.'}</h2>
  <p class="lead">${A()?'كل يوم فيه تفاصيل جديدة تنكتب. لو حاب تكمّل القصة معي، أو تسولف عن الموارد البشرية وتجربة الموظف، أنا هنا.':'New details get written every day. If you want to continue the story with me, or just talk about HR and employee experience, I am here.'}</p>
- <a class="btn gold" href="/">${I.play} ${A()?'شاهد القصة من البداية':'Watch the story from the start'}</a></div>
+ <a class="btn gold" href="/#play">${I.play} ${A()?'شاهد القصة من البداية':'Watch the story from the start'}</a></div>
  <div class="links rv"><a href="${LI}" target="_blank" rel="noopener">LinkedIn <span dir="ltr">linkedin.com/in/thameralshehri ${I.ext}</span></a><a href="mailto:mrthameralshehri@gmail.com">${A()?'البريد الإلكتروني':'Email'} <span dir="ltr">mrthameralshehri@gmail.com</span></a><a href="${CV}" download>${A()?'السيرة الذاتية':'Resume'} <span>PDF ${I.down}</span></a></div></div></section>`}
 const R={hub,about,journey,projects,resume,contact};
 
@@ -339,7 +339,7 @@ function render(){
  $('#crumb').innerHTML=sec?`${I.sep}<a href="/home/">${L(T.home)}</a>${I.sep}<b>${L(sec.t)}</b>`:'';
  $('#main').innerHTML=R[PAGE]();
  const nx=$('#next');
- if(sec){const i=SECS.indexOf(sec); nx.innerHTML=`<div class="wrap"><h3>${A()?'كمّل لقسم ثاني':'Continue to another section'}</h3><div class="others"><a class="hub-l" href="/home/">${I.home} ${A()?'كل الأقسام':'All sections'}</a>${SECS.filter(s=>s!==sec).map(s=>`<a href="/home/${s.id}/"><span class="n">${num(SECS.indexOf(s)+1)}</span>${L(s.t)}</a>`).join('')}<a href="/">${I.play} ${A()?'القصة':'The story'}</a></div></div>`; nx.hidden=false}
+ if(sec){const i=SECS.indexOf(sec); nx.innerHTML=`<div class="wrap"><h3>${A()?'كمّل لقسم ثاني':'Continue to another section'}</h3><div class="others"><a class="hub-l" href="/home/">${I.home} ${A()?'كل الأقسام':'All sections'}</a>${SECS.filter(s=>s!==sec).map(s=>`<a href="/home/${s.id}/"><span class="n">${num(SECS.indexOf(s)+1)}</span>${L(s.t)}</a>`).join('')}<a href="/#play">${I.play} ${A()?'القصة':'The story'}</a></div></div>`; nx.hidden=false}
  else nx.hidden=true;
  $('#foot').textContent=A()?'© ٢٠٢٦ ثامر الشهري':'© 2026 Thamer Alshehri';
  $$('.pc').forEach(b=>b.addEventListener('click',()=>openP(+b.dataset.p,b)));
