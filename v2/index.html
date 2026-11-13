@@ -415,10 +415,10 @@ function rIntro(){return `<div class="layer surface grain"><div class="layer-in"
  <p class="note">سارة شخصية من الخيال، بس كل الشغل اللي وراها حقيقي.</p></div>
  <div class="vis"><div class="float">${SVG.badge}</div></div></div></div>`}
 function rDetail(c){const b=c.b;return `
- <div class="layer surface grain"><div class="layer-in"><div><span class="k">وش شافت سارة</span><h2>${words(c.s.h)}</h2><p class="lead">${c.s.p}</p>
+ <div class="layer surface grain"><div class="layer-in"><div><h2>${words(c.s.h)}</h2><p class="lead">${c.s.p}</p>
   <p class="hint ui"><i></i>${matchMedia('(hover:hover)').matches?'مرّر الماوس على الرسم، أو اضغط الزر، وشوف وش كان وراه':'اضغط الزر اللي تحت وشوف وش كان وراه'}</p></div>
   <div class="vis reveal-zone"><div class="float">${SVG[c.svg]}</div></div></div></div>
- <div class="layer beneath" aria-hidden="${!revealed[c.id]}"><div class="layer-in"><div><span class="k">وش كان وراه</span><h2>${b.h}</h2>
+ <div class="layer beneath" aria-hidden="${!revealed[c.id]}"><div class="layer-in"><div><h2>${b.h}</h2>
   ${b.num?`<div class="num"><b>${b.num}</b><span>${b.unit}</span></div>`:''}
   <p class="lead">${b.p}</p><div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center"><span class="where">${b.where}</span>${b.link?`<a class="btn ghost" style="color:var(--gold)" href="${b.link.u}" target="_blank" rel="noopener">${b.link.t} ${I.ext}</a>`:''}</div></div>
   <div class="vis" style="position:relative">${SVG[c.svg]}<span class="stamp">ثامر ${I.ok}</span></div></div></div>`}
