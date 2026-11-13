@@ -114,7 +114,7 @@ img{display:block;max-width:100%}
 .beneath::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(40% 35% at 85% 15%,rgba(212,168,90,.16),transparent 70%),radial-gradient(45% 40% at 10% 90%,rgba(79,179,165,.13),transparent 70%)}
 .beneath > *{position:relative}
 .k{font-family:var(--sans);font-size:.88rem;font-weight:500;display:flex;align-items:center;gap:.6rem;color:var(--gold-d)}
-.k::before{content:"";width:26px;height:1.5px;background:currentColor}
+
 .beneath .k{color:var(--gold)}
 h1,h2{font-weight:700;margin:.5rem 0 1rem;line-height:1.35}
 h1{font-size:clamp(2.4rem,1.5rem + 4vw,4.6rem)}
@@ -388,7 +388,7 @@ const SC=[
    b:{h:'أنا جهّزت أول يوم لها.',num:'+٤٠',unit:'موظف جديد جهّزت لهم أول يوم',p:'أجهّز أوراقهم وأنسّق مع الأقسام، عشان يبدأون بدون لخبطة.',where:'مخزن الأدوية العربي السعودي'}}),
  detail({id:'probation',name:'بعد ٣ شهور',svg:'calendar',
    s:{h:'بعد ٣ شهور، جاها تقييمها في وقته.',p:'عرفت وش سوّت زين، ووش تحتاج تطوّر.'},
-   b:{h:'أنا تابعت فترة التجربة.',num:'٣٠',unit:'تقييم فترة تجربة خلّصته',p:'أذكّر المدراء بالمواعيد، وسويت تذكيرات تلقائية عشان ما يتأخر أي تقييم.',where:'مخزن الأدوية العربي السعودي'}}),
+   b:{h:'أنا تابعت فترة التجربة.',num:'٣٠',unit:'تقييم فترة تجربة خلّصتها',p:'أذكّر المدراء بالمواعيد، وسويت تذكيرات تلقائية عشان ما يتأخر أي تقييم.',where:'مخزن الأدوية العربي السعودي'}}),
  detail({id:'recognition',name:'التكريم',svg:'medal',
    s:{h:'ولما تميّزت، أحد انتبه.',p:'اسمها طلع مع المكرّمين هالشهر.'},
    b:{h:'أنا نسّقت برنامج التكريم.',num:'٣٥',unit:'اختيار في برنامج تقدير الموظفين',p:'أجمع الترشيحات والتقييمات كل شهر، عشان الشغل الحلو ما يضيع.',where:'مخزن الأدوية العربي السعودي'}}),
@@ -424,7 +424,7 @@ function rDetail(c){const b=c.b;return `
   <div class="vis" style="position:relative">${SVG[c.svg]}<span class="stamp">ثامر ${I.ok}</span></div></div></div>`}
 function rWho(){return `<div class="layer dark-scene grain"><div class="layer-in">
  <div><span class="k">مين وراها</span><h1 style="font-size:clamp(2.1rem,1.4rem + 3vw,3.8rem)">${words('سارة ما تعرف ثامر.')}</h1>
- <p class="lead line2" style="color:var(--ivory);font-size:clamp(1.3rem,1.1rem + .8vw,1.8rem);font-weight:700">بس يومها كان أحلى بسببه.</p>
+ <p class="lead line2" style="color:var(--ivory);font-size:clamp(1.3rem,1.1rem + .8vw,1.8rem);font-weight:700">بس يومها كان أسهل بسببه.</p>
  <p class="lead line2">أنا ثامر الشهري، أخصائي موارد بشرية. شغلي إن الموظف يرتاح من أول يوم، وأحوّل الإجراءات الصعبة لخطوات سهلة وتلقائية.</p>
  <ol class="tl line2">
   <li><small>٢٠٢٤</small>بكالوريوس الإدارة العامة<br><span>جامعة الملك عبدالعزيز</span></li>
