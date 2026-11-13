@@ -479,7 +479,7 @@ const SC=[
  {id:'learn',name:{ar:'وش أتعلم',en:'What I learn'},type:'learn'},
  {id:'end',name:{ar:'تواصل معي',en:'Get in touch'},type:'end'}
 ];
-const Q=[{o:{ar:'أنتظر لين يجي، وبعدين نشوف.',en:'Wait until they arrive, then sort it out.'}},{o:{ar:'أكلّم التقنية ومديره اليوم، وأرسل له رسالة ترحيب فيها جدول يومه.',en:'Call IT and their manager today, and send a welcome message with their first-day schedule.'},ok:true},{o:{ar:'أأجّل مباشرته أسبوع.',en:'Push their start date back a week.'}}];
+const Q=[{o:{ar:'أنتظر لين يجي، وبعدين نشوف.',en:'Wait until they arrive, then sort it out.'}},{o:{ar:'أكلّم التقنية ومديره اليوم، وأرسل له رسالة ترحيب فيها جدول يومه.',en:'Call IT and their manager today, and send a welcome message with their first-day schedule.'},ok:true},{o:{ar:'أخلّيه يبدأ بعد أسبوع بدل بكرة.',en:'Move their start to next week instead.'}}];
 
 let cur=0, reached=0, done=store.get('ta2-done')==='1', revealed={}, qPick=-1, busy=false;
 if(done)reached=SC.length-1;
@@ -527,12 +527,13 @@ function rLearn(){return `<div class="layer dark-scene grain"><div class="layer-
  <div class="cert"><div><b>${A()?'دبلوم إدارة الموارد البشرية':'Diploma in HR Management'}</b><small>${A()?'جامعة الأمير مقرن':'Prince Mugrin University'}</small></div><span class="st">${A()?'أدرسها الحين':'In progress'}</span></div></div></div>
  <div><a class="li" href="${LI}" target="_blank" rel="noopener"><span class="in">in</span><b>${A()?'أفكار قصيرة.<br>وفهم أوضح.':'Short ideas.<br>Clearer understanding.'}</b><span>${A()?'أنزّل دايم على LinkedIn أفكار وتوضيحات تبسّط مواضيع الموارد البشرية: التوظيف، والتهيئة، وفترة التجربة، وتجربة الموظف.':'I regularly post ideas and explanations on LinkedIn that make HR topics simpler: hiring, onboarding, probation and employee experience.'}</span><span style="font-size:.88rem">${A()?'من سلسلتي: «من إعلان الوظيفة إلى تثبيت الموظف»':'From my series: "From Job Posting to Confirmation"'}</span><em>${A()?'تابعني على LinkedIn':'Follow me on LinkedIn'} ${I.ext}</em></a></div></div></div>`}
 function rEnd(){return `<div class="layer dark-scene grain"><div class="layer-in">
- <div><span class="k">${A()?'النهاية… ولا البداية؟':'The end… or the start?'}</span><h1 style="font-size:clamp(2.1rem,1.4rem + 3vw,3.8rem)">${words(A()?'التفاصيل الجاية… خلّنا نكتبها سوا.':"The next details… let's write them together.")}</h1>
- <p class="lead">${A()?'لو عندك فرصة وظيفية، أو تبي نتعاون، أو بس نسولف عن الموارد البشرية وتجربة الموظف.':"If you have a role in mind, want to collaborate, or just want to talk about HR and employee experience."}</p>
+ <div><span class="k">${A()?'مو النهاية':'Not the end'}</span><h1 style="font-size:clamp(2.1rem,1.4rem + 3vw,3.8rem)">${words(A()?'أنا مو في نهاية القصة، ولا أنت.':"I'm not at the end of the story. Neither are you.")}</h1>
+ <p class="lead" style="color:var(--ivory);font-weight:700;font-size:clamp(1.2rem,1.05rem + .6vw,1.6rem)">${A()?'إحنا في بدايتها.':'We are at the beginning.'}</p>
+ <p class="lead">${A()?'كل يوم فيه تفاصيل جديدة تنكتب. لو حاب تكمّل القصة معي، أو تسولف عن الموارد البشرية، أنا هنا.':'New details get written every day. If you want to continue the story with me, or just talk about HR, I am here.'}</p>
  <div class="links"><a href="${LI}" target="_blank" rel="noopener">LinkedIn <span dir="ltr">linkedin.com/in/thameralshehri ${I.ext}</span></a>
  <a href="mailto:mrthameralshehri@gmail.com">${A()?'البريد الإلكتروني':'Email'} <span dir="ltr">mrthameralshehri@gmail.com</span></a>
  <a href="${CV}" download>${A()?'السيرة الذاتية':'Resume'} <span>PDF · ${A()?'تحميل':'Download'} ${I.down}</span></a></div>
- <div class="end-cta"><a class="btn gold" href="home/">${I.home} ${A()?'روح للصفحة الرئيسية':'Go to the home page'}</a><button class="btn" type="button" id="replay">${I.redo} ${L(T.again)}</button></div></div>
+ <div class="end-cta"><button class="btn ghost" style="color:var(--mist)" type="button" id="replay">${I.redo} ${L(T.again)}</button></div></div>
  <div class="vis"><div class="arch" style="width:min(300px,70%)"><img src="img/thamer-cut.webp" alt="${L(T.name)}"></div></div></div></div>`}
 
 function render(dir=1,anim=true){
@@ -575,7 +576,7 @@ function chrome(){
  document.body.classList.toggle('dark',isDark());
  const c=SC[cur], nx=$('#next');
  const needReveal=c.type==='detail'&&!revealed[c.id], gate=c.gate?c.gate():true, last=cur===SC.length-1;
- nx.innerHTML=needReveal?`${L(T.reveal)} ${I.eye}`:(!gate?L(T.pick):(last?`${L(T.again)} ${I.redo}`:`${L(T.next)} ${I.next}`));
+ nx.innerHTML=needReveal?`${L(T.reveal)} ${I.eye}`:(!gate?L(T.pick):(last?`${I.home} ${L(T.home)}`:`${L(T.next)} ${I.next}`));
  nx.disabled=!gate;
  $('#prev').innerHTML=I.back; $('#prev').setAttribute('aria-label',L(T.back));
  $('#prev').disabled=cur===0; $('#prev').style.visibility=cur===0?'hidden':'visible';
@@ -587,7 +588,7 @@ function chrome(){
  const mt=document.querySelector('meta[name=theme-color]'); if(mt)mt.content=isDark()?'#0F1B2D':'#F4EEE3';
 }
 function go(i){ if(i<0||i>=SC.length||i===cur)return; const d=i>cur?1:-1; cur=i; reached=Math.max(reached,cur); if(cur===SC.length-1){done=true;store.set('ta2-done','1')} render(d); }
-$('#next').addEventListener('click',()=>{ const c=SC[cur]; if(c.type==='detail'&&!revealed[c.id]){reveal();return} if($('#next').disabled)return; try{navigator.vibrate&&navigator.vibrate(8)}catch(_){} if(cur===SC.length-1){replay();return} go(cur+1)});
+$('#next').addEventListener('click',()=>{ const c=SC[cur]; if(c.type==='detail'&&!revealed[c.id]){reveal();return} if($('#next').disabled)return; try{navigator.vibrate&&navigator.vibrate(8)}catch(_){} if(cur===SC.length-1){location.href='home/';return} go(cur+1)});
 $('#prev').addEventListener('click',()=>go(cur-1));
 document.addEventListener('keydown',e=>{ if($('#sheet').classList.contains('open')){if(e.key==='Escape')closeP();return} if(!$('#loader').classList.contains('gone'))return;
  const fwd=A()?'ArrowLeft':'ArrowRight', bwd=A()?'ArrowRight':'ArrowLeft'; if(e.key===fwd){e.preventDefault();$('#next').click()} if(e.key===bwd){e.preventDefault();go(cur-1)} });
