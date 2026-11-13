@@ -265,7 +265,7 @@ body:not(.dark) #next.gold{color:#14110A}
  <div class="who">ثامر الشهري</div>
  <p class="ph" id="ph"></p>
  <div class="bar" aria-hidden="true"><i id="bar"></i></div>
- <div class="meta"><span id="lmsg">جارٍ تجهيز القصة…</span><span id="lpct">٠٪</span></div>
+ <div class="meta"><span id="lmsg">نجهّز لك القصة…</span><span id="lpct">٠٪</span></div>
 </div></div>
 
 <header class="mbar"><img src="../img/avatar.webp" alt=""><div><b>ثامر الشهري</b><small>أخصائي موارد بشرية</small></div><span class="cnt" id="mcnt"></span></header>
@@ -273,9 +273,9 @@ body:not(.dark) #next.gold{color:#14110A}
 <div class="shell">
  <aside class="panel grain" aria-label="ملف ثامر">
   <div class="id"><img src="../img/avatar.webp" alt="ثامر الشهري"><div><b>ثامر الشهري</b><span>أخصائي موارد بشرية</span></div></div>
-  <p class="tag">أعمل على التفاصيل التي لا يراها أحد، ويشعر بها الجميع.</p>
+  <p class="tag">أشتغل على التفاصيل اللي محد يشوفها، بس الكل يحس فيها.</p>
   <ol class="chap" id="chap"></ol>
-  <div class="acts"><a class="btn solid" href="../files/Thamer_Alshehri_HR_Specialist.pdf" download>حمّل السيرة الذاتية ↓</a><a class="btn" href="https://www.linkedin.com/in/thameralshehri" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+  <div class="acts"><a class="btn solid" href="../files/Thamer_Alshehri_HR_Specialist.pdf" download>نزّل سيرتي الذاتية ↓</a><a class="btn" href="https://www.linkedin.com/in/thameralshehri" target="_blank" rel="noopener">LinkedIn ↗</a></div>
  </aside>
  <main class="stage">
   <div class="view" id="view" aria-live="polite"></div>
@@ -351,49 +351,49 @@ ${['الهوية الوطنية','المؤهلات','العقد','الترخيص
 };
 
 /* ---------- content ---------- */
-const STATUS={live:'منشور',done:'مكتمل',prototype:'نموذج أولي',experiment:'تجربة',side:'مشروع جانبي · قيد التطوير'};
+const STATUS={live:'شغّال',done:'مكتمل',prototype:'نسخة أولى',experiment:'تجربة',side:'مشروع جانبي'};
 const PROJECTS=[
- {n:'مجد',st:'live',url:'https://majd.cc',cat:'منصة موارد بشرية سعودية',img:['majd1','majd2','majd4','majd5'],d:'منصة سعودية مجانية تجمع المعرفة والأدوات والقوالب والحاسبات والمسارات المهنية في مكان واحد، بالعربية والإنجليزية.',
-  s:['تشتت المعلومات والأدوات التي يحتاجها مختص الموارد البشرية بين مصادر متعددة.','منصة ويب تضم مركز معرفة وحاسبات ونماذج وأدوات عملية، طوّرتها بالاستفادة من أدوات التطوير المدعومة بالذكاء الاصطناعي.','منصة قائمة ومتاحة للاستخدام.']},
- {n:'قبل يومك الأول',st:'live',url:'https://before-day-one.mrthameralshehri.workers.dev',cat:'تجربة ويب لما قبل المباشرة',img:['byfd1','byfd2','byfd3'],d:'تجربة تفاعلية تساعد المرشح على فهم الدور قبل توقيع العرض الوظيفي.',
-  s:['محدودية التفاعل مع الموظف الجديد قبل مباشرة العمل.','تجربة ويب تفاعلية تتضمن أسئلة وتحليلًا للمدخلات وعرض نتائج مخصصة.','نموذج قابل للتجربة يوضح إمكانية تحسين التواصل قبل المباشرة.']},
- {n:'اعتماد سباهي',st:'done',cat:'امتثال الموارد البشرية · مستشفى أندلسية',img:['cbahi'],d:'تجهيز ملفات الموظفين لاعتماد المركز السعودي لاعتماد المنشآت الصحية (سباهي).',
-  s:['كان على ملفات موظفي المستشفى أن تستوفي معايير سباهي قبل زيارة الاعتماد مطلع ٢٠٢٥.','دقّقت كل ملف وفق المعايير، وحدّثت النواقص، ورتّبت السجلات لتكون جاهزة للتدقيق.','تدقيق وتحديث أكثر من ٢٬٠٠٠ ملف موظف لقوة عاملة تتجاوز ١٬٦٠٠ موظف.']},
- {n:'مسار',st:'live',url:'https://lnkd.in/dRkbS_9u',urlLbl:'جرّب البوت',cat:'مساعد مهني · Telegram · ChatGPT',img:['masar'],d:'بوت يساعد الباحث عن عمل في أكثر من خطوة خلال رحلته المهنية، ويجمع لك أهم الأشياء في مكان واحد.',
-  s:['كل خطوة في رحلة البحث عن عمل موجودة في مكان مختلف.','بُني في Telegram ورُبط مع ChatGPT، بحيث يفهم طلب المستخدم ويتعامل معه حسب احتياجه.','سيرة ذاتية بنظام ATS · تحليل السيرة · البحث عن الفرص · الاستعداد للمقابلات · الاستفسارات المهنية.'],l3:'ماذا يقدّم'},
- {n:'سند',st:'experiment',cat:'مساعد موارد بشرية ذكي',img:['sanad'],d:'مساعد ذكي يجيب الموظفين فورًا عن السياسات والتهيئة وطلبات الإجازة والإجراءات الداخلية، بالعربية والإنجليزية.',
-  s:['تكرار الأسئلة نفسها، وصعوبة الوصول السريع للمعلومة، وضغط إداري على فريق الموارد البشرية.','ذكاء اصطناعي محادثي يستمد إجاباته من مستندات الشركة، مع مسار لطلب التواصل مع الموارد البشرية، وإرشادات عامة من نظام العمل السعودي للتوعية.','خدمة ذاتية ذكية بإجابات دقيقة ومتسقة بلغتين. لم يُقَس أثرها التشغيلي بعد.']},
- {n:'ريم',st:'prototype',cat:'مساعد صوتي ذكي · Retell AI',img:['reem'],d:'المساعد الصوتي الذكي للموارد البشرية، يتحدث مع الموظفين عبر المكالمات.',
-  s:['الحاجة إلى وسيلة تواصل سهلة وتفاعلية للإجابة عن الاستفسارات المتكررة.','من ملاحظة أولية إلى تجربة اتصال حقيقية: بُنيت على Retell AI، بشخصية صوتية سعودية وسيناريوهات تواصل واختبار للمكالمات.','تجربة صوتية عملية، وليست نظامًا مؤسسيًا منشورًا على نطاق واسع.']},
- {n:'بيّنة',st:'prototype',cat:'التحقق من الإعلانات الوظيفية',img:['bayyinah'],d:'افهم أدلة إعلان الوظيفة قبل مشاركة بياناتك.',
-  s:['صعوبة تمييز الإعلانات الوظيفية الموثوقة من الإعلانات المشبوهة.','فحص الجهة والقناة والتفويض والطلب، ثم عرض ما يثبته الدليل وما لا يثبته.','تنفيذ أولي قابل للتجربة. لا توجد نتائج تشغيلية مؤكدة للنشر حاليًا.']}
+ {n:'مجد',st:'live',url:'https://majd.cc',cat:'منصة موارد بشرية سعودية',img:['majd1','majd2','majd4','majd5'],d:'منصة سعودية مجانية تجمع لك المعرفة والأدوات والقوالب والحاسبات والمسارات المهنية في مكان واحد، بالعربي والإنجليزي.',
+  s:['المعلومات والأدوات اللي يحتاجها مختص الموارد البشرية متفرقة في أماكن كثيرة.','منصة ويب فيها مركز معرفة وحاسبات ونماذج وأدوات عملية، سويتها بمساعدة أدوات التطوير بالذكاء الاصطناعي.','منصة شغّالة وتقدر تستخدمها الحين.']},
+ {n:'قبل يومك الأول',st:'live',url:'https://before-day-one.mrthameralshehri.workers.dev',cat:'تجربة ويب لما قبل المباشرة',img:['byfd1','byfd2','byfd3'],d:'تجربة تفاعلية تساعد المرشح يفهم دوره قبل لا يوقّع العرض الوظيفي.',
+  s:['التواصل مع الموظف الجديد قبل ما يباشر قليل جدًا.','تجربة ويب تفاعلية فيها أسئلة، تحلل إجاباتك وتطلع لك نتائج على مقاسك.','نموذج تقدر تجربه، ويوضح كيف نقدر نحسّن التواصل قبل المباشرة.']},
+ {n:'اعتماد سباهي',st:'done',cat:'امتثال الموارد البشرية · مستشفى أندلسية',img:['cbahi'],d:'جهّزت ملفات الموظفين لاعتماد المركز السعودي لاعتماد المنشآت الصحية (سباهي).',
+  s:['ملفات موظفي المستشفى لازم تطابق معايير سباهي قبل زيارة الاعتماد بداية ٢٠٢٥.','دقّقت كل ملف حسب المعايير، وكمّلت النواقص، ورتّبت السجلات عشان تكون جاهزة للتدقيق.','دقّقت وحدّثت أكثر من ٢٬٠٠٠ ملف موظف، في مستشفى فيه أكثر من ١٬٦٠٠ موظف.']},
+ {n:'مسار',st:'live',url:'https://lnkd.in/dRkbS_9u',urlLbl:'جرّب البوت',cat:'مساعد مهني · Telegram · ChatGPT',img:['masar'],d:'بوت يساعد الباحث عن عمل في أكثر من خطوة في رحلته المهنية، وبدل ما تكون كل خطوة في مكان، يجمع لك أهم الأشياء في مكان واحد.',
+  s:['كل خطوة في البحث عن وظيفة موجودة في مكان مختلف.','سويته في Telegram وربطته مع ChatGPT، عشان يفهم وش يبي المستخدم ويتعامل معه حسب احتياجه.','سيرة ذاتية بنظام ATS · تحليل السيرة · البحث عن الفرص · الاستعداد للمقابلات · الاستفسارات المهنية.'],l3:'وش يقدّم'},
+ {n:'سند',st:'experiment',cat:'مساعد موارد بشرية ذكي',img:['sanad'],d:'مساعد ذكي يرد على الموظفين على طول عن السياسات والتهيئة والإجازات والإجراءات الداخلية، بالعربي والإنجليزي.',
+  s:['نفس الأسئلة تتكرر، والمعلومة صعب توصلها بسرعة، وفريق الموارد البشرية عليه ضغط.','ذكاء اصطناعي محادثي ياخذ إجاباته من مستندات الشركة، وفيه طريقة تطلب فيها تواصل مع الموارد البشرية، وإرشادات عامة من نظام العمل السعودي للتوعية.','خدمة ذاتية ذكية بإجابات دقيقة وثابتة بلغتين. وللحين ما قسنا أثرها على الشغل.']},
+ {n:'ريم',st:'prototype',cat:'مساعد صوتي ذكي · Retell AI',img:['reem'],d:'مساعدة صوتية ذكية للموارد البشرية، تكلّم الموظفين بالاتصال.',
+  s:['الموظفين يحتاجون طريقة سهلة يسألون فيها عن الأشياء اللي تتكرر.','بدأت من ملاحظة بسيطة لين صارت تجربة اتصال حقيقية: سويتها على Retell AI، بصوت سعودي وسيناريوهات محادثة واختبرت المكالمات.','تجربة صوتية شغّالة، بس مو نظام منشور على مستوى شركة كاملة.']},
+ {n:'بيّنة',st:'prototype',cat:'التحقق من الإعلانات الوظيفية',img:['bayyinah'],d:'افهم وش يثبت إعلان الوظيفة قبل لا تعطيهم بياناتك.',
+  s:['صعب تفرّق بين إعلان الوظيفة الموثوق والمشبوه.','يفحص الجهة والقناة والتفويض والطلب، وبعدين يوريك وش يثبته الدليل ووش ما يثبته.','نسخة أولى تقدر تجربها. وللحين ما عندي نتائج مؤكدة أنشرها.']}
 ];
 
 const detail=(o)=>({type:'detail',...o});
 const SC=[
  {id:'sara',name:'هذه سارة',type:'intro'},
  detail({id:'contract',name:'العقد',svg:'contract',
-   s:{h:'عقدٌ واضح، من أول مرة.',p:'لم تحتج أن تسأل عن راتبها أو بدلاتها أو تاريخ مباشرتها. كل شيء كان صحيحًا.'},
-   b:{h:'دوري: مراجعة كل عقد وسجل تعويضات.',p:'أراجع عقود العمل وسجلات التعويضات، حتى يصل كل عقد صحيحًا من البداية.',where:'مخزن الأدوية العربي السعودي'}}),
- detail({id:'before',name:'قبل أن تصل',svg:'phone',
-   s:{h:'كانت تعرف ماذا ينتظرها.',p:'قبل أن تصل، فهمت دورها وجدول يومها الأول، فجاءت مطمئنة.'},
-   b:{h:'دوري: بنيت تجربة «قبل يومك الأول».',p:'بنيت تجربة تفاعلية تساعد المرشح على فهم الدور قبل توقيع العرض، لأن التهيئة تبدأ قبل اليوم الأول.',where:'مشروع منشور',link:{t:'جرّب التجربة ↗',u:'https://before-day-one.mrthameralshehri.workers.dev'}}}),
+   s:{h:'عقد واضح من أول مرة.',p:'ما احتاجت تسأل عن راتبها ولا بدلاتها ولا متى تباشر. كل شي كان مضبوط.'},
+   b:{h:'شغلي: أراجع كل عقد وكل سجل تعويضات.',p:'أراجع عقود العمل وسجلات التعويضات، عشان يوصل كل عقد صح من أول مرة.',where:'مخزن الأدوية العربي السعودي'}}),
+ detail({id:'before',name:'قبل لا توصل',svg:'phone',
+   s:{h:'كانت عارفة وش ينتظرها.',p:'قبل لا توصل، فهمت دورها وجدول أول يوم لها، فجت وهي مرتاحة.'},
+   b:{h:'شغلي: سويت تجربة «قبل يومك الأول».',p:'سويت تجربة تفاعلية تساعد المرشح يفهم دوره قبل لا يوقّع العرض، لأن التهيئة تبدأ قبل أول يوم.',where:'مشروع شغّال',link:{t:'جرّبها بنفسك ↗',u:'https://before-day-one.mrthameralshehri.workers.dev'}}}),
  detail({id:'first',name:'اليوم الأول',svg:'desk',
-   s:{h:'يومٌ أول بلا ارتباك.',p:'مكتبها جاهز، وأوراقها مكتملة، وتعرف أين تذهب ومن تقابل.'},
-   b:{h:'دوري: تهيئة الموظفين الجدد.',num:'+٤٠',unit:'عملية تهيئة موظفين',p:'أجهّز المستندات، وأنسّق متطلبات اليوم الأول مع الجهات المعنية، حتى لا يُترك شيء للصدفة.',where:'مخزن الأدوية العربي السعودي'}}),
- detail({id:'probation',name:'اليوم التسعون',svg:'calendar',
-   s:{h:'بعد تسعين يومًا، لم يتأخر تقييمها.',p:'عرفت أين تقف، وماذا تطوّر، في الوقت المناسب.'},
-   b:{h:'دوري: متابعة فترة التجربة.',num:'٣٠',unit:'تقييم فترة تجربة مكتمل',p:'أتابع مواعيد انتهاء التجربة مع المدراء، وأبني أدوات تذكير ومتابعة آلية حتى لا يفوت موعد.',where:'مخزن الأدوية العربي السعودي'}}),
- detail({id:'recognition',name:'حين تميّزت',svg:'medal',
-   s:{h:'وحين تميّزت، لاحظ أحدهم.',p:'اسمها ظهر ضمن المكرّمين هذا الشهر.'},
-   b:{h:'دوري: تنسيق برنامج تقدير الموظفين.',num:'٣٥',unit:'اختيارًا ضمن برنامج التقدير',p:'أنسّق التقييمات الشهرية والترشيحات وسجلات الاختيار، حتى يُرى العمل الجيد بعدالة.',where:'مخزن الأدوية العربي السعودي'}}),
+   s:{h:'أول يوم بدون لخبطة.',p:'مكتبها جاهز، وأوراقها كاملة، وعارفة وين تروح ومين تقابل.'},
+   b:{h:'شغلي: تهيئة الموظفين الجدد.',num:'+٤٠',unit:'موظف جديد هيّأتهم',p:'أجهّز المستندات، وأنسّق مع الإدارات كل اللي يحتاجه أول يوم، عشان ما يصير شي بالصدفة.',where:'مخزن الأدوية العربي السعودي'}}),
+ detail({id:'probation',name:'يوم ٩٠',svg:'calendar',
+   s:{h:'بعد ٩٠ يوم، تقييمها ما تأخر.',p:'عرفت وين مستواها، ووش تطوّر، في الوقت الصح.'},
+   b:{h:'شغلي: متابعة فترة التجربة.',num:'٣٠',unit:'تقييم فترة تجربة خلّصته',p:'أتابع مع المدراء متى تخلص فترة التجربة، وسويت أدوات تذكير ومتابعة تلقائية عشان ما يفوت أي موعد.',where:'مخزن الأدوية العربي السعودي'}}),
+ detail({id:'recognition',name:'لما تميّزت',svg:'medal',
+   s:{h:'ولما تميّزت، أحد انتبه لها.',p:'اسمها طلع مع المكرّمين هالشهر.'},
+   b:{h:'شغلي: أنسّق برنامج تقدير الموظفين.',num:'٣٥',unit:'موظف اختيروا في برنامج التقدير',p:'أنسّق التقييمات الشهرية والترشيحات وسجلات الاختيار، عشان الشغل الحلو ينشاف بعدل.',where:'مخزن الأدوية العربي السعودي'}}),
  detail({id:'file',name:'ملفها',svg:'folder',
-   s:{h:'وملفها مكتمل، حتى لو جاء التدقيق غدًا.',p:'لا ورقة ناقصة، ولا تاريخ منتهٍ.'},
-   b:{h:'وقبلها: جهّزت ملفات لاعتماد سباهي.',num:'+٢٬٠٠٠',unit:'ملف موظف تم تدقيقه',p:'في مستشفى أندلسية دقّقت ملفات الموظفين وحدّثتها وفق معايير المركز السعودي لاعتماد المنشآت الصحية (سباهي)، وجهّزتها للتدقيق قبل زيارة الاعتماد.',where:'مستشفى أندلسية · ٢٠٢٤–٢٠٢٥'}}),
- {id:'who',name:'من خلف التفاصيل',type:'who'},
- {id:'build',name:'ما أبنيه',type:'build'},
- {id:'think',name:'طريقة تفكيري',type:'think',gate:()=>qPick>=0},
- {id:'learn',name:'ما أتعلمه',type:'learn'},
+   s:{h:'وملفها كامل، لو جا التدقيق بكرة.',p:'ولا ورقة ناقصة، ولا شي منتهي.'},
+   b:{h:'وقبل كذا: جهّزت ملفات لاعتماد سباهي.',num:'+٢٬٠٠٠',unit:'ملف موظف دقّقته',p:'في مستشفى أندلسية دقّقت ملفات الموظفين وحدّثتها حسب معايير المركز السعودي لاعتماد المنشآت الصحية (سباهي)، وجهّزتها قبل زيارة الاعتماد.',where:'مستشفى أندلسية · ٢٠٢٤–٢٠٢٥'}}),
+ {id:'who',name:'مين ورا التفاصيل',type:'who'},
+ {id:'build',name:'وش أبني',type:'build'},
+ {id:'think',name:'كيف أفكر',type:'think',gate:()=>qPick>=0},
+ {id:'learn',name:'وش أتعلم',type:'learn'},
  {id:'end',name:'لنتواصل',type:'end'}
 ];
 
@@ -404,23 +404,23 @@ if(done){reached=SC.length-1}
 /* ---------- renderers ---------- */
 function rIntro(){return `<div class="layer surface grain"><div class="layer-in">
  <div><span class="k">قصة قصيرة</span><h1>${words('هذه سارة.')}</h1>
- <p class="lead">اليوم أول يوم لها في وظيفتها الجديدة. وصلت، ووجدت كل شيء جاهزًا.</p>
- <p class="lead">لكن خلف هذا اليوم الهادئ… عمل لم تره.</p>
- <p class="lead" style="color:var(--ink);font-size:1.08rem">في كل محطة سترى ما رأته سارة، ثم تكشف العمل الذي كان وراءه، والذي كنت أقوم به.</p>
- <p class="note">سارة شخصية تمثيلية. التفاصيل خلفها حقيقية.</p></div>
+ <p class="lead">اليوم أول يوم لها في دوامها الجديد. وصلت، ولقت كل شي جاهز.</p>
+ <p class="lead">بس ورا هاليوم الهادي… شغل ما شافته.</p>
+ <p class="lead" style="color:var(--ink);font-size:1.08rem">في كل محطة بتشوف وش شافت سارة، وبعدين تكشف الشغل اللي كان وراه، واللي كنت أنا أسويه.</p>
+ <p class="note">سارة شخصية تمثيلية، بس الشغل اللي وراها حقيقي.</p></div>
  <div class="vis"><div class="float">${SVG.badge}</div></div></div></div>`}
 function rDetail(c){const b=c.b;return `
- <div class="layer surface grain"><div class="layer-in"><div><span class="k">ما رأته سارة</span><h2>${words(c.s.h)}</h2><p class="lead">${c.s.p}</p>
-  <p class="hint ui"><i></i>${matchMedia('(hover:hover)').matches?'مرّر على الرسم لتلمح العمل الذي وراء هذه التفصيلة، ثم اضغط لتكشفه كاملًا':'اضغط الزر بالأسفل لترى العمل الذي وراء هذه التفصيلة'}</p></div>
+ <div class="layer surface grain"><div class="layer-in"><div><span class="k">اللي شافته سارة</span><h2>${words(c.s.h)}</h2><p class="lead">${c.s.p}</p>
+  <p class="hint ui"><i></i>${matchMedia('(hover:hover)').matches?'مرّر الماوس على الرسم وشوف لمحة من الشغل اللي وراه، وبعدين اضغط عشان تكشفه كله':'اضغط الزر اللي تحت وشوف الشغل اللي ورا هالتفصيلة'}</p></div>
   <div class="vis reveal-zone"><div class="float">${SVG[c.svg]}</div></div></div></div>
- <div class="layer beneath" aria-hidden="${!revealed[c.id]}"><div class="layer-in"><div><span class="k">ما لم تره سارة · دوري</span><h2>${b.h}</h2>
+ <div class="layer beneath" aria-hidden="${!revealed[c.id]}"><div class="layer-in"><div><span class="k">اللي ما شافته سارة · شغلي</span><h2>${b.h}</h2>
   ${b.num?`<div class="num"><b>${b.num}</b><span>${b.unit}</span></div>`:''}
   <p class="lead">${b.p}</p><div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center"><span class="where">${b.where}</span>${b.link?`<a class="btn ghost" style="color:var(--gold)" href="${b.link.u}" target="_blank" rel="noopener">${b.link.t}</a>`:''}</div></div>
   <div class="vis" style="position:relative">${SVG[c.svg]}<span class="stamp">ثامر ✓</span></div></div></div>`}
 function rWho(){return `<div class="layer dark-scene grain"><div class="layer-in">
- <div><span class="k">من خلف التفاصيل</span><h1 style="font-size:clamp(2.1rem,1.4rem + 3vw,3.8rem)">${words('سارة لا تعرف ثامر.')}</h1>
- <p class="lead line2" style="color:var(--ivory);font-size:clamp(1.3rem,1.1rem + .8vw,1.8rem);font-weight:700">لكن يومها كان أفضل بسببه.</p>
- <p class="lead line2">أنا ثامر الشهري، أخصائي موارد بشرية. أعمل على التفاصيل التي لا يراها أحد، ويشعر بها الجميع، وأحوّل الإجراءات المعقدة إلى أتمتة سهلة الاستخدام.</p>
+ <div><span class="k">مين ورا التفاصيل</span><h1 style="font-size:clamp(2.1rem,1.4rem + 3vw,3.8rem)">${words('سارة ما تعرف ثامر.')}</h1>
+ <p class="lead line2" style="color:var(--ivory);font-size:clamp(1.3rem,1.1rem + .8vw,1.8rem);font-weight:700">بس يومها كان أحلى بسببه.</p>
+ <p class="lead line2">أنا ثامر الشهري، أخصائي موارد بشرية. أشتغل على التفاصيل اللي محد يشوفها بس الكل يحس فيها، وأحوّل الإجراءات المعقدة لأتمتة سهلة.</p>
  <ol class="tl line2">
   <li><small>٢٠٢٤</small>بكالوريوس الإدارة العامة<br><span>جامعة الملك عبدالعزيز</span></li>
   <li><small>٢٠٢٤ – ٢٠٢٥</small>مستشفى أندلسية<br><span>أخصائي عمليات موارد بشرية (تمهير)، ثم منسق موارد بشرية</span></li>
@@ -429,29 +429,29 @@ function rWho(){return `<div class="layer dark-scene grain"><div class="layer-in
  </ol></div>
  <div class="vis"><div class="arch"><img src="../img/portrait.webp" alt="ثامر الشهري"></div></div></div></div>`}
 function rBuild(){return `<div class="layer dark-scene grain"><div class="layer-in one"><div>
- <span class="k">ما أبنيه</span><h2>${words('وحين تتكرر التفاصيل، أبني لها أداة.')}</h2>
- <p class="lead" style="max-width:60ch">بجانب عملي أبني أدوات وتجارب رقمية للموارد البشرية. كل مشروع معروض بحالته الحقيقية، فليست كل فكرة منتجًا مكتملًا.</p>
+ <span class="k">وش أبني</span><h2>${words('ولما تتكرر التفاصيل، أسوي لها أداة.')}</h2>
+ <p class="lead" style="max-width:60ch">جنب شغلي أسوي أدوات وتجارب رقمية للموارد البشرية. وكل مشروع معروض بحالته الحقيقية، لأن مو كل فكرة صارت منتج كامل.</p>
  <div class="pgrid">${PROJECTS.map((p,i)=>`<button class="pc" type="button" data-p="${i}"><span class="cv">${p.img[0]?`<img src="../img/${p.img[0]}.webp" alt="" loading="lazy">`:`<span class="ph">${p.n}</span>`}</span><span class="bd"><span class="st ${p.st}">${STATUS[p.st]}</span><b>${p.n}</b><small>${p.cat}</small></span></button>`).join('')}</div>
  </div></div></div>`}
-const Q=[{o:'افتح شاغرًا فورًا.'},{o:'راجع حجم العمل والموارد الحالية.',ok:true},{o:'ارفض الطلب.'}];
+const Q=[{o:'أفتح وظيفة على طول.'},{o:'أشوف حجم الشغل والموارد اللي عندهم.',ok:true},{o:'أرفض الطلب.'}];
 function rThink(){return `<div class="layer dark-scene grain"><div class="layer-in">
- <div><span class="k">دورك الآن</span><h2>${words('مدير يقول إن فريقه يحتاج موظفًا إضافيًا.')}</h2><p class="lead">ما أول شيء ستتحقق منه؟</p></div>
+ <div><span class="k">دورك الحين</span><h2>${words('مدير يقول فريقه يحتاج موظف زيادة.')}</h2><p class="lead">وش أول شي بتتأكد منه؟</p></div>
  <div><div class="opts">${Q.map((x,i)=>{const st=qPick<0?'':(x.ok?'ok':(i===qPick?'no':'dim'));return `<button class="opt ${st}" type="button" data-i="${i}" aria-pressed="${i===qPick}"><span class="l">${st==='ok'?'✓':st==='no'?'✕':'أبج'[i]}</span>${x.o}</button>`}).join('')}</div>
- <div aria-live="polite">${qPick<0?`<p class="note" style="color:var(--mist)">اختر إجابة لتكمل القصة.</p>`:`<div class="ans ${Q[qPick].ok?'':'wrong'}"><b>${Q[qPick].ok?'إجابة صحيحة ✓':'ليست الخطوة الأولى الأفضل'}</b>${Q[qPick].ok?'':'<div class="best">الإجابة الصحيحة: راجع حجم العمل والموارد الحالية.</div>'}لماذا؟ قد يكون التوظيف هو الحل، لكن قبله نتأكد: هل المشكلة فعلًا في عدد الموظفين؟ أحيانًا يكفي توزيع المهام أو تبسيطها. وإن بقيت الحاجة، يصبح طلب التوظيف أوضح وأسهل في الاعتماد.<div class="take">افهم الإجراء قبل أن تنفّذه. وهذه أيضًا تفصيلة لا يراها أحد.</div></div>`}</div></div></div></div>`}
+ <div aria-live="polite">${qPick<0?`<p class="note" style="color:var(--mist)">اختار إجابة عشان تكمّل القصة.</p>`:`<div class="ans ${Q[qPick].ok?'':'wrong'}"><b>${Q[qPick].ok?'صح عليك ✓':'مو هذي أفضل خطوة أولى'}</b>${Q[qPick].ok?'':'<div class="best">الصح: تشوف حجم الشغل والموارد اللي عندهم.</div>'}ليش؟ ممكن التوظيف يكون هو الحل، بس قبله نتأكد: المشكلة فعلًا في عدد الموظفين؟ أحيانًا يكفي نوزّع المهام أو نبسّطها. ولو للحين يحتاجون، يصير طلب التوظيف أوضح وأسهل ينعتمد.<div class="take">افهم الإجراء قبل لا تنفّذه. وهذي بعد تفصيلة محد يشوفها.</div></div>`}</div></div></div></div>`}
 function rLearn(){return `<div class="layer dark-scene grain"><div class="layer-in">
- <div><span class="k">ما أتعلمه</span><h2>${words('ما زلت أتعلم. وما أتعلمه، أشاركه.')}</h2>
- <p class="lead">أتجه نحو التحول في الموارد البشرية وتجربة الموظف، وأتعلم كل يوم ما يجعل التفاصيل أفضل.</p>
- <div class="certs"><div class="cert"><div><b>aPHRi</b><small>HRCI</small></div><span class="st done">مكتملة · أبريل ٢٠٢٦</span></div>
- <div class="cert"><div><b>CIPD Level 5</b></div><span class="st">قيد الدراسة</span></div>
- <div class="cert"><div><b>دبلوم إدارة الموارد البشرية</b><small>جامعة الأمير مقرن</small></div><span class="st">قيد الدراسة</span></div></div></div>
- <div><a class="li" href="${LI}" target="_blank" rel="noopener"><span class="in">in</span><b>أفكار قصيرة.<br>فهم أوضح.</b><span>أنشر باستمرار على LinkedIn أفكارًا وتوضيحات تبسّط مواضيع الموارد البشرية: التوظيف، والتهيئة، وفترة التجربة، وتجربة الموظف.</span><span style="font-size:.88rem">من سلسلتي: «من إعلان الوظيفة إلى تثبيت الموظف»</span><em>تابعني على LinkedIn ↗</em></a></div></div></div>`}
+ <div><span class="k">وش أتعلم</span><h2>${words('للحين أتعلم. واللي أتعلمه، أشاركه.')}</h2>
+ <p class="lead">رايح باتجاه التحول في الموارد البشرية وتجربة الموظف، وكل يوم أتعلم شي يخلّي التفاصيل أحلى.</p>
+ <div class="certs"><div class="cert"><div><b>aPHRi</b><small>HRCI</small></div><span class="st done">خلّصتها · أبريل ٢٠٢٦</span></div>
+ <div class="cert"><div><b>CIPD Level 5</b></div><span class="st">أدرسها الحين</span></div>
+ <div class="cert"><div><b>دبلوم إدارة الموارد البشرية</b><small>جامعة الأمير مقرن</small></div><span class="st">أدرسها الحين</span></div></div></div>
+ <div><a class="li" href="${LI}" target="_blank" rel="noopener"><span class="in">in</span><b>أفكار قصيرة.<br>وفهم أوضح.</b><span>أنزّل دايم على LinkedIn أفكار وتوضيحات تبسّط مواضيع الموارد البشرية: التوظيف، والتهيئة، وفترة التجربة، وتجربة الموظف.</span><span style="font-size:.88rem">من سلسلتي: «من إعلان الوظيفة إلى تثبيت الموظف»</span><em>تابعني على LinkedIn ↗</em></a></div></div></div>`}
 function rEnd(){return `<div class="layer dark-scene grain"><div class="layer-in">
- <div><span class="k">النهاية… أو البداية</span><h1 style="font-size:clamp(2.1rem,1.4rem + 3vw,3.8rem)">${words('التفاصيل القادمة… لنكتبها معًا.')}</h1>
- <p class="lead">لفرص العمل، أو التعاون، أو حديث عن الموارد البشرية وتجربة الموظف.</p>
+ <div><span class="k">النهاية… ولا البداية؟</span><h1 style="font-size:clamp(2.1rem,1.4rem + 3vw,3.8rem)">${words('التفاصيل الجاية… خلّنا نكتبها سوا.')}</h1>
+ <p class="lead">لو عندك فرصة وظيفية، أو تبي نتعاون، أو بس نسولف عن الموارد البشرية وتجربة الموظف.</p>
  <div class="links"><a href="${LI}" target="_blank" rel="noopener">LinkedIn <span dir="ltr">linkedin.com/in/thameralshehri ↗</span></a>
  <a href="mailto:mrthameralshehri@gmail.com">البريد الإلكتروني <span dir="ltr">mrthameralshehri@gmail.com</span></a>
  <a href="${CV}" download>السيرة الذاتية <span>PDF · تحميل ↓</span></a>
- <button type="button" id="replay">أعد القصة من البداية <span>↺</span></button></div></div>
+ <button type="button" id="replay">عيد القصة من أولها <span>↺</span></button></div></div>
  <div class="vis"><div class="arch" style="width:min(300px,70%)"><img src="../img/portrait.webp" alt="ثامر الشهري"></div></div></div></div>`}
 
 function render(dir=1,anim=true){
@@ -493,7 +493,7 @@ function chrome(){
  document.body.classList.toggle('dark',isDark());
  const c=SC[cur], nx=$('#next');
  const needReveal=c.type==='detail'&&!revealed[c.id], gate=c.gate?c.gate():true, last=cur===SC.length-1;
- nx.innerHTML=needReveal?'اكشف العمل الذي وراءها 🔍':(!gate?'اختر إجابة أولًا':(last?'أعد القصة ↺':`التالي <span class="arr" aria-hidden="true">→</span>`));
+ nx.innerHTML=needReveal?'اكشف وش وراها 🔍':(!gate?'اختار إجابة أول':(last?'عيد القصة ↺':`التالي <span class="arr" aria-hidden="true">→</span>`));
  nx.disabled=!gate;
  $('#prev').disabled=cur===0; $('#prev').style.visibility=cur===0?'hidden':'visible';
  const n=a=>a.toLocaleString('ar-SA');
@@ -512,9 +512,9 @@ document.addEventListener('keydown',e=>{ if($('#sheet').classList.contains('open
 /* ---------- project sheet ---------- */
 let lastBtn=null;
 function openP(i,btn){lastBtn=btn;const p=PROJECTS[i];let k=0;
- const draw=()=>{$('#sbox').innerHTML=`<div class="media">${p.img.length?`<img src="../img/${p.img[k]}.webp" alt="${p.n}">`+(p.img.length>1?`<div class="thumbs">${p.img.map((m,j)=>`<button type="button" aria-pressed="${j===k}" data-k="${j}" aria-label="صورة ${j+1}"><img src="../img/${m}.webp" alt=""></button>`).join('')}</div>`:''):`<div class="ph">صور الواجهة تُضاف لاحقًا</div>`}</div>
+ const draw=()=>{$('#sbox').innerHTML=`<div class="media">${p.img.length?`<img src="../img/${p.img[k]}.webp" alt="${p.n}">`+(p.img.length>1?`<div class="thumbs">${p.img.map((m,j)=>`<button type="button" aria-pressed="${j===k}" data-k="${j}" aria-label="صورة ${j+1}"><img src="../img/${m}.webp" alt=""></button>`).join('')}</div>`:''):`<div class="ph">صور الواجهة بتنضاف قريب</div>`}</div>
  <div class="info"><button class="x" type="button" aria-label="إغلاق">✕</button><span class="st ${p.st}">${STATUS[p.st]}</span><h3 id="pT">${p.n}</h3><div class="cat">${p.cat}</div><p style="margin:.8rem 0 0">${p.d}</p>
- <dl><dt>المشكلة</dt><dd>${p.s[0]}</dd><dt>طريقة البناء</dt><dd>${p.s[1]}</dd><dt>${p.l3||'النتيجة'}</dt><dd>${p.s[2]}</dd></dl>
+ <dl><dt>وش المشكلة</dt><dd>${p.s[0]}</dd><dt>كيف سويته</dt><dd>${p.s[1]}</dd><dt>${p.l3||'وين وصل'}</dt><dd>${p.s[2]}</dd></dl>
  ${p.url?`<a class="btn gold" href="${p.url}" target="_blank" rel="noopener">${p.urlLbl||'جرّب المشروع'} ↗</a>`:''}</div>`;
  $('.x',$('#sbox')).addEventListener('click',closeP);
  $$('.thumbs button',$('#sbox')).forEach(b=>b.addEventListener('click',()=>{k=+b.dataset.k;draw()}));};
@@ -527,7 +527,7 @@ $('#sheet').addEventListener('click',e=>{if(e.target.id==='sheet')closeP()});
 async function boot(){
  render(1,false); chrome();
  const ph=$('#ph'), bar=$('#bar'), pct=$('#lpct'), msg=$('#lmsg');
- const P=['خلف كل تجربة موظف رائعة…','تفاصيل لا يراها أحد.','هذه قصة إحداها.'], M=['جارٍ تجهيز القصة…','جارٍ ترتيب التفاصيل…','جاهز.'];
+ const P=['ورا كل تجربة موظف حلوة…','تفاصيل محد يشوفها.','وهذي قصة وحدة منها.'], M=['نجهّز لك القصة…','نرتّب التفاصيل…','جاهزين.'];
  const D=RM?1500:(done?5000:13500), t0=performance.now(); let pi=-1;
  const set=i=>{if(i===pi)return;pi=i;ph.innerHTML=words(P[i]);msg.textContent=M[i]};
  await new Promise(res=>{const f=n=>{const k=Math.min(1,(n-t0)/D),e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;bar.style.transform=`scaleX(${e})`;pct.textContent=Math.round(e*100).toLocaleString('ar-SA')+'٪';set(k<.36?0:k<.7?1:2);if(k<1)requestAnimationFrame(f);else res()};requestAnimationFrame(f)});
