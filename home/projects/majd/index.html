@@ -274,6 +274,8 @@ a.pc{text-decoration:none;color:inherit}
 .hs .hi{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--night);color:var(--gold);flex:none}
 .hs b{font-size:1.35rem;font-weight:900;line-height:1}.hs small{color:var(--muted);font-size:.9rem}
 @media(max-width:560px){.hs{min-width:0;flex:1 1 140px;flex-direction:column;align-items:center;text-align:center;border-radius:18px;padding:12px;gap:4px}}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;justify-self:start}.pj-hero .pd,.mt-hero .pd,.sheet .pd{color:var(--mist)}.pj-hero .pd,.mt-hero .pd{font-size:.92rem}
+.pd{font-size:.8rem;color:var(--muted);white-space:nowrap}.pd::before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.5;margin-inline-end:7px;vertical-align:middle}
 footer{color:var(--muted);padding:20px 0 30px;font-size:.88rem}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.001ms!important;animation-duration:.001ms!important;transition-delay:0s!important}.rv{opacity:1;transform:none}}
 </style>
@@ -303,6 +305,8 @@ const num=n=>A()?n.toLocaleString('ar-SA',{useGrouping:false}):String(n);
 const ic=d=>`<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="${d}"/></svg>`;
 const I={x:ic('M4 4l8 8M12 4l-8 8'),ext:ic('M11 5l-6 6M5 5h6v6'),down:ic('M8 2v9M4 7.5l4 4 4-4M3 14h10'),play:`<svg class="ic" viewBox="0 0 16 16" aria-hidden="true" style="fill:currentColor;stroke:none"><path d="M5 3.5v9l7.5-4.5z"/></svg>`,bolt:ic('M9 1.5L3.5 9H8l-1 5.5L12.5 7H8z'),arr:`<span class="flip">${ic('M3 8h10M9 4l4 4-4 4')}</span>`,home:ic('M2.5 7.5L8 3l5.5 4.5V13a1 1 0 0 1-1 1H3.5a1 1 0 0 1-1-1z'),sep:`<span class="flip" style="opacity:.5">${ic('M6 4l4 4-4 4')}</span>`};
 const STATUS={live:{ar:'شغّال',en:'Live'},done:{ar:'مكتمل',en:'Completed'},prototype:{ar:'نسخة أولى',en:'Prototype'},experiment:{ar:'تجربة',en:'Experiment'},init:{ar:'مبادرة قيد التحقق',en:'Initiative · validating'}};
+const MON={ar:['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'],en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']};
+const pdate=p=>{if(p.dateLbl)return L(p.dateLbl);if(!p.date)return '';const[y,m,d]=p.date.split('-').map(Number);return A()?`${num(d)} ${MON.ar[m-1]} ${num(y)}`:`${d} ${MON.en[m-1]} ${y}`};
 const PROJECTS=[
  {
   "n": {
@@ -339,7 +343,8 @@ const PROJECTS=[
     "ar": "مسودة أولى قيد التحقق. قدّمتها لوزارة الموارد البشرية، والتأمينات الاجتماعية قبلت مقترحي واعتمدته في سجلات التطوير.",
     "en": "An early draft now in validation. Submitted to the Ministry of Human Resources, and GOSI accepted my proposal into its development records."
    }
-  ]
+  ],
+  "date": "2026-11-17"
  },
  {
   "n": {
@@ -376,7 +381,8 @@ const PROJECTS=[
     "ar": "نموذج تقدر تجربه، ويوضح كيف نقدر نحسّن التواصل قبل المباشرة.",
     "en": "A working model that shows how pre-joining communication can be improved."
    }
-  ]
+  ],
+  "date": "2026-10-21"
  },
  {
   "n": {
@@ -410,7 +416,8 @@ const PROJECTS=[
     "ar": "تجربة صوتية شغّالة، بس مو نظام منشور على مستوى شركة كاملة.",
     "en": "A working voice prototype, not a company-wide system."
    }
-  ]
+  ],
+  "date": "2026-10-10"
  },
  {
   "n": {
@@ -446,7 +453,8 @@ const PROJECTS=[
     "ar": "متفعّلة وشغّالة فعليًا في مخزن الأدوية العربي السعودي (SADSCO)، والتهاني توصل للموظفين في يومهم بدون أي تدخل يدوي.",
     "en": "Activated and running at SADSCO, with greetings reaching employees on their day without any manual work."
    }
-  ]
+  ],
+  "date": "2026-10-02"
  },
  {
   "n": {
@@ -489,7 +497,8 @@ const PROJECTS=[
   "l3": {
    "ar": "وش يقدّم",
    "en": "What it does"
-  }
+  },
+  "date": "2026-09-14"
  },
  {
   "n": {
@@ -523,7 +532,8 @@ const PROJECTS=[
     "ar": "نسخة أولى تقدر تجربها. وللحين ما عندي نتائج مؤكدة أنشرها.",
     "en": "A first version you can try. No confirmed results to publish yet."
    }
-  ]
+  ],
+  "date": "2026-09-10"
  },
  {
   "n": {
@@ -561,7 +571,8 @@ const PROJECTS=[
     "ar": "منصة شغّالة وتقدر تستخدمها الحين.",
     "en": "Live and ready to use today."
    }
-  ]
+  ],
+  "date": "2026-08-04"
  },
  {
   "n": {
@@ -595,7 +606,8 @@ const PROJECTS=[
     "ar": "خدمة ذاتية ذكية بإجابات دقيقة وثابتة بلغتين. وللحين ما قسنا أثرها على الشغل.",
     "en": "Smart self-service with accurate, consistent answers in two languages. Its operational impact has not been measured yet."
    }
-  ]
+  ],
+  "date": "2026-07-27"
  },
  {
   "n": {
@@ -629,7 +641,11 @@ const PROJECTS=[
     "ar": "دقّقت وحدّثت أكثر من ٢٠٠٠ ملف موظف، في مستشفى فيه أكثر من ١٦٠٠ موظف. وعدّت الزيارة وأخذ المستشفى الاعتماد.",
     "en": "2,000+ employee files audited and updated, across a workforce of 1,600+. The visit went through and the hospital earned its accreditation."
    }
-  ]
+  ],
+  "dateLbl": {
+   "ar": "٢٠٢٤ – ٢٠٢٥",
+   "en": "2024 – 2025"
+  }
  }
 ];
 const T={name:{ar:'ثامر الشهري',en:'Thamer Alshehri'},role:{ar:'أخصائي موارد بشرية',en:'Human Resources Specialist'},home:{ar:'الرئيسية',en:'Home'},close:{ar:'إغلاق',en:'Close'}};
@@ -683,7 +699,7 @@ function journey(){return `<section class="page dark"><div class="wrap">${head('
  <div class="flow rv">${FLOW.map((f,i)=>`<div class="step"><span class="dot">${num(i+1)}</span><div><h3>${L(f.h)}</h3><p>${L(f.p)}</p>${f.n?`<span class="n">${L(f.n)}</span>`:''}</div></div>`).join('')}</div>
  <div class="flow-note rv">${I.bolt}<span><b>${A()?'وطول الرحلة:':'Throughout the journey:'}</b> ${A()?'أحوّل الخطوات المتكررة لأتمتة سهلة بـ Power Automate وExcel، مثل تذكيرات فترة التجربة، وتهاني أعياد ميلاد الموظفين.':'I turn repetitive steps into simple automations with Power Automate and Excel, like probation reminders and employee birthday greetings.'}</span></div></div></section>`}
 function projects(){return `<section class="page"><div class="wrap">${head('projects',A()?'المشاريع':'Projects',A()?'أفكار صارت أدوات.':'Ideas that became tools.',A()?'جنب شغلي أسوي أدوات وتجارب رقمية للموارد البشرية. وكل مشروع معروض بحالته الحقيقية.':'Alongside my job, I build HR tools and digital experiences. Each one shows its real status.')}
- <div class="pgrid rv">${PROJECTS.map((p,i)=>`<a class="pc" href="${p.page}"><span class="cv"><img src="/img/${p.img[0]}.webp" alt="" loading="lazy"></span><span class="bd"><span class="st ${p.st}">${L(STATUS[p.st])}</span><b>${L(p.n)}</b><small>${L(p.d)}</small></span></a>`).join('')}</div></div></section>`}
+ <div class="pgrid rv">${PROJECTS.map((p,i)=>`<a class="pc" href="${p.page}"><span class="cv"><img src="/img/${p.img[0]}.webp" alt="" loading="lazy"></span><span class="bd"><span class="meta"><span class="st ${p.st}">${L(STATUS[p.st])}</span>${pdate(p)?`<span class="pd">${pdate(p)}</span>`:''}</span><b>${L(p.n)}</b><small>${L(p.d)}</small></span></a>`).join('')}</div></div></section>`}
 function resume(){return `<section class="page"><div class="wrap">${head('resume',A()?'السيرة الذاتية':'Resume',A()?'كل شي في صفحة وحدة.':'Everything on one page.')}
  <div class="cvg"><div class="doc rv"><img src="/img/cv.webp" alt="${A()?'السيرة الذاتية لثامر الشهري':'Thamer Alshehri resume'}"></div><div class="side rv"><a class="btn solid" href="${CV}" download>${A()?'نزّل السيرة الذاتية (PDF)':'Download resume (PDF)'} ${I.down}</a><a class="btn" href="${LI}" target="_blank" rel="noopener">LinkedIn ${I.ext}</a><p class="lead" style="font-size:1rem">${A()?'السيرة بالإنجليزي، ومحدّثة باستمرار.':'In English, and kept up to date.'}</p></div></div></div></section>`}
 function contact(){return `<section class="page dark"><div class="wrap contact"><div class="rv"><span class="k">${A()?'تواصل':'Contact'}</span><h2>${A()?'القصة ما خلصت. إحنا في بدايتها.':'The story is not over. We are at the beginning.'}</h2>
@@ -703,7 +719,7 @@ function matla(){const a=A(),F='/files/matla/';
   [F+'Matla_Sample_Report.pdf',a?'نموذج التقرير':'Sample report',a?'وش يوصل الشركة بعد ما تجاوب، على شركة خيالية. ٦ صفحات.':'What a company receives after answering, for a fictional company. 6 pages.','PDF · 0.2 MB']];
  const box=(t,b)=>`<div class="mx-c rv"><b>${t}</b><p>${b}</p></div>`;
  return `<section class="mt-hero"><div class="wrap mt-hg">
-  <div class="rv"><img class="mt-logo" src="/img/matla-logo.svg" alt="${a?'شعار مطلع':'Matla logo'}"><span class="st init">${L(STATUS.init)}</span>
+  <div class="rv"><img class="mt-logo" src="/img/matla-logo.svg" alt="${a?'شعار مطلع':'Matla logo'}"><span class="meta"><span class="st init">${L(STATUS.init)}</span><span class="pd">${pdate(PROJECTS[0])}</span></span>
   <h1>${a?'مطلع':'Matla'}</h1><p class="mt-one">${a?'مؤشر سعودي يقيس تجربة الموظف الجديد في أول ١٨٠ يوم، ويقارنها بالسوق، ويحوّلها لخطوات تحسين واضحة.':'A Saudi index that measures the new-hire experience in the first 180 days, compares it with the market and turns it into clear next steps.'}</p>
   <div class="mt-btns"><a class="btn gold" href="#files">${I.down} ${a?'ملفات المشروع':'Project files'}</a><a class="btn mt-ghost" href="https://lnkd.in/p/dqJCXmtk" target="_blank" rel="noopener">LinkedIn ${I.ext}</a></div>${shareBox('/home/projects/matla/')}
   <p class="mt-name">${a?'«المَطلع» هو أول الشي ومكان طلوعه، مثل مطلع الشمس. ومطلع الموظف هو أيامه الأولى.':'"Matla" is Arabic for the beginning of something and the place it rises from, like a sunrise. A new hire\'s matla is their first days.'}</p></div>
@@ -760,7 +776,7 @@ function proj(){const a=A(),i=PROJECTS.findIndex(p=>p.slug===SLUG),p=PROJECTS[i]
  const lab=[{ar:'وش المشكلة',en:'The problem'},{ar:'كيف سويته',en:'How I built it'},p.l3||{ar:'وين وصل',en:'Where it stands'}];
  const prev=PROJECTS[(i-1+PROJECTS.length)%PROJECTS.length],next=PROJECTS[(i+1)%PROJECTS.length];
  const nb=(q,t)=>`<a class="pj-nb" href="${q.page}"><img src="/img/${q.img[0]}.webp" alt="" loading="lazy"><span><small>${t}</small><b>${L(q.n)}</b><em>${L(q.cat)}</em></span></a>`;
- return `<section class="pj-hero"><div class="wrap pj-hg"><div class="rv"><span class="st ${p.st}">${L(STATUS[p.st])}</span><h1>${L(p.n)}</h1><div class="pj-cat">${L(p.cat)}</div><p class="mt-one">${L(p.d)}</p>
+ return `<section class="pj-hero"><div class="wrap pj-hg"><div class="rv"><span class="meta"><span class="st ${p.st}">${L(STATUS[p.st])}</span>${pdate(p)?`<span class="pd">${pdate(p)}</span>`:''}</span><h1>${L(p.n)}</h1><div class="pj-cat">${L(p.cat)}</div><p class="mt-one">${L(p.d)}</p>
   <div class="mt-btns">${p.url?`<a class="btn gold" href="${p.url}" target="_blank" rel="noopener">${p.urlLbl?L(p.urlLbl):(a?'جرّب المشروع':'Try it live')} ${I.ext}</a>`:''}</div>${shareBox(p.page)}</div>
   <figure class="pj-cover rv"><img src="/img/${p.img[0]}.webp" alt="${L(p.n)}"></figure></div></section>
  <section class="page"><div class="wrap"><div class="pj-ss">${p.s.map((x,j)=>`<div class="pj-s rv"><span class="pj-n">${num(j+1)}</span><span class="k">${L(lab[j])}</span><p>${L(x)}</p></div>`).join('')}</div>
@@ -818,7 +834,7 @@ if(document.fonts)document.fonts.ready.then(()=>{if(PAGE==='hub')wires()});
 let lastBtn=null;
 function openP(i,btn){lastBtn=btn;const p=PROJECTS[i];let k=0;const sec=[{ar:'وش المشكلة',en:'The problem'},{ar:'كيف سويته',en:'How I built it'},p.l3||{ar:'وين وصل',en:'Where it stands'}];
  const draw=()=>{$('#sbox').innerHTML=`<div class="media"><img src="/img/${p.img[k]}.webp" alt="${L(p.n)}">${p.img.length>1?`<div class="thumbs">${p.img.map((m,j)=>`<button type="button" aria-pressed="${j===k}" data-k="${j}" aria-label="${j+1}"><img src="/img/${m}.webp" alt=""></button>`).join('')}</div>`:''}</div>
- <div class="info"><button class="x" type="button" aria-label="${L(T.close)}">${I.x}</button><span class="st ${p.st}">${L(STATUS[p.st])}</span><h3 id="pT">${L(p.n)}</h3><div class="cat">${L(p.cat)}</div><p>${L(p.d)}</p><dl>${p.s.map((x,j)=>`<dt>${L(sec[j])}</dt><dd>${L(x)}</dd>`).join('')}</dl><div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px">${p.page?`<a class="btn gold" href="${p.page}">${A()?'اقرأ المشروع كامل':'Read the full project'}</a>`:''}${p.url?`<a class="btn ${p.page?'':'gold'}" href="${p.url}" target="_blank" rel="noopener">${p.urlLbl?L(p.urlLbl):(A()?'جرّب المشروع':'Try it live')} ${I.ext}</a>`:''}</div></div>`;
+ <div class="info"><button class="x" type="button" aria-label="${L(T.close)}">${I.x}</button><span class="meta"><span class="st ${p.st}">${L(STATUS[p.st])}</span>${pdate(p)?`<span class="pd">${pdate(p)}</span>`:''}</span><h3 id="pT">${L(p.n)}</h3><div class="cat">${L(p.cat)}</div><p>${L(p.d)}</p><dl>${p.s.map((x,j)=>`<dt>${L(sec[j])}</dt><dd>${L(x)}</dd>`).join('')}</dl><div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px">${p.page?`<a class="btn gold" href="${p.page}">${A()?'اقرأ المشروع كامل':'Read the full project'}</a>`:''}${p.url?`<a class="btn ${p.page?'':'gold'}" href="${p.url}" target="_blank" rel="noopener">${p.urlLbl?L(p.urlLbl):(A()?'جرّب المشروع':'Try it live')} ${I.ext}</a>`:''}</div></div>`;
  $('.x',$('#sbox')).addEventListener('click',closeP);$$('.thumbs button',$('#sbox')).forEach(b=>b.addEventListener('click',()=>{k=+b.dataset.k;draw()}));};
  draw();$('#sheet').classList.add('open');setTimeout(()=>$('.x',$('#sbox')).focus(),60)}
 function closeP(){$('#sheet').classList.remove('open');lastBtn&&lastBtn.focus()}

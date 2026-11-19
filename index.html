@@ -424,6 +424,8 @@ html[lang=ar] .bars{direction:rtl}
  .path.free{transform-origin:center bottom}
  .g-f{font-size:.8rem;margin-top:16px}
 }
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;justify-self:start}.pd{font-size:.8rem;color:var(--muted);white-space:nowrap}.pd::before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.5;margin-inline-end:7px;vertical-align:middle}
+.dark-scene .pd,.beneath .pd,.sheet .pd,#sheet .pd{color:var(--mist)}
 /* ===== story visual upgrades ===== */
 @media(max-width:860px){.arch{width:min(190px,52%)!important}}
 
@@ -582,6 +584,8 @@ const T={
  lm:[{ar:'نجهّز لك القصة…',en:'Preparing the story…'},{ar:'نرتّب التفاصيل…',en:'Arranging the details…'},{ar:'جاهزين.',en:'Ready.'}],
 };
 const STATUS={live:{ar:'شغّال',en:'Live'},done:{ar:'مكتمل',en:'Completed'},prototype:{ar:'نسخة أولى',en:'Prototype'},experiment:{ar:'تجربة',en:'Experiment'},init:{ar:'مبادرة قيد التحقق',en:'Initiative · validating'}};
+const MON={ar:['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'],en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']};
+const pdate=p=>{if(p.dateLbl)return L(p.dateLbl);if(!p.date)return '';const[y,m,d]=p.date.split('-').map(Number);return A()?`${num(d)} ${MON.ar[m-1]} ${num(y)}`:`${d} ${MON.en[m-1]} ${y}`};
 const PROJECTS=[
  {
   "n": {
@@ -618,7 +622,8 @@ const PROJECTS=[
     "ar": "مسودة أولى قيد التحقق. قدّمتها لوزارة الموارد البشرية، والتأمينات الاجتماعية قبلت مقترحي واعتمدته في سجلات التطوير.",
     "en": "An early draft now in validation. Submitted to the Ministry of Human Resources, and GOSI accepted my proposal into its development records."
    }
-  ]
+  ],
+  "date": "2026-11-17"
  },
  {
   "n": {
@@ -655,7 +660,8 @@ const PROJECTS=[
     "ar": "نموذج تقدر تجربه، ويوضح كيف نقدر نحسّن التواصل قبل المباشرة.",
     "en": "A working model that shows how pre-joining communication can be improved."
    }
-  ]
+  ],
+  "date": "2026-10-21"
  },
  {
   "n": {
@@ -689,7 +695,8 @@ const PROJECTS=[
     "ar": "تجربة صوتية شغّالة، بس مو نظام منشور على مستوى شركة كاملة.",
     "en": "A working voice prototype, not a company-wide system."
    }
-  ]
+  ],
+  "date": "2026-10-10"
  },
  {
   "n": {
@@ -725,7 +732,8 @@ const PROJECTS=[
     "ar": "متفعّلة وشغّالة فعليًا في مخزن الأدوية العربي السعودي (SADSCO)، والتهاني توصل للموظفين في يومهم بدون أي تدخل يدوي.",
     "en": "Activated and running at SADSCO, with greetings reaching employees on their day without any manual work."
    }
-  ]
+  ],
+  "date": "2026-10-02"
  },
  {
   "n": {
@@ -768,7 +776,8 @@ const PROJECTS=[
   "l3": {
    "ar": "وش يقدّم",
    "en": "What it does"
-  }
+  },
+  "date": "2026-09-14"
  },
  {
   "n": {
@@ -802,7 +811,8 @@ const PROJECTS=[
     "ar": "نسخة أولى تقدر تجربها. وللحين ما عندي نتائج مؤكدة أنشرها.",
     "en": "A first version you can try. No confirmed results to publish yet."
    }
-  ]
+  ],
+  "date": "2026-09-10"
  },
  {
   "n": {
@@ -840,7 +850,8 @@ const PROJECTS=[
     "ar": "منصة شغّالة وتقدر تستخدمها الحين.",
     "en": "Live and ready to use today."
    }
-  ]
+  ],
+  "date": "2026-08-04"
  },
  {
   "n": {
@@ -874,7 +885,8 @@ const PROJECTS=[
     "ar": "خدمة ذاتية ذكية بإجابات دقيقة وثابتة بلغتين. وللحين ما قسنا أثرها على الشغل.",
     "en": "Smart self-service with accurate, consistent answers in two languages. Its operational impact has not been measured yet."
    }
-  ]
+  ],
+  "date": "2026-07-27"
  },
  {
   "n": {
@@ -908,7 +920,11 @@ const PROJECTS=[
     "ar": "دقّقت وحدّثت أكثر من ٢٠٠٠ ملف موظف، في مستشفى فيه أكثر من ١٦٠٠ موظف. وعدّت الزيارة وأخذ المستشفى الاعتماد.",
     "en": "2,000+ employee files audited and updated, across a workforce of 1,600+. The visit went through and the hospital earned its accreditation."
    }
-  ]
+  ],
+  "dateLbl": {
+   "ar": "٢٠٢٤ – ٢٠٢٥",
+   "en": "2024 – 2025"
+  }
  }
 ];
 const COMPANY={ar:'مخزن الأدوية العربي السعودي',en:'Saudi Arabian Drug Store (SADSCO)'};
@@ -973,7 +989,7 @@ function rWho(){const tl=A()?[['٢٠٢٤','بكالوريوس الإدارة ا�
 function rBuild(){return `<div class="layer dark-scene grain"><div class="layer-in one"><div>
  <span class="k">${A()?'وش أبني':'What I build'}</span><h2>${words(A()?'ولما تتكرر التفاصيل، أسوي لها أداة.':'When details repeat, I build a tool for them.')}</h2>
  <p class="lead" style="max-width:60ch">${A()?'جنب شغلي أسوي أدوات وتجارب رقمية للموارد البشرية. وكل مشروع معروض بحالته الحقيقية، لأن مو كل فكرة صارت منتج كامل.':'Alongside my job, I build HR tools and digital experiences. Each project shows its real status, because not every idea is a finished product.'}</p>
- <div class="pgrid">${PROJECTS.map((p,i)=>`<button class="pc" type="button" data-p="${i}"><span class="cv">${p.img[0]?`<img src="img/${p.img[0]}.webp" alt="" loading="lazy">`:`<span class="ph">${L(p.n)}</span>`}</span><span class="bd"><span class="st ${p.st}">${L(STATUS[p.st])}</span><b>${L(p.n)}</b><small>${L(p.cat)}</small></span></button>`).join('')}</div>
+ <div class="pgrid">${PROJECTS.map((p,i)=>`<button class="pc" type="button" data-p="${i}"><span class="cv">${p.img[0]?`<img src="img/${p.img[0]}.webp" alt="" loading="lazy">`:`<span class="ph">${L(p.n)}</span>`}</span><span class="bd"><span class="meta"><span class="st ${p.st}">${L(STATUS[p.st])}</span>${pdate(p)?`<span class="pd">${pdate(p)}</span>`:''}</span><b>${L(p.n)}</b><small>${L(p.cat)}</small></span></button>`).join('')}</div>
  </div></div></div>`}
 function rThink(){return `<div class="layer dark-scene grain"><div class="layer-in">
  <div><span class="k">${A()?'دورك الحين':'Your turn'}</span><h2>${words(A()?'موظف جديد بيبدأ بكرة.':'A new hire starts tomorrow.')}</h2><p class="lead">${A()?'وجهازه وحسابه للحين ما جهزوا. وش أول شي تسويه؟':"Their laptop and accounts aren't ready yet. What do you do first?"}</p></div>
@@ -1058,7 +1074,7 @@ let lastBtn=null;
 function openP(i,btn){lastBtn=btn;const p=PROJECTS[i];let k=0;
  const sec=[{ar:'وش المشكلة',en:'The problem'},{ar:'كيف سويته',en:'How I built it'},p.l3||{ar:'وين وصل',en:'Where it stands'}];
  const draw=()=>{$('#sbox').innerHTML=`<div class="media">${p.img.length?`<img src="img/${p.img[k]}.webp" alt="${L(p.n)}">`+(p.img.length>1?`<div class="thumbs">${p.img.map((m,j)=>`<button type="button" aria-pressed="${j===k}" data-k="${j}" aria-label="${j+1}"><img src="img/${m}.webp" alt=""></button>`).join('')}</div>`:''):`<div class="ph">${A()?'صور الواجهة بتنضاف قريب':'Screenshots coming soon'}</div>`}</div>
- <div class="info"><button class="x" type="button" aria-label="${A()?'إغلاق':'Close'}">${I.x}</button><span class="st ${p.st}">${L(STATUS[p.st])}</span><h3 id="pT">${L(p.n)}</h3><div class="cat">${L(p.cat)}</div><p style="margin:.8rem 0 0">${L(p.d)}</p>
+ <div class="info"><button class="x" type="button" aria-label="${A()?'إغلاق':'Close'}">${I.x}</button><span class="meta"><span class="st ${p.st}">${L(STATUS[p.st])}</span>${pdate(p)?`<span class="pd">${pdate(p)}</span>`:''}</span><h3 id="pT">${L(p.n)}</h3><div class="cat">${L(p.cat)}</div><p style="margin:.8rem 0 0">${L(p.d)}</p>
  <dl>${p.s.map((x,j)=>`<dt>${L(sec[j])}</dt><dd>${L(x)}</dd>`).join('')}</dl>
  <div style="display:flex;flex-wrap:wrap;gap:10px">${p.page?`<a class="btn gold" href="${p.page}">${A()?'اقرأ المشروع كامل':'Read the full project'}</a>`:''}${p.url?`<a class="btn ${p.page?'ghost':'gold'}" href="${p.url}" target="_blank" rel="noopener">${p.urlLbl?L(p.urlLbl):(A()?'جرّب المشروع':'Try it live')} ${I.ext}</a>`:''}</div></div>`;
  $('.x',$('#sbox')).addEventListener('click',closeP);
