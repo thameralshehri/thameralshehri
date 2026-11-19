@@ -271,6 +271,7 @@ a.pc{text-decoration:none;color:inherit}
 footer{color:var(--muted);padding:20px 0 30px;font-size:.88rem}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.001ms!important;animation-duration:.001ms!important;transition-delay:0s!important}.rv{opacity:1;transform:none}}
 </style>
+<script data-goatcounter="https://thameralshehri.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <header class="hdr"><div class="wrap">
@@ -473,6 +474,9 @@ function proj(){const a=A(),i=PROJECTS.findIndex(p=>p.slug===SLUG),p=PROJECTS[i]
   <div class="pj-nav rv">${nb(prev,a?'المشروع السابق':'Previous project')}${nb(next,a?'المشروع التالي':'Next project')}</div>
   <p style="text-align:center;margin-top:22px"><a class="btn" href="/home/projects/">${a?'كل المشاريع':'All projects'}</a></p></div></section>`}
 
+let VC=0;const VMIN=500;
+function foot(){$('#foot').innerHTML=(A()?'© ٢٠٢٦ ثامر الشهري':'© 2026 Thamer Alshehri')+(VC>=VMIN?` · <span class="vc">${A()?`عدد زيارات الموقع: ${num(VC)}`:`${VC} visits so far`}</span>`:'')}
+fetch('https://thameralshehri.goatcounter.com/counter/TOTAL.json').then(r=>r.ok?r.json():null).then(j=>{if(!j)return;VC=+String(j.count).replace(/\D/g,'')||0;if(VC>=VMIN)foot()}).catch(()=>{});
 const R={hub,about,journey,projects,resume,contact,matla,project:proj};
 
 /* ---------- branch wires (hub) ---------- */
@@ -505,7 +509,7 @@ function render(){
  const nx=$('#next');
  if(sec){const i=SECS.indexOf(sec); nx.innerHTML=`<div class="wrap"><h3>${A()?'كمّل لقسم ثاني':'Continue to another section'}</h3><div class="others"><a class="hub-l" href="/home/">${I.home} ${A()?'كل الأقسام':'All sections'}</a>${SECS.filter(s=>MT||s!==sec).map(s=>`<a href="/home/${s.id}/"><span class="n">${num(SECS.indexOf(s)+1)}</span>${L(s.t)}</a>`).join('')}<a href="/#play">${I.play} ${A()?'القصة':'The story'}</a></div></div>`; nx.hidden=false}
  else nx.hidden=true;
- $('#foot').textContent=A()?'© ٢٠٢٦ ثامر الشهري':'© 2026 Thamer Alshehri';
+ foot();
  $$('button.pc').forEach(b=>b.addEventListener('click',()=>openP(+b.dataset.p,b)));bindShare();
  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
  $$('.rv').forEach(el=>io.observe(el));
