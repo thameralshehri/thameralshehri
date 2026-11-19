@@ -187,6 +187,59 @@ html[lang=ar] .flow::before{background:linear-gradient(-90deg,var(--emerald-l),v
 .links a:hover{border-color:rgba(212,168,90,.6)}.links span{color:var(--mist);font-size:.88rem;overflow-wrap:anywhere}@media(max-width:560px){.links a{flex-direction:column;align-items:flex-start;justify-content:center;gap:.1rem}}
 .contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,60px);align-items:center}
 @media(max-width:860px){.contact{grid-template-columns:minmax(0,1fr)}}
+/* matla page */
+.mt-hero{background:radial-gradient(90% 80% at 80% 0%,#1B3A66 0%,#0A1A33 60%);color:var(--ivory);padding:clamp(40px,8vh,80px) 0;overflow:hidden}
+.mt-hg{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,5vw,64px);align-items:center}
+.mt-logo{width:clamp(110px,14vw,160px);margin-bottom:14px}
+.mt-hero h1{font-size:clamp(3rem,2rem + 5vw,5.6rem);margin:.2rem 0 .6rem;line-height:1.45}
+.mt-one{font-size:clamp(1.15rem,1rem + .6vw,1.45rem);color:#E9E2D2;max-width:44ch;margin:0 0 1.2rem;line-height:1.75}
+.mt-name{color:var(--mist);font-size:.98rem;max-width:52ch;margin:1.4rem 0 0;padding-inline-start:14px;border-inline-start:2px solid #D4B56A}
+.mt-btns{display:flex;flex-wrap:wrap;gap:10px}
+.mt-ghost{color:var(--ivory);border-color:rgba(243,238,228,.35)}
+.mt-hero .btn.gold{background:linear-gradient(135deg,#E8CD8A,#C9A961)}
+.mt-vid{margin:0;justify-self:center;width:min(340px,100%)}
+.mt-vid video{width:100%;aspect-ratio:9/16;border-radius:24px;background:#071226;box-shadow:0 0 0 1px rgba(212,181,106,.4),0 40px 70px -30px rgba(0,0,0,.8);display:block;object-fit:cover}
+.mt-vid figcaption{text-align:center;color:var(--mist);font-size:.88rem;margin-top:10px}
+.st.init{color:#8A6A1F;border-color:rgba(201,169,97,.6);background:rgba(212,181,106,.16)}
+.mt-hero .st.init,.dark .st.init{color:#F0D79A}
+.mt-sec{margin-bottom:clamp(44px,8vh,80px)}.mt-sec:last-child{margin-bottom:0}
+.mt-sec .lead{max-width:62ch}
+.mt-h3{font-size:1.25rem;margin:26px 0 12px}
+.mx{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+.mx-c{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.mx-c b{display:block;font-size:1.12rem;margin-bottom:.3rem}.mx-c p{margin:0;color:var(--muted);font-size:.97rem;line-height:1.75}
+.dark .mx-c{background:var(--night-2);border-color:var(--nline)}.dark .mx-c p{color:var(--mist)}
+.ax{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.axc{position:relative;background:var(--night);color:var(--ivory);border-radius:18px;padding:16px;display:grid;gap:4px;overflow:hidden}
+.axc span{color:#D4B56A;font-size:.85rem}.axc b{font-size:1.15rem}.axc small{color:var(--mist);font-size:.88rem;line-height:1.6}
+.axc:last-child{background:linear-gradient(160deg,#2A4A73,#0A1A33);box-shadow:inset 0 0 0 1px rgba(212,181,106,.55)}
+.mt-note{color:var(--muted);font-size:.95rem;margin:12px 0 0;max-width:70ch}
+.lv{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:end;max-width:640px;height:200px}
+.lv div{position:relative;height:100%;display:flex;flex-direction:column;justify-content:flex-end;gap:6px}
+.lv i{display:block;height:var(--h);border-radius:12px 12px 4px 4px;background:linear-gradient(180deg,#D4B56A,#9C7E3E);order:2}
+.lv div:nth-child(1) i{background:#C9C2B3}.lv div:nth-child(2) i{background:linear-gradient(180deg,#B9A57A,#8E7D58)}
+.lv span{position:absolute;bottom:8px;inset-inline:0;text-align:center;color:#fff;font-weight:700;z-index:1}
+.lv b{order:1;font-size:.9rem;text-align:center;line-height:1.35}
+.mt-gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}
+.mt-gal img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px}
+.tst{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:18px}
+.tst div{border:1px solid var(--nline);border-radius:16px;padding:16px;display:grid;gap:4px;align-content:start;background:var(--night-2)}
+.tst span{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--gold);color:var(--gold);font-size:.9rem}
+.tst b{font-size:1.08rem}.tst small{color:var(--mist);font-size:.9rem;line-height:1.6}
+.mt-tl{max-width:720px}.mt-tl li b{font-weight:500;font-size:1.05rem}
+.mt-tl li.gosi{background:linear-gradient(90deg,rgba(13,112,98,.1),transparent);border-radius:12px;padding-top:10px;padding-bottom:10px;margin-bottom:12px}
+.mt-tl li.gosi::before{background:var(--emerald);border-color:var(--emerald);top:1.1em}
+.fl{display:grid;gap:10px;max-width:760px}
+.fl a{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:14px;align-items:center;padding:14px 16px;border-radius:16px;border:1px solid var(--line);background:var(--paper);text-decoration:none;transition:border-color .2s,transform .2s}
+.fl a:hover{border-color:#C9A961;transform:translateY(-2px)}
+.fl .fi{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:#0A1A33;color:#D4B56A}
+.fl b{display:block;font-size:1.08rem}.fl small{display:block;color:var(--muted);font-size:.9rem;line-height:1.55}.fl em{font-style:normal;color:var(--muted);font-size:.82rem;white-space:nowrap}
+.mt-ask{background:#0A1A33;color:var(--ivory);border-radius:26px;padding:clamp(24px,4vw,44px);margin-top:clamp(36px,6vh,60px)}
+.mt-ask .lead{color:var(--mist)}.mt-ask .btn.solid{background:#D4B56A;border-color:#D4B56A;color:#0A1A33}.mt-ask .btn:not(.solid){color:var(--ivory)}
+@media(max-width:1000px){.ax,.tst{grid-template-columns:repeat(2,minmax(0,1fr))}.ax .axc:last-child,.tst div:last-child{grid-column:1/-1}}
+@media(max-width:860px){.mt-hg{grid-template-columns:minmax(0,1fr)}.mx{grid-template-columns:minmax(0,1fr)}.mt-gal{grid-template-columns:minmax(0,1fr)}.mt-vid{width:min(300px,80%)}}
+@media(max-width:560px){.ax,.tst{grid-template-columns:minmax(0,1fr)}.fl a{grid-template-columns:40px minmax(0,1fr)}.fl em{grid-column:2}.fl .fi{width:40px;height:40px}.lv{height:170px}.lv b{font-size:.78rem}}
+
 footer{color:var(--muted);padding:20px 0 30px;font-size:.88rem}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.001ms!important;animation-duration:.001ms!important;transition-delay:0s!important}.rv{opacity:1;transform:none}}
 </style>
@@ -214,8 +267,13 @@ const L=o=>o==null?'':(typeof o==='string'?o:(o[lang]??o.ar));
 const num=n=>A()?n.toLocaleString('ar-SA',{useGrouping:false}):String(n);
 const ic=d=>`<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="${d}"/></svg>`;
 const I={x:ic('M4 4l8 8M12 4l-8 8'),ext:ic('M11 5l-6 6M5 5h6v6'),down:ic('M8 2v9M4 7.5l4 4 4-4M3 14h10'),play:`<svg class="ic" viewBox="0 0 16 16" aria-hidden="true" style="fill:currentColor;stroke:none"><path d="M5 3.5v9l7.5-4.5z"/></svg>`,bolt:ic('M9 1.5L3.5 9H8l-1 5.5L12.5 7H8z'),arr:`<span class="flip">${ic('M3 8h10M9 4l4 4-4 4')}</span>`,home:ic('M2.5 7.5L8 3l5.5 4.5V13a1 1 0 0 1-1 1H3.5a1 1 0 0 1-1-1z'),sep:`<span class="flip" style="opacity:.5">${ic('M6 4l4 4-4 4')}</span>`};
-const STATUS={live:{ar:'شغّال',en:'Live'},done:{ar:'مكتمل',en:'Completed'},prototype:{ar:'نسخة أولى',en:'Prototype'},experiment:{ar:'تجربة',en:'Experiment'}};
+const STATUS={live:{ar:'شغّال',en:'Live'},done:{ar:'مكتمل',en:'Completed'},prototype:{ar:'نسخة أولى',en:'Prototype'},experiment:{ar:'تجربة',en:'Experiment'},init:{ar:'مبادرة قيد التحقق',en:'Initiative · validating'}};
 const PROJECTS=[
+ {n:{ar:'مطلع',en:'Matla'},st:'init',url:'#',urlLbl:{ar:'زور موقع مطلع',en:'Visit Matla'},page:'/home/projects/matla/',cat:{ar:'مؤشر سعودي لتجربة الموظف الجديد',en:'A Saudi index for the new-hire experience'},img:['matla-1','matla-2','matla-3','matla-4'],
+  d:{ar:'مؤشر يقيس كيف تستقبل الشركة موظفها الجديد في أول ١٨٠ يوم، ويعطيها رقم من ١٠٠، ويقارنها بالشركات اللي مثلها، ويطلع لها خطوات تحسين واضحة.',en:'An index that measures how a company welcomes its new hires in their first 180 days, gives it a score out of 100, compares it with similar companies and turns the gaps into clear next steps.'},
+  s:[{ar:'كل شركة تستقبل موظفها الجديد على اجتهادها، وما فيه مقياس سعودي تعرف فيه هي وين مقارنة بغيرها، مع إن أول ١٨٠ يوم هي فترة التجربة في نظام العمل.',en:'Every company onboards its own way, and there is no Saudi benchmark to see where it stands, even though the first 180 days are the probation period under the Labor Law.'},
+     {ar:'٢٠ سؤال على خمس محاور، وكل جواب له أربع مستويات. سويت ملف مبادرة من ٥٠ صفحة، وبروتوكول تحقق علمي، ونموذج تقرير، وهوية وفيديو، وموقع شغّال.',en:'20 questions across five areas, each with four maturity levels. I built a 50-page initiative file, a validation protocol, a sample report, a brand, a video and a working website.'},
+     {ar:'مسودة أولى قيد التحقق. قدّمتها لوزارة الموارد البشرية، والتأمينات الاجتماعية قبلت مقترحي واعتمدته في سجلات التطوير.',en:'An early draft now in validation. Submitted to the Ministry of Human Resources, and GOSI accepted my proposal into its development records.'}]},
  {n:{ar:'مجد',en:'MAJD'},st:'live',url:'https://majd.cc',cat:{ar:'منصة موارد بشرية سعودية',en:'Saudi HR platform'},img:['majd1','majd2','majd4','majd5'],
   d:{ar:'منصة سعودية مجانية تجمع لك المعرفة والأدوات والقوالب والحاسبات والمسارات المهنية في مكان واحد، بالعربي والإنجليزي.',en:'A free Saudi platform that brings HR knowledge, tools, templates, calculators and career paths together in one place, in Arabic and English.'},
   s:[{ar:'المعلومات والأدوات اللي يحتاجها مختص الموارد البشرية متفرقة في أماكن كثيرة.',en:'The information and tools an HR practitioner needs are scattered across many places.'},
@@ -309,7 +367,67 @@ function contact(){return `<section class="page dark"><div class="wrap contact">
  <p class="lead">${A()?'كل يوم فيه تفاصيل جديدة تنكتب. لو حاب تكمّل القصة معي، أو تسولف عن الموارد البشرية وتجربة الموظف، أنا هنا.':'New details get written every day. If you want to continue the story with me, or just talk about HR and employee experience, I am here.'}</p>
  <a class="btn gold" href="/#play">${I.play} ${A()?'شاهد القصة من البداية':'Watch the story from the start'}</a></div>
  <div class="links rv"><a href="${LI}" target="_blank" rel="noopener">LinkedIn <span dir="ltr">linkedin.com/in/thameralshehri ${I.ext}</span></a><a href="mailto:mrthameralshehri@gmail.com">${A()?'البريد الإلكتروني':'Email'} <span dir="ltr">mrthameralshehri@gmail.com</span></a><a href="${CV}" download>${A()?'السيرة الذاتية':'Resume'} <span>PDF ${I.down}</span></a></div></div></section>`}
-const R={hub,about,journey,projects,resume,contact};
+function matla(){const a=A(),F='/files/matla/';
+ const axes=a?[['الامتثال','العقد في قوى، والتسجيل في التأمينات، والسياسات المكتوبة.'],['الوضوح','يعرف وش المطلوب منه، وأهدافه مكتوبة، ولقاءات المتابعة في وقتها.'],['الثقافة','يفهم طريقة الشغل وجو المكان.'],['الارتباط','يحس إنه واحد من الفريق، وله أحد يرجع له.'],['الواقع السعودي','موظف الفرع البعيد والموظف الميداني ياخذون نفس التجربة.']]
+ :[['Compliance','Contract on Qiwa, GOSI registration and written policies.'],['Clarity','Knows what is expected, has written goals and timely check-ins.'],['Culture','Understands how work gets done and the feel of the place.'],['Connection','Feels part of the team, with someone to turn to.'],['Saudi reality','Remote-branch and field staff get the same experience.']];
+ const lv=a?['غير موجود','اجتهادي','موثّق','ممنهج ومقاس']:['Not in place','Ad hoc','Documented','Systematic & measured'];
+ const tests=a?[['صدق المحتوى','هل الأسئلة العشرين هي الممارسات الصح؟ بحكم خبراء.'],['الثبات','هل تطلع نفس الدرجة لو جاوبت الشركة مرتين، أو جاوب شخصين منها؟'],['صدق البناء','هل المحاور الخمسة منفصلة فعلًا، وتتفق مع اللي يعيشه الموظفين الجدد؟'],['الصدق التنبؤي','هل الشركات الأعلى درجة يطلع منها موظفين جدد أقل خلال ١٨٠ يوم؟'],['العدالة','هل يقيس الشركة الصغيرة والكبيرة، وكل القطاعات والمناطق، بنفس المسطرة؟']]
+ :[['Content validity','Are the 20 questions the right practices? Judged by experts.'],['Reliability','Does a company get the same score twice, or from two respondents?'],['Construct validity','Are the five areas truly distinct, and do they match what new hires live?'],['Predictive validity','Do higher-scoring companies lose fewer new hires within 180 days?'],['Fairness','Does it measure small and large firms, all sectors and regions, the same way?']];
+ const tl=a?[['نوفمبر ٢٠٢٦','ملف المبادرة بنسخته الثانية، والهوية، والفيديو، والموقع.'],['نوفمبر ٢٠٢٦','قدّمت المبادرة لوزارة الموارد البشرية والتنمية الاجتماعية.'],['نوفمبر ٢٠٢٦','التأمينات الاجتماعية قبلت مقترحي واعتمدته في سجلات التطوير، ودعمهم كبّر المشروع.',1],['ديسمبر ٢٠٢٦ – يناير ٢٠٢٧','أختبر ستة افتراضات حرجة، وبعدها أقرر: أكمل، أو أعدّل، أو أوقف.'],['ديسمبر ٢٠٢٦ – مارس ٢٠٢٨','التحقق العلمي من المنهجية على خمس مراحل، ولا يُعلن المؤشر قبل ما يجتازها.']]
+ :[['Nov 2026','Initiative file (v0.2), brand, video and website.'],['Nov 2026','Submitted to the Ministry of Human Resources and Social Development.'],['Nov 2026','GOSI accepted my proposal into its development records, and their support helped the project grow.',1],['Dec 2026 – Jan 2027','Testing six critical assumptions, then deciding: continue, adjust or stop.'],['Dec 2026 – Mar 2028','Scientific validation of the method in five phases; no public index before it passes.']];
+ const goals=[[300,a?'أخصائي يشخّصون شركاتهم':'HR specialists assessing their companies'],[1000,a?'رد من موظفين جدد':'responses from new hires'],[8,a?'قطاعات بمقارنة سعودية':'sectors with Saudi benchmarks'],[1,a?'تقرير «حالة التهيئة ٢٠٢٧»':'"State of Onboarding 2027" report']];
+ const files=[[F+'Matla_Initiative_File_v0.2.pdf',a?'ملف المبادرة':'Initiative file',a?'الصورة كاملة: الفكرة، والقيمة، والتحليل، والحوكمة، والتنفيذ. ٥٠ صفحة.':'The full picture: idea, value, analysis, governance and delivery. 50 pages.','PDF · 3.4 MB'],
+  [F+'Matla_Sample_Report.pdf',a?'نموذج التقرير':'Sample report',a?'وش يوصل الشركة بعد ما تجاوب، على شركة خيالية. ٦ صفحات.':'What a company receives after answering, for a fictional company. 6 pages.','PDF · 0.2 MB'],
+  [F+'Matla_Validation_Protocol.pdf',a?'بروتوكول التحقق':'Validation protocol',a?'كيف أثبت بالأرقام إن المؤشر يقيس صح. ٨ صفحات.':'How the index will prove, with numbers, that it measures correctly. 8 pages.','PDF · 0.4 MB']];
+ const box=(t,b)=>`<div class="mx-c rv"><b>${t}</b><p>${b}</p></div>`;
+ return `<section class="mt-hero"><div class="wrap mt-hg">
+  <div class="rv"><img class="mt-logo" src="/img/matla-logo.svg" alt="${a?'شعار مطلع':'Matla logo'}"><span class="st init">${L(STATUS.init)}</span>
+  <h1>${a?'مطلع':'Matla'}</h1><p class="mt-one">${a?'مؤشر سعودي يقيس تجربة الموظف الجديد في أول ١٨٠ يوم، ويقارنها بالسوق، ويحوّلها لخطوات تحسين واضحة.':'A Saudi index that measures the new-hire experience in the first 180 days, compares it with the market and turns it into clear next steps.'}</p>
+  <div class="mt-btns"><a class="btn gold" href="#" target="_blank" rel="noopener">${a?'زور موقع مطلع':'Visit Matla'} ${I.ext}</a><a class="btn mt-ghost" href="#files">${I.down} ${a?'ملفات المشروع':'Project files'}</a><a class="btn mt-ghost" href="https://lnkd.in/p/dqJCXmtk" target="_blank" rel="noopener">LinkedIn ${I.ext}</a></div>
+  <p class="mt-name">${a?'«المَطلع» هو أول الشي ومكان طلوعه، مثل مطلع الشمس. ومطلع الموظف هو أيامه الأولى.':'"Matla" is Arabic for the beginning of something and the place it rises from, like a sunrise. A new hire\'s matla is their first days.'}</p></div>
+  <figure class="mt-vid rv"><video controls playsinline preload="metadata" poster="/img/matla-poster.webp"><source src="/files/matla/matla-video.mp4" type="video/mp4"></video><figcaption>${a?'الفيديو التعريفي · دقيقتين ونص':'Intro video · 2.5 minutes (Arabic)'}</figcaption></figure>
+ </div></section>
+ <section class="page"><div class="wrap">
+  <div class="mt-sec rv"><span class="k">${a?'المشكلة':'The problem'}</span><h2>${a?'موظف جديد يوصل، ومحد يدري إنه جاي.':'A new hire arrives, and nobody knew they were coming.'}</h2>
+  <p class="lead">${a?'لا مكتب، ولا جهاز، ولا أحد يقول له وش المطلوب منه. وهالشي يصير كثير، والشركة هي الخسرانة: وقت توظيف راح، وتدريب راح، وشخص كان ممكن يصير من أحسن موظفينها.':'No desk, no laptop, no one telling them what is expected. It happens a lot, and the company pays for it: hiring time lost, training lost, and someone who could have been one of its best.'}</p>
+  <div class="mx">${box(a?'فترة التجربة تحسم كل شي':'Probation decides everything',a?'في نظام العمل أول ٩٠ يوم فترة تجربة، وممكن توصل ١٨٠ (المادة ٥٣). فيها يا يتثبّت الموظف، يا يطلع.':'Under the Labor Law, the first 90 days are probation, extendable to 180 (Article 53). Within it, a new hire is either confirmed or leaves.')}${box(a?'ما فيه مقياس سعودي':'No Saudi benchmark',a?'كل شركة تجتهد على كيفها. فيه أرقام أمريكية وأوروبية، بس ما فيه مقياس يفهم نظام العمل وقوى والتأمينات.':'Every company improvises. There are US and European figures, but nothing that understands Saudi labor law, Qiwa and GOSI.')}${box(a?'من شغلي اليومي':'Born from my daily work',a?'أجهّز الموظفين الجدد وأتابعهم لين نهاية التجربة، وكل مرة أسأل: اللي نقدّمه زين فعلًا؟ ومقارنة بمين؟':'I onboard new hires and follow them to the end of probation, and I kept asking: is what we offer actually good? Compared to whom?')}</div></div>
+
+  <div class="mt-sec rv"><span class="k">${a?'الفكرة':'The idea'}</span><h2>${a?'مثل ميزان الحرارة: ما يقول لك تعبان وبس، يعطيك رقم.':'Like a thermometer: it does not just say you are unwell, it gives you a number.'}</h2>
+  <p class="lead">${a?'الشركة تجاوب على ٢٠ سؤال في قرابة ١٠ دقايق، وتطلع لها درجة من ١٠٠ تبيّن كيف تستقبل موظفها الجديد. وتتكرر كل سنة عشان تشوف: تحسّنت ولا لا.':'A company answers 20 questions in about 10 minutes and gets a score out of 100 for how it welcomes new hires. It repeats every year, so it can see whether it improved.'}</p>
+  <h3 class="mt-h3">${a?'خمس محاور':'Five areas'}</h3><div class="ax">${axes.map((x,i)=>`<div class="axc"><span>${num(i+1)}</span><b>${x[0]}</b><small>${x[1]}</small></div>`).join('')}</div>
+  <p class="mt-note">${a?'أول أربع محاور مبنية على نموذج «4C» المعروف للتهيئة الوظيفية (Bauer، SHRM 2010). والمحور الخامس إضافة سعودية ما تغطيها النماذج العالمية.':'The first four follow the well-known "4C" onboarding model (Bauer, SHRM 2010). The fifth is a Saudi addition that global models do not cover.'}</p>
+  <h3 class="mt-h3">${a?'وكل جواب له أربع مستويات':'Each answer has four levels'}</h3><div class="lv">${lv.map((x,i)=>`<div style="--h:${30+i*22}%"><i></i><span>${num(i+1)}</span><b>${x}</b></div>`).join('')}</div></div>
+
+  <div class="mt-sec rv"><span class="k">${a?'وش يوصل الشركة':'What the company gets'}</span><h2>${a?'تقرير فيه ثلاث أشياء.':'A report with three things.'}</h2>
+  <div class="mx">${box(a?'درجتها في كل محور':'Its score per area',a?'وين هي قوية، ووين تحتاج شغل.':'Where it is strong, and where it needs work.')}${box(a?'مكانها بين الشركات':'Where it stands',a?'مقارنة بالشركات اللي من قطاعها وحجمها، بدون أسماء.':'Against companies of its sector and size, without names.')}${box(a?'أهم الخطوات':'The key next steps',a?'وش تسوي عشان ترفع درجتها، وتكلفة الفجوة بالريال.':'What to do to raise its score, and the cost of the gap in riyals.')}</div>
+  <p class="lead" style="margin-top:18px">${a?'وبعدها ترسل الشركة رابط بدون أسماء لموظفيها الجدد، فيبان الفرق بين اللي تظنه الشركة واللي يعيشه الموظف. وكل سنة يطلع تقرير عام عن السوق كله، بدون أسماء.':'The company then sends an anonymous link to its new hires, revealing the gap between what it thinks and what they live. Every year, a market-wide report is published, with no names.'}</p>
+  <div class="mt-gal">${['matla-3','matla-4','matla-2'].map(m=>`<img src="/img/${m}.webp" alt="" loading="lazy">`).join('')}</div></div>
+
+  <div class="mt-sec rv"><span class="k">${a?'مين يستفيد':'Who benefits'}</span><h2>${a?'الشركة، والأخصائي، والموظف الجديد.':'The company, the HR specialist, and the new hire.'}</h2>
+  <div class="mx">${box(a?'الشركة':'The company',a?'تعرف وين هي، وتخف عندها خسارة الموظفين.':'Knows where it stands, and loses fewer people.')}${box(a?'أخصائي الموارد البشرية':'The HR specialist',a?'يصير عنده رقم يثبت فيه أثر شغله قدام الإدارة.':'Gets a number that proves the impact of their work to management.')}${box(a?'الموظف الجديد':'The new hire',a?'حتى لو ما يدري عن المؤشر، يلقى بداية أوضح، وأحد منتظره من أول يوم.':'Even without knowing the index exists, finds a clearer start, and someone waiting from day one.')}</div></div>
+ </div></section>
+
+ <section class="page dark"><div class="wrap">
+  <div class="mt-sec rv"><span class="k">${a?'ما نتحمس قبل ما نختبر':'No excitement before testing'}</span><h2>${a?'المؤشر لازم يثبت بالأرقام إنه يقيس صح.':'The index has to prove, with numbers, that it measures correctly.'}</h2>
+  <p class="lead">${a?'سويت بروتوكول تحقق فيه خمس اختبارات، تتنفذ على خمس مراحل في قرابة ١٥ شهر. ولو فشل أي اختبار، تتعدّل المنهجية وتنعاد المرحلة.':'I wrote a validation protocol with five tests, run in five phases over about 15 months. If any test fails, the method is revised and the phase repeated.'}</p>
+  <div class="tst">${tests.map((x,i)=>`<div><span>${num(i+1)}</span><b>${x[0]}</b><small>${x[1]}</small></div>`).join('')}</div>
+  <div class="mx" style="margin-top:22px">${box(a?'مستقل':'Independent',a?'مبادرة شخصية ما تتبع أي جهة حكومية أو خاصة، ولا جهة عملي. وبتمويل ذاتي يحافظ على استقلالها.':'A personal initiative, not tied to any government or private body or my employer. Self-funded to stay independent.')}${box(a?'البيانات محفوظة':'Data protected',a?'ما ينطلع أي اسم إلا بموافقة صاحبه، ووفق نظام حماية البيانات الشخصية.':'No name is published without consent, in line with the Personal Data Protection Law.')}${box(a?'مجاني':'Free',a?'للأخصائيين والشركات، عشان يوصل لأكبر عدد.':'For specialists and companies, so it reaches as many as possible.')}</div></div>
+ </div></section>
+
+ <section class="page"><div class="wrap">
+  <div class="mt-sec rv"><span class="k">${a?'وين وصل':'Where it stands'}</span><h2>${a?'مسودة أولى، وأبنيها خطوة بخطوة.':'An early draft, built step by step.'}</h2>
+  <ol class="tl mt-tl">${tl.map(x=>`<li class="${x[2]?'gosi':''}"><small>${x[0]}</small><b>${x[1]}</b></li>`).join('')}</ol>
+  <h3 class="mt-h3">${a?'المستهدفات المبدئية بنهاية ٢٠٢٧':'Initial targets by end of 2027'}</h3>
+  <div class="stats">${goals.map(g=>`<div class="stat"><b dir="ltr">${num(g[0])}</b><span>${g[1]}</span></div>`).join('')}</div></div>
+
+  <div class="mt-sec rv" id="files"><span class="k">${a?'ملفات المشروع':'Project files'}</span><h2>${a?'اقرأ بنفسك.':'Read it yourself.'}</h2>
+  <div class="fl">${files.map(f=>`<a href="${f[0]}" target="_blank" rel="noopener"><span class="fi">${I.down}</span><span><b>${f[1]}</b><small>${f[2]}</small></span><em dir="ltr">${f[3]}</em></a>`).join('')}<a href="/files/matla/matla-video.mp4" download><span class="fi">${I.down}</span><span><b>${a?'الفيديو التعريفي':'Intro video'}</b><small>${a?'نسخة جاهزة للمشاركة.':'A version ready to share.'}</small></span><em dir="ltr">MP4 · 4.4 MB</em></a></div></div>
+
+  <div class="mt-ask rv"><h2>${a?'شفت الفكرة، وش رايك؟':'You have seen the idea. What do you think?'}</h2><p class="lead">${a?'ودي أبنيها صح، مع الناس اللي يفهمون بهالمجال. أي رأي أو ملاحظة تفرق.':'I want to build it right, with people who know this field. Every comment counts.'}</p>
+  <div class="mt-btns"><a class="btn solid" href="${LI}" target="_blank" rel="noopener">LinkedIn ${I.ext}</a><a class="btn" href="mailto:mrthameralshehri@gmail.com?subject=${encodeURIComponent(a?'رأيي في مطلع':'Feedback on Matla')}">${a?'راسلني':'Email me'}</a></div></div>
+ </div></section>`}
+
+const R={hub,about,journey,projects,resume,contact,matla};
 
 /* ---------- branch wires (hub) ---------- */
 function wires(){
@@ -331,15 +449,15 @@ function wires(){
 /* ---------- chrome ---------- */
 function render(){
  const d=document.documentElement; d.lang=lang; d.dir=A()?'rtl':'ltr';
- const sec=SECS.find(s=>s.id===PAGE);
- document.title=(sec?L(sec.t)+' — ':'')+L(T.name);
+ const MT=PAGE==='matla'; const sec=SECS.find(s=>s.id===(MT?'projects':PAGE));
+ document.title=(MT?(A()?'مطلع':'Matla')+' — ':sec?L(sec.t)+' — ':'')+L(T.name);
  $$('[data-t]').forEach(e=>e.textContent=L(T[e.dataset.t]));
  $$('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===lang));
  $('#storyBtn').innerHTML=`${I.play}<span>${A()?'شاهد القصة':'Watch the story'}</span>`; $('#storyBtn').setAttribute('aria-label',A()?'شاهد القصة':'Watch the story');
- $('#crumb').innerHTML=sec?`${I.sep}<a href="/home/">${L(T.home)}</a>${I.sep}<b>${L(sec.t)}</b>`:'';
+ $('#crumb').innerHTML=MT?`${I.sep}<a href="/home/">${L(T.home)}</a>${I.sep}<a href="/home/projects/">${L(sec.t)}</a>${I.sep}<b>${A()?'مطلع':'Matla'}</b>`:sec?`${I.sep}<a href="/home/">${L(T.home)}</a>${I.sep}<b>${L(sec.t)}</b>`:'';
  $('#main').innerHTML=R[PAGE]();
  const nx=$('#next');
- if(sec){const i=SECS.indexOf(sec); nx.innerHTML=`<div class="wrap"><h3>${A()?'كمّل لقسم ثاني':'Continue to another section'}</h3><div class="others"><a class="hub-l" href="/home/">${I.home} ${A()?'كل الأقسام':'All sections'}</a>${SECS.filter(s=>s!==sec).map(s=>`<a href="/home/${s.id}/"><span class="n">${num(SECS.indexOf(s)+1)}</span>${L(s.t)}</a>`).join('')}<a href="/#play">${I.play} ${A()?'القصة':'The story'}</a></div></div>`; nx.hidden=false}
+ if(sec){const i=SECS.indexOf(sec); nx.innerHTML=`<div class="wrap"><h3>${A()?'كمّل لقسم ثاني':'Continue to another section'}</h3><div class="others"><a class="hub-l" href="/home/">${I.home} ${A()?'كل الأقسام':'All sections'}</a>${SECS.filter(s=>MT||s!==sec).map(s=>`<a href="/home/${s.id}/"><span class="n">${num(SECS.indexOf(s)+1)}</span>${L(s.t)}</a>`).join('')}<a href="/#play">${I.play} ${A()?'القصة':'The story'}</a></div></div>`; nx.hidden=false}
  else nx.hidden=true;
  $('#foot').textContent=A()?'© ٢٠٢٦ ثامر الشهري':'© 2026 Thamer Alshehri';
  $$('.pc').forEach(b=>b.addEventListener('click',()=>openP(+b.dataset.p,b)));
@@ -353,7 +471,7 @@ if(document.fonts)document.fonts.ready.then(()=>{if(PAGE==='hub')wires()});
 let lastBtn=null;
 function openP(i,btn){lastBtn=btn;const p=PROJECTS[i];let k=0;const sec=[{ar:'وش المشكلة',en:'The problem'},{ar:'كيف سويته',en:'How I built it'},p.l3||{ar:'وين وصل',en:'Where it stands'}];
  const draw=()=>{$('#sbox').innerHTML=`<div class="media"><img src="/img/${p.img[k]}.webp" alt="${L(p.n)}">${p.img.length>1?`<div class="thumbs">${p.img.map((m,j)=>`<button type="button" aria-pressed="${j===k}" data-k="${j}" aria-label="${j+1}"><img src="/img/${m}.webp" alt=""></button>`).join('')}</div>`:''}</div>
- <div class="info"><button class="x" type="button" aria-label="${L(T.close)}">${I.x}</button><span class="st ${p.st}">${L(STATUS[p.st])}</span><h3 id="pT">${L(p.n)}</h3><div class="cat">${L(p.cat)}</div><p>${L(p.d)}</p><dl>${p.s.map((x,j)=>`<dt>${L(sec[j])}</dt><dd>${L(x)}</dd>`).join('')}</dl>${p.url?`<a class="btn gold" href="${p.url}" target="_blank" rel="noopener">${p.urlLbl?L(p.urlLbl):(A()?'جرّب المشروع':'Try it live')} ${I.ext}</a>`:''}</div>`;
+ <div class="info"><button class="x" type="button" aria-label="${L(T.close)}">${I.x}</button><span class="st ${p.st}">${L(STATUS[p.st])}</span><h3 id="pT">${L(p.n)}</h3><div class="cat">${L(p.cat)}</div><p>${L(p.d)}</p><dl>${p.s.map((x,j)=>`<dt>${L(sec[j])}</dt><dd>${L(x)}</dd>`).join('')}</dl><div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px">${p.page?`<a class="btn gold" href="${p.page}">${A()?'اقرأ المشروع كامل':'Read the full project'}</a>`:''}${p.url?`<a class="btn ${p.page?'':'gold'}" href="${p.url}" target="_blank" rel="noopener">${p.urlLbl?L(p.urlLbl):(A()?'جرّب المشروع':'Try it live')} ${I.ext}</a>`:''}</div></div>`;
  $('.x',$('#sbox')).addEventListener('click',closeP);$$('.thumbs button',$('#sbox')).forEach(b=>b.addEventListener('click',()=>{k=+b.dataset.k;draw()}));};
  draw();$('#sheet').classList.add('open');setTimeout(()=>$('.x',$('#sbox')).focus(),60)}
 function closeP(){$('#sheet').classList.remove('open');lastBtn&&lastBtn.focus()}
