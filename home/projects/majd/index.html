@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-page="project" data-slug="majd">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>(function(){var l='ar';try{l=localStorage.getItem('ta-lang')||'ar'}catch(e){}try{var q=new URLSearchParams(location.search).get('lang');if(q==='ar'||q==='en'){l=q;localStorage.setItem('ta-lang',q)}}catch(e){}l=l==='en'?'en':'ar';var d=document.documentElement;d.lang=l;d.dir=l==='ar'?'rtl':'ltr';})();</script>
+<link rel="preload" href="/fonts/thmanyah-serif-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/thmanyah-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<title>ثامر الشهري</title>
+<meta name="description" content="منصة سعودية مجانية تجمع لك المعرفة والأدوات والقوالب والحاسبات والمسارات المهنية في مكان واحد، بالعربي والإنجليزي.">
+<link rel="canonical" href="https://thameralshehri.sa/home/projects/majd/">
+<meta property="og:type" content="profile"><meta property="og:url" content="https://thameralshehri.sa/home/projects/majd/">
+<meta property="og:title" content="مجد | MAJD — ثامر الشهري"><meta property="og:description" content="منصة سعودية مجانية تجمع لك المعرفة والأدوات والقوالب والحاسبات والمسارات المهنية في مكان واحد، بالعربي والإنجليزي. | A free Saudi platform that brings HR knowledge, tools, templates, calculators and career paths together in one place, in Arabic and English.">
+<meta property="og:image" content="https://thameralshehri.sa/img/og/majd.jpg"><meta property="og:image:alt" content="Thamer Alshehri ثامر الشهري — HR Specialist أخصائي موارد بشرية"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4EEE3">
+<style>
+@font-face{font-family:"Thmanyah Sans";font-weight:300;font-style:normal;font-display:swap;src:url(/fonts/thmanyah-sans-300.woff2) format("woff2")}
+@font-face{font-family:"Thmanyah Sans";font-weight:400;font-style:normal;font-display:swap;src:url(/fonts/thmanyah-sans-400.woff2) format("woff2")}
+@font-face{font-family:"Thmanyah Sans";font-weight:500;font-style:normal;font-display:swap;src:url(/fonts/thmanyah-sans-500.woff2) format("woff2")}
+@font-face{font-family:"Thmanyah Sans";font-weight:700;font-style:normal;font-display:swap;src:url(/fonts/thmanyah-sans-700.woff2) format("woff2")}
+@font-face{font-family:"Thmanyah Serif";font-weight:400;font-style:normal;font-display:swap;src:url(/fonts/thmanyah-serif-400.woff2) format("woff2")}
+@font-face{font-family:"Thmanyah Serif";font-weight:500;font-style:normal;font-display:swap;src:url(/fonts/thmanyah-serif-500.woff2) format("woff2")}
+@font-face{font-family:"Thmanyah Serif";font-weight:700;font-style:normal;font-display:swap;src:url(/fonts/thmanyah-serif-700.woff2) format("woff2")}
+@font-face{font-family:"Thmanyah Serif";font-weight:900;font-style:normal;font-display:swap;src:url(/fonts/thmanyah-serif-900.woff2) format("woff2")}
+:root{--day:#F4EEE3;--paper:#FFFDF8;--ink:#14233A;--muted:#5A6170;--line:rgba(20,35,58,.12);--night:#0F1B2D;--night-2:#16263C;--night-3:#1C3049;--ivory:#F3EEE4;--mist:#AEB8C6;--nline:rgba(243,238,228,.12);--gold:#D4A85A;--gold-2:#E3BD76;--gold-d:#94692A;--emerald:#0D7062;--emerald-l:#4FB3A5;--f:"Thmanyah Serif";--e:cubic-bezier(.22,.61,.36,1);--w:1160px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--day);color:var(--ink);font-family:var(--f);font-size:18px;line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}img{display:block;max-width:100%}button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:8px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+.ic{width:1.05em;height:1.05em;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.15em}
+html[lang=ar] .flip{display:inline-flex;transform:scaleX(-1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:48px;padding:.5em 1.3em;border-radius:999px;border:1.5px solid currentColor;background:transparent;font-weight:500;font-size:.98rem;cursor:pointer;text-decoration:none;white-space:nowrap;transition:transform .2s,background .3s,color .3s,box-shadow .3s}
+.btn:active{transform:scale(.98)}
+.btn.gold{background:linear-gradient(135deg,var(--gold-2),#C99B4C);border-color:transparent;color:#14110A;box-shadow:0 14px 30px -14px rgba(212,168,90,.7)}
+.btn.solid{background:var(--ink);border-color:var(--ink);color:var(--day)}
+.lang{position:relative;display:inline-grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:999px;padding:3px;height:38px;direction:ltr;background:rgba(255,255,255,.5);flex:none}
+.lang button{position:relative;z-index:1;border:0;background:none;padding:0 .75rem;font-size:.85rem;cursor:pointer;color:var(--muted);min-width:44px;border-radius:999px;transition:color .3s}
+.lang button[aria-pressed=true]{color:var(--day)}
+.lang .th{position:absolute;top:3px;bottom:3px;left:3px;width:calc(50% - 3px);border-radius:999px;background:var(--ink);transition:transform .4s var(--e)}
+html[lang=ar] .lang .th{transform:translateX(100%)}
+/* header */
+.hdr{position:sticky;top:0;z-index:30;background:rgba(244,238,227,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:14px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:1.05rem;white-space:nowrap}
+.brand img{width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:50% 20%;background:radial-gradient(circle at 50% 70%,#24405E,#0F1B2D)}
+.crumb{display:flex;align-items:center;gap:.5rem;font-size:.92rem;color:var(--muted);min-width:0;overflow:hidden;white-space:nowrap}
+.crumb a{text-decoration:none}.crumb a:hover{color:var(--ink)}
+.crumb b{color:var(--ink);font-weight:700;overflow:hidden;text-overflow:ellipsis}
+.hdr .sp{margin-inline-start:auto;display:flex;gap:10px;align-items:center}
+.hdr .story{min-height:38px;padding:.25em 1em;font-size:.9rem}
+@media(max-width:700px){.hdr .story span{display:none}.brand span{display:none}.hdr .story{padding:0;width:38px}}
+.k{font-size:.92rem;color:var(--gold-d);font-weight:500}
+h1{font-size:clamp(2.4rem,1.6rem + 3.6vw,4.4rem);line-height:1.25;margin:.3rem 0 .8rem;font-weight:700}
+h2{font-size:clamp(1.9rem,1.4rem + 2.2vw,3rem);line-height:1.3;margin:.3rem 0 1rem;font-weight:700}
+html[lang=en] h1,html[lang=en] h2{line-height:1.12;letter-spacing:-.01em}
+.lead{font-size:clamp(1.1rem,1rem + .4vw,1.3rem);color:var(--muted);max-width:52ch;margin:0 0 1.2rem}
+.dark{background:var(--night);color:var(--ivory)}.dark .lead{color:var(--mist)}.dark .k{color:var(--gold)}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .9s var(--e),transform .9s var(--e)}
+.rv.in{opacity:1;transform:none}
+
+/* ================= HUB ================= */
+.hub{position:relative;min-height:calc(100vh - 68px);padding:clamp(28px,6vh,60px) 0 70px;overflow:hidden;background:radial-gradient(90% 70% at 50% 0%,#FBF7EF 0%,var(--day) 55%,#EDE3D2 100%)}
+.hub::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.45;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hub .wrap{position:relative;z-index:2}
+.root{display:flex;flex-direction:column;align-items:center;text-align:center}
+.node{position:relative;width:132px;height:132px;border-radius:50%;background:radial-gradient(circle at 50% 75%,#24405E,#0F1B2D);box-shadow:0 0 0 3px var(--day),0 0 0 4.5px rgba(212,168,90,.7),0 30px 50px -24px rgba(15,27,45,.6);overflow:hidden}
+.node img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.node::after{content:"";position:absolute;inset:-14px;border-radius:50%;border:1px solid rgba(212,168,90,.35);animation:ring 3.4s ease-out infinite}
+@keyframes ring{0%{transform:scale(.85);opacity:.9}100%{transform:scale(1.35);opacity:0}}
+.root h1{margin:.9rem 0 .2rem}
+.root .lead{margin:0 auto .2rem;text-align:center}
+.root .pick{margin-top:.6rem;font-size:1rem;color:var(--gold-d);display:flex;align-items:center;gap:.5rem}
+.root .pick i{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 0 rgba(212,168,90,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(212,168,90,0)}100%{box-shadow:0 0 0 0 rgba(212,168,90,0)}}
+.branches{position:relative;margin-top:clamp(70px,11vh,110px)}
+.wires{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible;z-index:0}
+.wires path{fill:none;stroke:url(#wg);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:var(--len);stroke-dashoffset:var(--len);transition:stroke-dashoffset 1.6s var(--e),stroke-width .3s,opacity .3s;opacity:.75}
+.drawn .wires path{stroke-dashoffset:0}
+.wires path.hot{stroke-width:3;opacity:1}
+.wires circle{fill:var(--gold);filter:drop-shadow(0 0 6px rgba(212,168,90,.9));opacity:0;transition:opacity .6s 1.4s}
+.drawn .wires circle{opacity:1}
+.cards{position:relative;z-index:1;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.card{position:relative;display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--ivory);background:var(--night);border-radius:22px;padding:22px 20px 20px;min-height:250px;overflow:hidden;box-shadow:0 30px 50px -30px rgba(15,27,45,.7);transform:translateY(24px);opacity:0;transition:transform .8s var(--e),opacity .8s var(--e),box-shadow .4s}
+.drawn .card{transform:none;opacity:1}
+.card:nth-child(1){transition-delay:.9s}.card:nth-child(2){transition-delay:1.02s}.card:nth-child(3){transition-delay:1.14s}.card:nth-child(4){transition-delay:1.26s}.card:nth-child(5){transition-delay:1.38s}
+.drawn .card:hover{transform:translateY(-8px);transition-delay:0s;box-shadow:0 40px 60px -30px rgba(15,27,45,.85),0 0 0 1px rgba(212,168,90,.5)}
+.card::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(240px circle at var(--mx,50%) var(--my,0%),rgba(212,168,90,.18),transparent 60%);opacity:0;transition:opacity .35s}
+.card:hover::before{opacity:1}
+.card .no{font-size:.85rem;color:var(--gold)}
+.card .art{height:74px;display:flex;align-items:center;margin:4px 0 8px}
+.card .art svg{height:100%;width:auto;overflow:visible}
+.card .art svg *{fill:none;stroke:var(--gold);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.card .art svg .em{stroke:var(--emerald-l)}
+.card b{font-size:1.35rem;line-height:1.3}
+.card small{color:var(--mist);font-size:.92rem;line-height:1.55}
+.card .go{margin-top:auto;display:flex;align-items:center;gap:.4rem;color:var(--gold);font-size:.92rem;padding-top:10px}
+.card .go .ic{transition:transform .3s var(--e)}
+.card:hover .go .ic{transform:translateX(4px)}
+html[lang=ar] .card:hover .go .ic{transform:translateX(-4px)}
+.story-strip{position:relative;z-index:1;margin:28px auto 0;max-width:640px;display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:999px;border:1px solid var(--line);background:rgba(255,253,248,.7);text-decoration:none;transition:transform .3s var(--e),box-shadow .3s}
+.story-strip:hover{transform:translateY(-2px);box-shadow:0 20px 30px -20px rgba(15,27,45,.4)}
+.story-strip .p{flex:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold-2),#C99B4C);color:#14110A}
+.story-strip b{display:block;font-size:1.02rem;line-height:1.35}
+.story-strip small{display:block;color:var(--muted);font-size:.85rem;line-height:1.4}
+@media(max-width:1060px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){
+ .branches{margin-top:30px;padding-inline-start:44px}
+ .cards{grid-template-columns:minmax(0,1fr);gap:14px}
+ .card{min-height:0;display:grid;grid-template-columns:62px minmax(0,1fr);grid-template-areas:"art no" "art t" "art s" "art g";column-gap:14px;row-gap:2px;padding:18px}
+ .card .art{grid-area:art;height:auto;width:62px;margin:0;align-self:center}.card .art svg{width:100%;height:auto;max-height:56px}.card .no{grid-area:no}.card b{grid-area:t;font-size:1.2rem}.card small{grid-area:s}.card .go{grid-area:g;padding-top:4px}
+ .node{width:112px;height:112px}
+ .story-strip{border-radius:20px}
+}
+
+/* ================= SECTION PAGES ================= */
+.page{padding:clamp(36px,7vh,72px) 0 clamp(50px,8vh,90px)}
+.page-head{max-width:760px;margin-bottom:clamp(26px,5vh,44px)}
+.next{border-top:1px solid var(--line);padding:30px 0 50px}
+.next .wrap{display:grid;gap:16px}
+.next h3{margin:0;font-size:1.1rem;color:var(--muted);font-weight:500}
+.others{display:flex;flex-wrap:wrap;gap:10px}
+.others a{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem 1.1rem;border-radius:999px;border:1px solid var(--line);background:var(--paper);text-decoration:none;transition:border-color .2s,transform .2s}
+.others a:hover{border-color:var(--gold);transform:translateY(-2px)}
+.others a.hub-l{background:var(--ink);color:var(--day);border-color:var(--ink)}
+.others .n{font-size:.8rem;color:var(--gold-d)}
+.dark+.next{border-top:0}
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:start}
+.about .ph{aspect-ratio:4/5;border-radius:999px 999px 26px 26px;overflow:hidden;background:radial-gradient(120% 90% at 50% 100%,#24405E,#16263C 55%,#0F1B2D);max-width:360px;box-shadow:0 0 0 1px rgba(212,168,90,.35),0 40px 70px -40px rgba(15,27,45,.7)}
+.about .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 100%}
+.tl{list-style:none;margin:0;padding:0;border-inline-start:1.5px solid var(--line)}
+.tl li{position:relative;padding:0 1.3rem 1.3rem}
+.tl li::before{content:"";position:absolute;inset-inline-start:-7px;top:.55em;width:12px;height:12px;border-radius:50%;background:var(--day);border:2px solid var(--gold)}
+.tl li:last-child::before{background:var(--gold)}
+.tl small{display:block;color:var(--gold-d);font-size:.85rem}.tl b{font-size:1.15rem}.tl span{display:block;color:var(--muted);font-size:.95rem;line-height:1.6}
+.certs{display:grid;gap:10px;margin-top:22px}
+.cert{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line)}
+.cert small{display:block;color:var(--muted);font-size:.85rem}
+.pill{font-size:.8rem;padding:.15rem .7rem;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.pill.ok{background:#DCEDE8;border-color:transparent;color:#0B4A41}
+.tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.tools span{font-size:.9rem;padding:.2rem .8rem;border-radius:999px;border:1px solid var(--line);background:var(--paper)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:30px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px}
+.stat b{display:block;font-size:clamp(2rem,1.6rem + 1.6vw,2.8rem);line-height:1;font-weight:900}
+.stat span{display:block;margin-top:.5rem;color:var(--muted);font-size:.92rem;line-height:1.5}
+@media(max-width:860px){.about{grid-template-columns:minmax(0,1fr)}.about .ph{max-width:180px;order:-1;margin:0 auto}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* journey */
+.flow{position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.flow::before{content:"";position:absolute;top:26px;inset-inline:6%;height:2px;background:linear-gradient(90deg,var(--emerald-l),var(--gold))}
+html[lang=ar] .flow::before{background:linear-gradient(-90deg,var(--emerald-l),var(--gold))}
+.step .dot{position:relative;z-index:1;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--night-2);border:2px solid var(--gold);color:var(--gold);font-weight:700;font-size:1.1rem;margin-bottom:14px}
+.step h3{font-size:1.2rem;line-height:1.35;margin:0 0 .4rem}.step p{margin:0;color:var(--mist);font-size:.95rem;line-height:1.7}
+.step .n{display:inline-block;margin-top:.7rem;font-size:.85rem;padding:.15rem .7rem;border-radius:999px;background:rgba(79,179,165,.14);color:#A6E6DA;border:1px solid rgba(79,179,165,.3)}
+.flow-note{margin-top:32px;padding:16px 18px;border-radius:16px;border:1px solid var(--nline);background:var(--night-2);display:flex;gap:12px;align-items:center;color:var(--mist)}
+.flow-note b{color:var(--ivory)}.flow-note .ic{color:var(--gold);width:22px;height:22px}
+@media(max-width:1000px){.flow{grid-template-columns:minmax(0,1fr);gap:0}.flow::before{top:0;bottom:0;inset-inline-start:26px;inset-inline-end:auto;width:2px;height:auto;background:linear-gradient(180deg,var(--emerald-l),var(--gold))}html[lang=ar] .flow::before{background:linear-gradient(180deg,var(--emerald-l),var(--gold))}.step{display:grid;grid-template-columns:54px minmax(0,1fr);gap:16px;padding-bottom:22px}.step .dot{margin:0}}
+/* projects */
+.pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pc{display:flex;flex-direction:column;text-align:start;padding:0;border-radius:18px;border:1px solid var(--line);background:var(--paper);overflow:hidden;cursor:pointer;transition:transform .35s var(--e),box-shadow .35s}
+.pc:hover{transform:translateY(-4px);box-shadow:0 24px 40px -26px rgba(15,27,45,.5)}
+.pc .cv{aspect-ratio:16/9;background:#0A1322;overflow:hidden}.pc .cv img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--e)}.pc:hover .cv img{transform:scale(1.04)}
+.pc .bd{padding:14px 16px 16px;display:grid;gap:6px}.pc b{font-size:1.25rem;line-height:1.3}.pc small{color:var(--muted);font-size:.88rem;line-height:1.5}
+.st{justify-self:start;font-size:.78rem;padding:.12rem .65rem;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.st.live,.st.done{background:#DCEDE8;border-color:transparent;color:#0B4A41}
+@media(max-width:980px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.pgrid{grid-template-columns:minmax(0,1fr)}}
+.sheet{position:fixed;inset:0;z-index:60;background:rgba(10,19,34,.6);backdrop-filter:blur(6px);display:grid;place-items:center;padding:20px;opacity:0;visibility:hidden;transition:opacity .35s,visibility 0s .35s}
+.sheet.open{opacity:1;visibility:visible;transition:opacity .35s}
+.box{width:min(980px,100%);max-height:calc(100% - 20px);overflow:auto;background:var(--night);color:var(--ivory);border:1px solid var(--nline);border-radius:22px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);transform:translateY(20px);transition:transform .45s var(--e)}
+.sheet.open .box{transform:none}
+.media{background:#0A1322;padding:16px;display:grid;gap:10px;align-content:start}.media>img{width:100%;border-radius:12px;aspect-ratio:16/10;object-fit:contain;background:#081020}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap}.thumbs button{width:64px;aspect-ratio:16/10;border-radius:8px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;opacity:.65;background:#081020}.thumbs button[aria-pressed=true]{border-color:var(--gold);opacity:1}.thumbs img{width:100%;height:100%;object-fit:cover}
+.info{padding:24px 26px;position:relative}
+.x{position:absolute;inset-inline-end:14px;top:14px;width:40px;height:40px;border-radius:50%;border:1px solid var(--nline);background:var(--night-2);cursor:pointer;color:var(--ivory);display:grid;place-items:center}
+.info h3{font-size:2rem;margin:.6rem 0 .1rem;line-height:1.3}.info .cat{color:var(--mist);font-size:.88rem}.info dt{color:var(--gold);font-size:.88rem;margin-top:.8rem}.info dd{margin:.1rem 0 0;line-height:1.7}
+.info .st{border-color:var(--nline);color:var(--mist)}.info .st.live,.info .st.done{background:rgba(79,179,165,.14);color:#A6E6DA;border-color:rgba(79,179,165,.35)}
+@media(max-width:800px){.sheet{padding:0;place-items:end stretch}.box{grid-template-columns:minmax(0,1fr);border-radius:22px 22px 0 0;max-height:92%}}
+/* resume */
+.cvg{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,5vw,60px);align-items:start}
+.cvg .doc{border-radius:12px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(15,27,45,.5),0 0 0 1px var(--line);background:#fff}
+.cvg .side{position:sticky;top:92px;display:grid;gap:12px}
+@media(max-width:860px){.cvg{grid-template-columns:minmax(0,1fr)}.cvg .side{position:static;order:-1}}
+/* contact */
+.links{display:grid;gap:10px;max-width:560px}
+.links a{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:60px;padding:.8rem 1.1rem;border-radius:14px;border:1px solid var(--nline);background:var(--night-2);text-decoration:none;font-size:1.05rem}
+.links a:hover{border-color:rgba(212,168,90,.6)}.links span{color:var(--mist);font-size:.88rem;overflow-wrap:anywhere}@media(max-width:560px){.links a{flex-direction:column;align-items:flex-start;justify-content:center;gap:.1rem}}
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,60px);align-items:center}
+@media(max-width:860px){.contact{grid-template-columns:minmax(0,1fr)}}
+/* matla page */
+.mt-hero{background:radial-gradient(90% 80% at 80% 0%,#1B3A66 0%,#0A1A33 60%);color:var(--ivory);padding:clamp(40px,8vh,80px) 0;overflow:hidden}
+.mt-hg{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,5vw,64px);align-items:center}
+.mt-logo{width:clamp(110px,14vw,160px);margin-bottom:14px}
+.mt-hero h1{font-size:clamp(3rem,2rem + 5vw,5.6rem);margin:.2rem 0 .6rem;line-height:1.45}
+.mt-one{font-size:clamp(1.15rem,1rem + .6vw,1.45rem);color:#E9E2D2;max-width:44ch;margin:0 0 1.2rem;line-height:1.75}
+.mt-name{color:var(--mist);font-size:.98rem;max-width:52ch;margin:1.4rem 0 0;padding-inline-start:14px;border-inline-start:2px solid #D4B56A}
+.mt-btns{display:flex;flex-wrap:wrap;gap:10px}
+.mt-ghost{color:var(--ivory);border-color:rgba(243,238,228,.35)}
+.mt-hero .btn.gold{background:linear-gradient(135deg,#E8CD8A,#C9A961)}
+.mt-vid{margin:0;justify-self:center;width:min(340px,100%)}
+.mt-vid video{width:100%;aspect-ratio:9/16;border-radius:24px;background:#071226;box-shadow:0 0 0 1px rgba(212,181,106,.4),0 40px 70px -30px rgba(0,0,0,.8);display:block;object-fit:cover}
+.mt-vid figcaption{text-align:center;color:var(--mist);font-size:.88rem;margin-top:10px}
+.st.init{color:#8A6A1F;border-color:rgba(201,169,97,.6);background:rgba(212,181,106,.16)}
+.mt-hero .st.init,.dark .st.init{color:#F0D79A}
+.mt-sec{margin-bottom:clamp(44px,8vh,80px)}.mt-sec:last-child{margin-bottom:0}
+.mt-sec .lead{max-width:62ch}
+.mt-h3{font-size:1.25rem;margin:26px 0 12px}
+.mx{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+.mx-c{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.mx-c b{display:block;font-size:1.12rem;margin-bottom:.3rem}.mx-c p{margin:0;color:var(--muted);font-size:.97rem;line-height:1.75}
+.dark .mx-c{background:var(--night-2);border-color:var(--nline)}.dark .mx-c p{color:var(--mist)}
+.ax{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.axc{position:relative;background:var(--night);color:var(--ivory);border-radius:18px;padding:16px;display:grid;gap:4px;overflow:hidden}
+.axc span{color:#D4B56A;font-size:.85rem}.axc b{font-size:1.15rem}.axc small{color:var(--mist);font-size:.88rem;line-height:1.6}
+.axc:last-child{background:linear-gradient(160deg,#2A4A73,#0A1A33);box-shadow:inset 0 0 0 1px rgba(212,181,106,.55)}
+.mt-note{color:var(--muted);font-size:.95rem;margin:12px 0 0;max-width:70ch}
+.lv{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:end;max-width:640px;height:200px}
+.lv div{position:relative;height:100%;display:flex;flex-direction:column;justify-content:flex-end;gap:6px}
+.lv i{display:block;height:var(--h);border-radius:12px 12px 4px 4px;background:linear-gradient(180deg,#D4B56A,#9C7E3E);order:2}
+.lv div:nth-child(1) i{background:#C9C2B3}.lv div:nth-child(2) i{background:linear-gradient(180deg,#B9A57A,#8E7D58)}
+.lv span{position:absolute;bottom:8px;inset-inline:0;text-align:center;color:#fff;font-weight:700;z-index:1}
+.lv b{order:1;font-size:.9rem;text-align:center;line-height:1.35}
+.mt-gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}
+.mt-gal img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px}
+.tst{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:18px}
+.tst div{border:1px solid var(--nline);border-radius:16px;padding:16px;display:grid;gap:4px;align-content:start;background:var(--night-2)}
+.tst span{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--gold);color:var(--gold);font-size:.9rem}
+.tst b{font-size:1.08rem}.tst small{color:var(--mist);font-size:.9rem;line-height:1.6}
+.mt-tl{max-width:720px}.mt-tl li b{font-weight:500;font-size:1.05rem}
+.mt-tl li.gosi{background:linear-gradient(90deg,rgba(13,112,98,.1),transparent);border-radius:12px;padding-top:10px;padding-bottom:10px;margin-bottom:12px}
+.mt-tl li.gosi::before{background:var(--emerald);border-color:var(--emerald);top:1.1em}
+.fl{display:grid;gap:10px;max-width:760px}
+.fl a{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:14px;align-items:center;padding:14px 16px;border-radius:16px;border:1px solid var(--line);background:var(--paper);text-decoration:none;transition:border-color .2s,transform .2s}
+.fl a:hover{border-color:#C9A961;transform:translateY(-2px)}
+.fl .fi{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:#0A1A33;color:#D4B56A}
+.fl b{display:block;font-size:1.08rem}.fl small{display:block;color:var(--muted);font-size:.9rem;line-height:1.55}.fl em{font-style:normal;color:var(--muted);font-size:.82rem;white-space:nowrap}
+.mt-ask{background:#0A1A33;color:var(--ivory);border-radius:26px;padding:clamp(24px,4vw,44px);margin-top:clamp(36px,6vh,60px)}
+.mt-ask .lead{color:var(--mist)}.mt-ask .btn.solid{background:#D4B56A;border-color:#D4B56A;color:#0A1A33}.mt-ask .btn:not(.solid){color:var(--ivory)}
+@media(max-width:1000px){.ax,.tst{grid-template-columns:repeat(2,minmax(0,1fr))}.ax .axc:last-child,.tst div:last-child{grid-column:1/-1}}
+@media(max-width:860px){.mt-hg{grid-template-columns:minmax(0,1fr)}.mx{grid-template-columns:minmax(0,1fr)}.mt-gal{grid-template-columns:minmax(0,1fr)}.mt-vid{width:min(300px,80%)}}
+@media(max-width:560px){.ax,.tst{grid-template-columns:minmax(0,1fr)}.fl a{grid-template-columns:40px minmax(0,1fr)}.fl em{grid-column:2}.fl .fi{width:40px;height:40px}.lv{height:170px}.lv b{font-size:.78rem}}
+
+/* project pages */
+.pj-hero{background:radial-gradient(90% 80% at 85% 0%,#24405E 0%,var(--night) 60%);color:var(--ivory);padding:clamp(40px,8vh,80px) 0}
+.pj-hg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(24px,5vw,60px);align-items:center}
+.pj-hero h1{font-size:clamp(2.6rem,1.8rem + 4vw,4.8rem);line-height:1.35;margin:.5rem 0 .1rem}
+.pj-cat{color:var(--gold);font-size:1.05rem;margin-bottom:.8rem}
+.pj-hero .st{border-color:var(--nline);color:var(--mist)}.pj-hero .st.live,.pj-hero .st.done{background:rgba(79,179,165,.14);color:#A6E6DA;border-color:rgba(79,179,165,.35)}
+.pj-cover{margin:0;border-radius:20px;overflow:hidden;background:#0A1322;box-shadow:0 0 0 1px rgba(212,168,90,.3),0 40px 70px -30px rgba(0,0,0,.8)}
+.pj-cover img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.share{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:18px;font-size:.92rem;color:var(--mist)}
+.share button{display:inline-flex;align-items:center;gap:.35rem;min-height:40px;padding:0 .9rem;border-radius:999px;border:1px solid rgba(243,238,228,.28);background:rgba(243,238,228,.06);color:var(--ivory);cursor:pointer;font-size:.9rem}
+.share button:hover{border-color:var(--gold)}.share button b{font-weight:500}
+.share em{font-style:normal;color:var(--gold);font-size:.88rem;min-width:1px}
+.pj-ss{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pj-s{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:22px 22px 24px;overflow:hidden}
+.pj-n{position:absolute;inset-inline-end:16px;top:4px;font-size:4.2rem;font-weight:900;line-height:1.2;color:transparent;-webkit-text-stroke:1.2px rgba(148,105,42,.3)}
+.pj-s p{margin:.4rem 0 0;font-size:1.08rem;line-height:1.85}
+.pj-gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:26px}
+.pj-gal img{width:100%;border-radius:16px;aspect-ratio:16/10;object-fit:cover;background:#0A1322;box-shadow:0 20px 40px -26px rgba(15,27,45,.6)}
+.pj-gal img:only-child,.pj-gal img:last-child:nth-child(odd){grid-column:1/-1}
+.pj-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:clamp(36px,6vh,56px)}
+.pj-nb{display:grid;grid-template-columns:120px minmax(0,1fr);gap:14px;align-items:center;padding:10px;border-radius:18px;border:1px solid var(--line);background:var(--paper);text-decoration:none;transition:border-color .2s,transform .2s}
+.pj-nb:hover{border-color:var(--gold);transform:translateY(-2px)}
+.pj-nb img{width:120px;aspect-ratio:16/10;object-fit:cover;border-radius:12px;background:#0A1322}
+.pj-nb small{display:block;color:var(--gold-d);font-size:.82rem}.pj-nb b{display:block;font-size:1.15rem;line-height:1.35}.pj-nb em{display:block;font-style:normal;color:var(--muted);font-size:.85rem;line-height:1.5}
+a.pc{text-decoration:none;color:inherit}
+@media(max-width:860px){.pj-hg{grid-template-columns:minmax(0,1fr)}.pj-cover{order:-1}.pj-ss,.pj-gal,.pj-nav{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:480px){.pj-nb{grid-template-columns:90px minmax(0,1fr)}.pj-nb img{width:90px}}
+
+footer{color:var(--muted);padding:20px 0 30px;font-size:.88rem}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.001ms!important;animation-duration:.001ms!important;transition-delay:0s!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap">
+ <a class="brand" href="/home/"><img src="/img/thamer-avatar.webp" alt=""><span data-t="name"></span></a>
+ <nav class="crumb" id="crumb" aria-label="breadcrumb"></nav>
+ <div class="sp"><a class="btn story" href="/#play" id="storyBtn"></a>
+ <div class="lang" role="group" aria-label="Language · اللغة"><span class="th"></span><button type="button" data-l="en" lang="en">EN</button><button type="button" data-l="ar" lang="ar">عربي</button></div></div>
+</div></header>
+<main id="main"></main>
+<nav class="next" id="next" aria-label="sections"></nav>
+<footer><div class="wrap" id="foot"></div></footer>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="pT"><div class="box" id="sbox"></div></div>
+<script>
+(()=>{
+"use strict";
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const PAGE=document.documentElement.dataset.page;
+let lang=document.documentElement.lang==='en'?'en':'ar'; const A=()=>lang==='ar';
+const L=o=>o==null?'':(typeof o==='string'?o:(o[lang]??o.ar));
+const num=n=>A()?n.toLocaleString('ar-SA',{useGrouping:false}):String(n);
+const ic=d=>`<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="${d}"/></svg>`;
+const I={x:ic('M4 4l8 8M12 4l-8 8'),ext:ic('M11 5l-6 6M5 5h6v6'),down:ic('M8 2v9M4 7.5l4 4 4-4M3 14h10'),play:`<svg class="ic" viewBox="0 0 16 16" aria-hidden="true" style="fill:currentColor;stroke:none"><path d="M5 3.5v9l7.5-4.5z"/></svg>`,bolt:ic('M9 1.5L3.5 9H8l-1 5.5L12.5 7H8z'),arr:`<span class="flip">${ic('M3 8h10M9 4l4 4-4 4')}</span>`,home:ic('M2.5 7.5L8 3l5.5 4.5V13a1 1 0 0 1-1 1H3.5a1 1 0 0 1-1-1z'),sep:`<span class="flip" style="opacity:.5">${ic('M6 4l4 4-4 4')}</span>`};
+const STATUS={live:{ar:'شغّال',en:'Live'},done:{ar:'مكتمل',en:'Completed'},prototype:{ar:'نسخة أولى',en:'Prototype'},experiment:{ar:'تجربة',en:'Experiment'},init:{ar:'مبادرة قيد التحقق',en:'Initiative · validating'}};
+const PROJECTS=[
+ {n:{ar:'مطلع',en:'Matla'},slug:'matla',page:'/home/projects/matla/',st:'init',page:'/home/projects/matla/',cat:{ar:'مؤشر سعودي لتجربة الموظف الجديد',en:'A Saudi index for the new-hire experience'},img:['matla-1','matla-2','matla-3','matla-4'],
+  d:{ar:'مؤشر يقيس كيف تستقبل الشركة موظفها الجديد في أول ١٨٠ يوم، ويعطيها رقم من ١٠٠، ويقارنها بالشركات اللي مثلها، ويطلع لها خطوات تحسين واضحة.',en:'An index that measures how a company welcomes its new hires in their first 180 days, gives it a score out of 100, compares it with similar companies and turns the gaps into clear next steps.'},
+  s:[{ar:'كل شركة تستقبل موظفها الجديد على اجتهادها، وما فيه مقياس سعودي تعرف فيه هي وين مقارنة بغيرها، مع إن أول ١٨٠ يوم هي فترة التجربة في نظام العمل.',en:'Every company onboards its own way, and there is no Saudi benchmark to see where it stands, even though the first 180 days are the probation period under the Labor Law.'},
+     {ar:'٢٠ سؤال على خمس محاور، وكل جواب له أربع مستويات. سويت ملف مبادرة من ٥٠ صفحة، وخطة تحقق علمي، ونموذج تقرير، وهوية وفيديو.',en:'20 questions across five areas, each with four maturity levels. I built a 50-page initiative file, a scientific validation plan, a sample report, a brand and a video.'},
+     {ar:'مسودة أولى قيد التحقق. قدّمتها لوزارة الموارد البشرية، والتأمينات الاجتماعية قبلت مقترحي واعتمدته في سجلات التطوير.',en:'An early draft now in validation. Submitted to the Ministry of Human Resources, and GOSI accepted my proposal into its development records.'}]},
+ {n:{ar:'مجد',en:'MAJD'},slug:'majd',page:'/home/projects/majd/',st:'live',url:'https://majd.cc',cat:{ar:'منصة موارد بشرية سعودية',en:'Saudi HR platform'},img:['majd1','majd2','majd4','majd5'],
+  d:{ar:'منصة سعودية مجانية تجمع لك المعرفة والأدوات والقوالب والحاسبات والمسارات المهنية في مكان واحد، بالعربي والإنجليزي.',en:'A free Saudi platform that brings HR knowledge, tools, templates, calculators and career paths together in one place, in Arabic and English.'},
+  s:[{ar:'المعلومات والأدوات اللي يحتاجها مختص الموارد البشرية متفرقة في أماكن كثيرة.',en:'The information and tools an HR practitioner needs are scattered across many places.'},
+     {ar:'منصة ويب فيها مركز معرفة وحاسبات ونماذج وأدوات عملية، سويتها بمساعدة أدوات التطوير بالذكاء الاصطناعي.',en:'A web platform with a knowledge hub, calculators, forms and practical tools, built with AI-assisted development tools.'},
+     {ar:'منصة شغّالة وتقدر تستخدمها الحين.',en:'Live and ready to use today.'}]},
+ {n:{ar:'قبل يومك الأول',en:'Before Your First Day'},slug:'before-your-first-day',page:'/home/projects/before-your-first-day/',st:'live',url:'https://before-day-one.mrthameralshehri.workers.dev',cat:{ar:'تجربة ويب لما قبل المباشرة',en:'Pre-boarding web experience'},img:['byfd1','byfd2','byfd3'],
+  d:{ar:'تجربة تفاعلية تساعد المرشح يفهم دوره قبل لا يوقّع العرض الوظيفي.',en:'An interactive experience that helps a candidate understand the role before signing the offer.'},
+  s:[{ar:'التواصل مع الموظف الجديد قبل ما يباشر قليل جدًا.',en:'There is very little contact with a new hire before they start.'},
+     {ar:'تجربة ويب تفاعلية فيها أسئلة، تحلل إجاباتك وتطلع لك نتائج على مقاسك.',en:'An interactive web experience with questions that analyses your answers and gives you tailored results.'},
+     {ar:'نموذج تقدر تجربه، ويوضح كيف نقدر نحسّن التواصل قبل المباشرة.',en:'A working model that shows how pre-joining communication can be improved.'}]},
+ {n:{ar:'اعتماد سباهي',en:'CBAHI Accreditation'},slug:'cbahi',page:'/home/projects/cbahi/',st:'done',cat:{ar:'امتثال الموارد البشرية · مستشفى أندلسية',en:'HR compliance · Andalusia Hospital'},img:['cbahi'],
+  d:{ar:'جهّزت ملفات الموظفين لاعتماد المركز السعودي لاعتماد المنشآت الصحية (سباهي).',en:'Getting employee files ready for accreditation by the Saudi Central Board for Accreditation of Healthcare Institutions (CBAHI).'},
+  s:[{ar:'ملفات موظفي المستشفى لازم تطابق معايير سباهي قبل زيارة الاعتماد بداية ٢٠٢٥.',en:"The hospital's employee files had to meet CBAHI standards before the accreditation visit in early 2025."},
+     {ar:'دقّقت كل ملف حسب المعايير، وكمّلت النواقص، ورتّبت السجلات عشان تكون جاهزة للتدقيق.',en:'I audited every file against the standards, completed what was missing, and organised the records for review.'},
+     {ar:'دقّقت وحدّثت أكثر من ٢٠٠٠ ملف موظف، في مستشفى فيه أكثر من ١٦٠٠ موظف. وعدّت الزيارة وأخذ المستشفى الاعتماد.',en:'2,000+ employee files audited and updated, across a workforce of 1,600+. The visit went through and the hospital earned its accreditation.'}]},
+ {n:{ar:'مسار',en:'MASAR'},slug:'masar',page:'/home/projects/masar/',st:'live',url:'https://lnkd.in/dRkbS_9u',urlLbl:{ar:'جرّب البوت',en:'Try the bot'},cat:{ar:'مساعد مهني · Telegram · ChatGPT',en:'Career assistant · Telegram · ChatGPT'},img:['masar'],
+  d:{ar:'بوت يساعد الباحث عن عمل في أكثر من خطوة في رحلته المهنية، وبدل ما تكون كل خطوة في مكان، يجمع لك أهم الأشياء في مكان واحد.',en:'A bot that helps job seekers through several steps of their career journey, bringing the essentials together in one place.'},
+  s:[{ar:'كل خطوة في البحث عن وظيفة موجودة في مكان مختلف.',en:'Every step of a job search lives in a different place.'},
+     {ar:'سويته في Telegram وربطته مع ChatGPT، عشان يفهم وش يبي المستخدم ويتعامل معه حسب احتياجه.',en:'Built on Telegram and connected to ChatGPT, so it understands what the user wants and responds to their need.'},
+     {ar:'سيرة ذاتية بنظام ATS · تحليل السيرة · البحث عن الفرص · الاستعداد للمقابلات · الاستفسارات المهنية.',en:'ATS-friendly CV · CV analysis · job search · interview preparation · career questions.'}],l3:{ar:'وش يقدّم',en:'What it does'}},
+ {n:{ar:'سند',en:'SANAD'},slug:'sanad',page:'/home/projects/sanad/',st:'experiment',cat:{ar:'مساعد موارد بشرية ذكي',en:'AI HR assistant'},img:['sanad'],
+  d:{ar:'مساعد ذكي يرد على الموظفين على طول عن السياسات والتهيئة والإجازات والإجراءات الداخلية، بالعربي والإنجليزي.',en:'An AI assistant that instantly answers employee questions on policies, onboarding, leave and internal procedures, in Arabic and English.'},
+  s:[{ar:'نفس الأسئلة تتكرر، والمعلومة صعب توصلها بسرعة، وفريق الموارد البشرية عليه ضغط.',en:'The same questions keep coming back, answers are slow to find, and the HR team carries the load.'},
+     {ar:'ذكاء اصطناعي محادثي ياخذ إجاباته من مستندات الشركة، وفيه طريقة تطلب فيها تواصل مع الموارد البشرية، وإرشادات عامة من نظام العمل السعودي للتوعية.',en:'Conversational AI that draws answers from company documents, with a way to request HR contact and general Saudi Labor Law guidance for awareness.'},
+     {ar:'خدمة ذاتية ذكية بإجابات دقيقة وثابتة بلغتين. وللحين ما قسنا أثرها على الشغل.',en:'Smart self-service with accurate, consistent answers in two languages. Its operational impact has not been measured yet.'}]},
+ {n:{ar:'ريم',en:'REEM'},slug:'reem',page:'/home/projects/reem/',st:'prototype',cat:{ar:'مساعد صوتي ذكي · Retell AI',en:'Voice AI · Retell AI'},img:['reem'],
+  d:{ar:'مساعدة صوتية ذكية للموارد البشرية، تكلّم الموظفين بالاتصال.',en:'A smart HR voice assistant that talks with employees over the phone.'},
+  s:[{ar:'الموظفين يحتاجون طريقة سهلة يسألون فيها عن الأشياء اللي تتكرر.',en:'Employees need an easy way to ask about recurring things.'},
+     {ar:'بدأت من ملاحظة بسيطة لين صارت تجربة اتصال حقيقية: سويتها على Retell AI، بصوت سعودي وسيناريوهات محادثة واختبرت المكالمات.',en:'From a simple observation to a real calling experience: built on Retell AI, with a Saudi voice, conversation scenarios and tested calls.'},
+     {ar:'تجربة صوتية شغّالة، بس مو نظام منشور على مستوى شركة كاملة.',en:'A working voice prototype, not a company-wide system.'}]},
+ {n:{ar:'بيّنة',en:'BAYYINAH'},slug:'bayyinah',page:'/home/projects/bayyinah/',st:'prototype',cat:{ar:'التحقق من الإعلانات الوظيفية',en:'Job-ad verification'},img:['bayyinah'],
+  d:{ar:'افهم وش يثبت إعلان الوظيفة قبل لا تعطيهم بياناتك.',en:'Understand the evidence behind a job ad before you share your data.'},
+  s:[{ar:'صعب تفرّق بين إعلان الوظيفة الموثوق والمشبوه.',en:'It is hard to tell a trustworthy job ad from a suspicious one.'},
+     {ar:'يفحص الجهة والقناة والتفويض والطلب، وبعدين يوريك وش يثبته الدليل ووش ما يثبته.',en:'It checks the employer, the channel, the authorisation and the request, then shows what the evidence does and does not prove.'},
+     {ar:'نسخة أولى تقدر تجربها. وللحين ما عندي نتائج مؤكدة أنشرها.',en:'A first version you can try. No confirmed results to publish yet.'}]}
+];
+const T={name:{ar:'ثامر الشهري',en:'Thamer Alshehri'},role:{ar:'أخصائي موارد بشرية',en:'Human Resources Specialist'},home:{ar:'الرئيسية',en:'Home'},close:{ar:'إغلاق',en:'Close'}};
+/* section art (line drawings) */
+const ART={
+ about:`<svg viewBox="0 0 80 74"><circle cx="40" cy="24" r="13"/><path d="M14 70c3-15 13-23 26-23s23 8 26 23"/><circle class="em" cx="40" cy="24" r="21" stroke-dasharray="2 5"/></svg>`,
+ journey:`<svg viewBox="0 0 120 74"><path d="M8 58 C 30 58, 30 20, 56 20 S 86 54, 112 22"/><circle cx="8" cy="58" r="5"/><circle cx="56" cy="20" r="5"/><circle class="em" cx="112" cy="22" r="6"/><circle cx="84" cy="44" r="4"/><circle cx="32" cy="38" r="4"/></svg>`,
+ projects:`<svg viewBox="0 0 96 74"><rect x="6" y="8" width="38" height="28" rx="6"/><rect x="52" y="8" width="38" height="28" rx="6"/><rect x="6" y="42" width="38" height="26" rx="6"/><rect class="em" x="52" y="42" width="38" height="26" rx="6"/><path d="M64 55h14M71 48v14" class="em"/></svg>`,
+ resume:`<svg viewBox="0 0 70 74"><path d="M14 4h30l16 16v48a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M44 4v16h16"/><path d="M22 34h28M22 44h28M22 54h18"/><path class="em" d="M22 24h12"/></svg>`,
+ contact:`<svg viewBox="0 0 96 74"><path d="M8 14h56a6 6 0 0 1 6 6v28a6 6 0 0 1-6 6H30l-14 12V54H8a6 6 0 0 1-6-6V20a6 6 0 0 1 6-6z"/><path class="em" d="M44 28h40a6 6 0 0 1 6 6v20a6 6 0 0 1-6 6h-6v10l-12-10H44"/><circle cx="22" cy="34" r="2.2"/><circle cx="34" cy="34" r="2.2"/><circle cx="46" cy="34" r="2.2"/></svg>`
+};
+const SECS=[
+ {id:'about',t:{ar:'مين أنا',en:'About me'},s:{ar:'رحلتي، وشهاداتي، وأرقامي.',en:'My path, certifications and numbers.'}},
+ {id:'journey',t:{ar:'رحلة الموظف معي',en:'The employee journey'},s:{ar:'من العرض الوظيفي، لين ما بعد التثبيت.',en:'From the offer to life after probation.'}},
+ {id:'projects',t:{ar:'المشاريع',en:'Projects'},s:{ar:'أفكار صارت أدوات.',en:'Ideas that became tools.'}},
+ {id:'resume',t:{ar:'السيرة الذاتية',en:'Resume'},s:{ar:'كل شي في صفحة وحدة.',en:'Everything on one page.'}},
+ {id:'contact',t:{ar:'تواصل',en:'Contact'},s:{ar:'القصة ما خلصت.',en:'The story is not over.'}}
+];
+const STATS=[[40,true,{ar:'موظف جديد جهّزت لهم أول يوم',en:'new hires onboarded'}],[30,false,{ar:'تقييم فترة تجربة خلّصتها',en:'probation reviews completed'}],[200,true,{ar:'عقد وسجل تعويضات راجعته',en:'contracts and compensation records reviewed'}],[35,false,{ar:'موظف نسّقت تقييمهم وتكريمهم الشهري',en:'employees in monthly evaluations and recognition'}]];
+const FLOW=[
+ {h:{ar:'التوظيف',en:'Hiring'},p:{ar:'أفرز الطلبات وأنسّق المقابلات، وأراجع العقد وسجلات التعويضات قبل ما توصل للمرشح.',en:'I screen applications, schedule interviews, and review the contract and compensation records before they reach the candidate.'},n:{ar:'٨ وظائف · ٣ تعيينات',en:'8 roles · 3 hires'}},
+ {h:{ar:'قبل المباشرة',en:'Before day one'},p:{ar:'أجهّز المستندات، وأنسّق مع التقنية والمدير، وأتأكد إن الموظف يعرف وش ينتظره.',en:'I prepare documents, coordinate with IT and the manager, and make sure the new hire knows what to expect.'}},
+ {h:{ar:'أول يوم',en:'Day one'},p:{ar:'أستقبل الموظف وأتأكد إن مكتبه وأوراقه وكل شي جاهز، عشان يبدأ بدون لخبطة.',en:'I welcome the new hire and make sure their desk, papers and everything else are ready.'},n:{ar:'+٤٠ موظف',en:'40+ new hires'}},
+ {h:{ar:'فترة التجربة',en:'Probation'},p:{ar:'سويت تذكيرات بـ Power Automate تنبّه المدير والموارد البشرية قبل نهاية التجربة بشهر.',en:'I built Power Automate reminders that alert the manager and HR a month before probation ends.'}},
+ {h:{ar:'نهاية فترة التجربة',en:'End of probation'},p:{ar:'أنسّق التقييم مع المدير، وأوثّق القرار في وقته.',en:'I coordinate the review with the manager and document the decision on time.'},n:{ar:'٣٠ تقييم',en:'30 reviews'}},
+ {h:{ar:'بعد التثبيت',en:'After confirmation'},p:{ar:'أنسّق التقييمات والتكريم كل شهر، وأراجع طلبات السلف والقروض كمراجع أول.',en:'I coordinate monthly evaluations and recognition, and act as first-level reviewer for salary advance and loan requests.'},n:{ar:'٣٥ موظف',en:'35 employees'}}
+];
+const CV='/files/Thamer_Alshehri_HR_Specialist.pdf', LI='https://www.linkedin.com/in/thameralshehri';
+
+/* ---------- pages ---------- */
+function hub(){return `<section class="hub"><div class="wrap">
+ <div class="root rv"><div class="node" id="node"><img src="/img/thamer-cut.webp" alt="${L(T.name)}"></div>
+  <h1>${A()?'أهلًا، أنا ثامر.':"Hi, I'm Thamer."}</h1>
+  <p class="lead">${A()?'أخصائي موارد بشرية، أشتغل على التفاصيل اللي محد يشوفها.':'An HR specialist who works on the details nobody sees.'}</p>
+  <span class="pick"><i></i>${A()?'اختار من وين تبدأ':'Choose where to start'}</span></div>
+ <div class="branches" id="branches"><svg class="wires" id="wires" aria-hidden="true"><defs><linearGradient id="wg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D4A85A"/><stop offset="1" stop-color="#4FB3A5"/></linearGradient></defs></svg>
+  <div class="cards">${SECS.map((s,i)=>`<a class="card" href="/home/${s.id}/" data-i="${i}"><span class="no">${num(i+1)}</span><span class="art">${ART[s.id]}</span><b>${L(s.t)}</b><small>${L(s.s)}</small><span class="go">${A()?'ادخل':'Enter'} ${I.arr}</span></a>`).join('')}</div>
+  <a class="story-strip" href="/#play"><span class="p">${I.play}</span><span><b>${A()?'أو شاهد القصة: ورا التفاصيل':'Or watch the story: Behind the details'}</b><small>${A()?'قصة قصيرة عن أول يوم لسارة، والشغل اللي كان وراه.':"A short story about Sara's first day, and the work behind it."}</small></span></a>
+ </div></div></section>`}
+function head(id,k,h,p,dark){return `<div class="page-head rv"><span class="k">${k}</span><h2>${h}</h2>${p?`<p class="lead">${p}</p>`:''}</div>`}
+function about(){const tl=A()?[['يونيو ٢٠٢٤','بكالوريوس الإدارة العامة','جامعة الملك عبدالعزيز'],['يوليو ٢٠٢٤ – مارس ٢٠٢٥','أخصائي عمليات موارد بشرية (تمهير)','مستشفى أندلسية · دقّقت أكثر من ٢٠٠٠ ملف موظف قبل زيارة سباهي، والمستشفى حصل على الاعتماد'],['مارس – أغسطس ٢٠٢٥','منسق موارد بشرية','مستشفى أندلسية · الإجازات والخطابات وسجلات أكثر من ١٦٠٠ موظف'],['أغسطس ٢٠٢٥ – فبراير ٢٠٢٦','برنامج أمين لتطوير الخريجين','هيئة الزكاة والضريبة والجمارك'],['مارس ٢٠٢٦ – الآن','أخصائي موارد بشرية','مخزن الأدوية العربي السعودي · قطاع الأدوية']]
+ :[['Jun 2024','Bachelor of Public Administration','King Abdulaziz University'],['Jul 2024 – Mar 2025','HR Operations Specialist (Tamheer)','Andalusia Hospital · audited 2,000+ employee files ahead of CBAHI; the hospital earned accreditation'],['Mar – Aug 2025','HR Coordinator','Andalusia Hospital · leave, letters and records for 1,600+ employees'],['Aug 2025 – Feb 2026','Ameen Graduate Development Program','Zakat, Tax and Customs Authority'],['Mar 2026 – now','Human Resources Specialist','Saudi Arabian Drug Store (SADSCO)']];
+ return `<section class="page"><div class="wrap">${head('about',A()?'مين أنا':'About me',A()?'أخصائي موارد بشرية، يحب يسهّل الأشياء.':'An HR specialist who likes making things easier.',A()?'بدأت في الموارد البشرية في يوليو ٢٠٢٤، واشتغلت في القطاع الصحي وقطاع الأدوية. أحب أحوّل الإجراءات الصعبة لخطوات سهلة وتلقائية.':'I started in HR in July 2024, working in healthcare and pharma. I like turning complicated procedures into simple, automated steps.')}
+ <div class="about"><div class="rv"><ol class="tl">${tl.map(x=>`<li><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></li>`).join('')}</ol>
+ <div class="certs">${[['aPHRi','HRCI',A()?'خلّصتها · أبريل ٢٠٢٦':'Earned · Apr 2026',1],['CIPD Level 5',A()?'دبلوم مشارك في إدارة الأفراد':'Associate Diploma in People Management',A()?'أدرسها · مارس ٢٠٢٧':'In progress · Mar 2027']].map(c=>`<div class="cert"><div><b>${c[0]}</b>${c[1]?`<small>${c[1]}</small>`:''}</div><span class="pill ${c[3]?'ok':''}">${c[2]}</span></div>`).join('')}</div>
+ <div class="tools">${['ZenHR','Power Automate','Excel',A()?'قوى':'Qiwa',A()?'التأمينات الاجتماعية':'GOSI',A()?'مدد':'Mudad',A()?'العربية: اللغة الأم':'Arabic: native',A()?'الإنجليزية: متوسط':'English: intermediate'].map(t=>`<span>${t}</span>`).join('')}</div></div>
+ <div class="ph rv"><img src="/img/thamer-cut.webp" alt="${L(T.name)}"></div></div>
+ <div class="stats rv">${STATS.map(s=>`<div class="stat"><b dir="ltr">${s[1]?'+':''}${num(s[0])}</b><span>${L(s[2])}</span></div>`).join('')}</div></div></section>`}
+function journey(){return `<section class="page dark"><div class="wrap">${head('journey',A()?'رحلة الموظف معي':'The employee journey',A()?'من العرض الوظيفي، لين ما بعد فترة التجربة.':'From the job offer, to life after probation.',A()?'هذي المراحل اللي أشتغل عليها مع كل موظف جديد، خطوة بخطوة.':'These are the stages I handle with every new hire, step by step.')}
+ <div class="flow rv">${FLOW.map((f,i)=>`<div class="step"><span class="dot">${num(i+1)}</span><div><h3>${L(f.h)}</h3><p>${L(f.p)}</p>${f.n?`<span class="n">${L(f.n)}</span>`:''}</div></div>`).join('')}</div>
+ <div class="flow-note rv">${I.bolt}<span><b>${A()?'وطول الرحلة:':'Throughout the journey:'}</b> ${A()?'أحوّل الخطوات المتكررة لأتمتة سهلة بـ Power Automate وExcel، مثل تذكيرات فترة التجربة، وتهاني أعياد ميلاد الموظفين.':'I turn repetitive steps into simple automations with Power Automate and Excel, like probation reminders and employee birthday greetings.'}</span></div></div></section>`}
+function projects(){return `<section class="page"><div class="wrap">${head('projects',A()?'المشاريع':'Projects',A()?'أفكار صارت أدوات.':'Ideas that became tools.',A()?'جنب شغلي أسوي أدوات وتجارب رقمية للموارد البشرية. وكل مشروع معروض بحالته الحقيقية.':'Alongside my job, I build HR tools and digital experiences. Each one shows its real status.')}
+ <div class="pgrid rv">${PROJECTS.map((p,i)=>`<a class="pc" href="${p.page}"><span class="cv"><img src="/img/${p.img[0]}.webp" alt="" loading="lazy"></span><span class="bd"><span class="st ${p.st}">${L(STATUS[p.st])}</span><b>${L(p.n)}</b><small>${L(p.d)}</small></span></a>`).join('')}</div></div></section>`}
+function resume(){return `<section class="page"><div class="wrap">${head('resume',A()?'السيرة الذاتية':'Resume',A()?'كل شي في صفحة وحدة.':'Everything on one page.')}
+ <div class="cvg"><div class="doc rv"><img src="/img/cv.webp" alt="${A()?'السيرة الذاتية لثامر الشهري':'Thamer Alshehri resume'}"></div><div class="side rv"><a class="btn solid" href="${CV}" download>${A()?'نزّل السيرة الذاتية (PDF)':'Download resume (PDF)'} ${I.down}</a><a class="btn" href="${LI}" target="_blank" rel="noopener">LinkedIn ${I.ext}</a><p class="lead" style="font-size:1rem">${A()?'السيرة بالإنجليزي، ومحدّثة باستمرار.':'In English, and kept up to date.'}</p></div></div></div></section>`}
+function contact(){return `<section class="page dark"><div class="wrap contact"><div class="rv"><span class="k">${A()?'تواصل':'Contact'}</span><h2>${A()?'القصة ما خلصت. إحنا في بدايتها.':'The story is not over. We are at the beginning.'}</h2>
+ <p class="lead">${A()?'كل يوم فيه تفاصيل جديدة تنكتب. لو حاب تكمّل القصة معي، أو تسولف عن الموارد البشرية وتجربة الموظف، أنا هنا.':'New details get written every day. If you want to continue the story with me, or just talk about HR and employee experience, I am here.'}</p>
+ <a class="btn gold" href="/#play">${I.play} ${A()?'شاهد القصة من البداية':'Watch the story from the start'}</a></div>
+ <div class="links rv"><a href="${LI}" target="_blank" rel="noopener">LinkedIn <span dir="ltr">linkedin.com/in/thameralshehri ${I.ext}</span></a><a href="mailto:mrthameralshehri@gmail.com">${A()?'البريد الإلكتروني':'Email'} <span dir="ltr">mrthameralshehri@gmail.com</span></a><a href="${CV}" download>${A()?'السيرة الذاتية':'Resume'} <span>PDF ${I.down}</span></a></div></div></section>`}
+function matla(){const a=A(),F='/files/matla/';
+ const axes=a?[['الامتثال','العقد في قوى، والتسجيل في التأمينات، والسياسات المكتوبة.'],['الوضوح','يعرف وش المطلوب منه، وأهدافه مكتوبة، ولقاءات المتابعة في وقتها.'],['الثقافة','يفهم طريقة الشغل وجو المكان.'],['الارتباط','يحس إنه واحد من الفريق، وله أحد يرجع له.'],['الواقع السعودي','موظف الفرع البعيد والموظف الميداني ياخذون نفس التجربة.']]
+ :[['Compliance','Contract on Qiwa, GOSI registration and written policies.'],['Clarity','Knows what is expected, has written goals and timely check-ins.'],['Culture','Understands how work gets done and the feel of the place.'],['Connection','Feels part of the team, with someone to turn to.'],['Saudi reality','Remote-branch and field staff get the same experience.']];
+ const lv=a?['غير موجود','اجتهادي','موثّق','ممنهج ومقاس']:['Not in place','Ad hoc','Documented','Systematic & measured'];
+ const tests=a?[['صدق المحتوى','هل الأسئلة العشرين هي الممارسات الصح؟ بحكم خبراء.'],['الثبات','هل تطلع نفس الدرجة لو جاوبت الشركة مرتين، أو جاوب شخصين منها؟'],['صدق البناء','هل المحاور الخمسة منفصلة فعلًا، وتتفق مع اللي يعيشه الموظفين الجدد؟'],['الصدق التنبؤي','هل الشركات الأعلى درجة يطلع منها موظفين جدد أقل خلال ١٨٠ يوم؟'],['العدالة','هل يقيس الشركة الصغيرة والكبيرة، وكل القطاعات والمناطق، بنفس المسطرة؟']]
+ :[['Content validity','Are the 20 questions the right practices? Judged by experts.'],['Reliability','Does a company get the same score twice, or from two respondents?'],['Construct validity','Are the five areas truly distinct, and do they match what new hires live?'],['Predictive validity','Do higher-scoring companies lose fewer new hires within 180 days?'],['Fairness','Does it measure small and large firms, all sectors and regions, the same way?']];
+ const tl=a?[['نوفمبر ٢٠٢٦','ملف المبادرة بنسخته الثانية، والهوية، والفيديو، والنسخة الأولى من المنصة.'],['نوفمبر ٢٠٢٦','قدّمت المبادرة لوزارة الموارد البشرية والتنمية الاجتماعية.'],['نوفمبر ٢٠٢٦','التأمينات الاجتماعية قبلت مقترحي واعتمدته في سجلات التطوير، ودعمهم كبّر المشروع.',1],['ديسمبر ٢٠٢٦ – يناير ٢٠٢٧','أختبر ستة افتراضات حرجة، وبعدها أقرر: أكمل، أو أعدّل، أو أوقف.'],['ديسمبر ٢٠٢٦ – مارس ٢٠٢٨','التحقق العلمي من المنهجية على خمس مراحل، ولا يُعلن المؤشر قبل ما يجتازها.']]
+ :[['Nov 2026','Initiative file (v0.2), brand, video and a first version of the platform.'],['Nov 2026','Submitted to the Ministry of Human Resources and Social Development.'],['Nov 2026','GOSI accepted my proposal into its development records, and their support helped the project grow.',1],['Dec 2026 – Jan 2027','Testing six critical assumptions, then deciding: continue, adjust or stop.'],['Dec 2026 – Mar 2028','Scientific validation of the method in five phases; no public index before it passes.']];
+ const goals=[[300,a?'أخصائي يشخّصون شركاتهم':'HR specialists assessing their companies'],[1000,a?'رد من موظفين جدد':'responses from new hires'],[8,a?'قطاعات بمقارنة سعودية':'sectors with Saudi benchmarks'],[1,a?'تقرير «حالة التهيئة ٢٠٢٧»':'"State of Onboarding 2027" report']];
+ const files=[[F+'Matla_Initiative_File_v0.2.pdf',a?'ملف المبادرة':'Initiative file',a?'الصورة كاملة: الفكرة، والقيمة، والتحليل، والحوكمة، والتنفيذ. ٥٠ صفحة.':'The full picture: idea, value, analysis, governance and delivery. 50 pages.','PDF · 3.4 MB'],
+  [F+'Matla_Sample_Report.pdf',a?'نموذج التقرير':'Sample report',a?'وش يوصل الشركة بعد ما تجاوب، على شركة خيالية. ٦ صفحات.':'What a company receives after answering, for a fictional company. 6 pages.','PDF · 0.2 MB']];
+ const box=(t,b)=>`<div class="mx-c rv"><b>${t}</b><p>${b}</p></div>`;
+ return `<section class="mt-hero"><div class="wrap mt-hg">
+  <div class="rv"><img class="mt-logo" src="/img/matla-logo.svg" alt="${a?'شعار مطلع':'Matla logo'}"><span class="st init">${L(STATUS.init)}</span>
+  <h1>${a?'مطلع':'Matla'}</h1><p class="mt-one">${a?'مؤشر سعودي يقيس تجربة الموظف الجديد في أول ١٨٠ يوم، ويقارنها بالسوق، ويحوّلها لخطوات تحسين واضحة.':'A Saudi index that measures the new-hire experience in the first 180 days, compares it with the market and turns it into clear next steps.'}</p>
+  <div class="mt-btns"><a class="btn gold" href="#files">${I.down} ${a?'ملفات المشروع':'Project files'}</a><a class="btn mt-ghost" href="https://lnkd.in/p/dqJCXmtk" target="_blank" rel="noopener">LinkedIn ${I.ext}</a></div>${shareBox('/home/projects/matla/')}
+  <p class="mt-name">${a?'«المَطلع» هو أول الشي ومكان طلوعه، مثل مطلع الشمس. ومطلع الموظف هو أيامه الأولى.':'"Matla" is Arabic for the beginning of something and the place it rises from, like a sunrise. A new hire\'s matla is their first days.'}</p></div>
+  <figure class="mt-vid rv"><video controls playsinline preload="metadata" poster="/img/matla-poster.webp"><source src="/files/matla/matla-video.mp4" type="video/mp4"></video><figcaption>${a?'الفيديو التعريفي · دقيقتين ونص':'Intro video · 2.5 minutes (Arabic)'}</figcaption></figure>
+ </div></section>
+ <section class="page"><div class="wrap">
+  <div class="mt-sec rv"><span class="k">${a?'المشكلة':'The problem'}</span><h2>${a?'موظف جديد يوصل، ومحد يدري إنه جاي.':'A new hire arrives, and nobody knew they were coming.'}</h2>
+  <p class="lead">${a?'لا مكتب، ولا جهاز، ولا أحد يقول له وش المطلوب منه. وهالشي يصير كثير، والشركة هي الخسرانة: وقت توظيف راح، وتدريب راح، وشخص كان ممكن يصير من أحسن موظفينها.':'No desk, no laptop, no one telling them what is expected. It happens a lot, and the company pays for it: hiring time lost, training lost, and someone who could have been one of its best.'}</p>
+  <div class="mx">${box(a?'فترة التجربة تحسم كل شي':'Probation decides everything',a?'في نظام العمل أول ٩٠ يوم فترة تجربة، وممكن توصل ١٨٠ (المادة ٥٣). فيها يا يتثبّت الموظف، يا يطلع.':'Under the Labor Law, the first 90 days are probation, extendable to 180 (Article 53). Within it, a new hire is either confirmed or leaves.')}${box(a?'ما فيه مقياس سعودي':'No Saudi benchmark',a?'كل شركة تجتهد على كيفها. فيه أرقام أمريكية وأوروبية، بس ما فيه مقياس يفهم نظام العمل وقوى والتأمينات.':'Every company improvises. There are US and European figures, but nothing that understands Saudi labor law, Qiwa and GOSI.')}${box(a?'من شغلي اليومي':'Born from my daily work',a?'أجهّز الموظفين الجدد وأتابعهم لين نهاية التجربة، وكل مرة أسأل: اللي نقدّمه زين فعلًا؟ ومقارنة بمين؟':'I onboard new hires and follow them to the end of probation, and I kept asking: is what we offer actually good? Compared to whom?')}</div></div>
+
+  <div class="mt-sec rv"><span class="k">${a?'الفكرة':'The idea'}</span><h2>${a?'مثل ميزان الحرارة: ما يقول لك تعبان وبس، يعطيك رقم.':'Like a thermometer: it does not just say you are unwell, it gives you a number.'}</h2>
+  <p class="lead">${a?'الشركة تجاوب على ٢٠ سؤال في قرابة ١٠ دقايق، وتطلع لها درجة من ١٠٠ تبيّن كيف تستقبل موظفها الجديد. وتتكرر كل سنة عشان تشوف: تحسّنت ولا لا.':'A company answers 20 questions in about 10 minutes and gets a score out of 100 for how it welcomes new hires. It repeats every year, so it can see whether it improved.'}</p>
+  <h3 class="mt-h3">${a?'خمس محاور':'Five areas'}</h3><div class="ax">${axes.map((x,i)=>`<div class="axc"><span>${num(i+1)}</span><b>${x[0]}</b><small>${x[1]}</small></div>`).join('')}</div>
+  <p class="mt-note">${a?'أول أربع محاور مبنية على نموذج «4C» المعروف للتهيئة الوظيفية (Bauer، SHRM 2010). والمحور الخامس إضافة سعودية ما تغطيها النماذج العالمية.':'The first four follow the well-known "4C" onboarding model (Bauer, SHRM 2010). The fifth is a Saudi addition that global models do not cover.'}</p>
+  <h3 class="mt-h3">${a?'وكل جواب له أربع مستويات':'Each answer has four levels'}</h3><div class="lv">${lv.map((x,i)=>`<div style="--h:${30+i*22}%"><i></i><span>${num(i+1)}</span><b>${x}</b></div>`).join('')}</div></div>
+
+  <div class="mt-sec rv"><span class="k">${a?'وش يوصل الشركة':'What the company gets'}</span><h2>${a?'تقرير فيه ثلاث أشياء.':'A report with three things.'}</h2>
+  <div class="mx">${box(a?'درجتها في كل محور':'Its score per area',a?'وين هي قوية، ووين تحتاج شغل.':'Where it is strong, and where it needs work.')}${box(a?'مكانها بين الشركات':'Where it stands',a?'مقارنة بالشركات اللي من قطاعها وحجمها، بدون أسماء.':'Against companies of its sector and size, without names.')}${box(a?'أهم الخطوات':'The key next steps',a?'وش تسوي عشان ترفع درجتها، وتكلفة الفجوة بالريال.':'What to do to raise its score, and the cost of the gap in riyals.')}</div>
+  <p class="lead" style="margin-top:18px">${a?'وبعدها ترسل الشركة رابط بدون أسماء لموظفيها الجدد، فيبان الفرق بين اللي تظنه الشركة واللي يعيشه الموظف. وكل سنة يطلع تقرير عام عن السوق كله، بدون أسماء.':'The company then sends an anonymous link to its new hires, revealing the gap between what it thinks and what they live. Every year, a market-wide report is published, with no names.'}</p>
+  <div class="mt-gal">${['matla-3','matla-4','matla-2'].map(m=>`<img src="/img/${m}.webp" alt="" loading="lazy">`).join('')}</div></div>
+
+  <div class="mt-sec rv"><span class="k">${a?'مين يستفيد':'Who benefits'}</span><h2>${a?'الشركة، والأخصائي، والموظف الجديد.':'The company, the HR specialist, and the new hire.'}</h2>
+  <div class="mx">${box(a?'الشركة':'The company',a?'تعرف وين هي، وتخف عندها خسارة الموظفين.':'Knows where it stands, and loses fewer people.')}${box(a?'أخصائي الموارد البشرية':'The HR specialist',a?'يصير عنده رقم يثبت فيه أثر شغله قدام الإدارة.':'Gets a number that proves the impact of their work to management.')}${box(a?'الموظف الجديد':'The new hire',a?'حتى لو ما يدري عن المؤشر، يلقى بداية أوضح، وأحد منتظره من أول يوم.':'Even without knowing the index exists, finds a clearer start, and someone waiting from day one.')}</div></div>
+ </div></section>
+
+ <section class="page dark"><div class="wrap">
+  <div class="mt-sec rv"><span class="k">${a?'ما نتحمس قبل ما نختبر':'No excitement before testing'}</span><h2>${a?'المؤشر لازم يثبت بالأرقام إنه يقيس صح.':'The index has to prove, with numbers, that it measures correctly.'}</h2>
+  <p class="lead">${a?'حطيت خطة تحقق فيها خمس اختبارات، تتنفذ على خمس مراحل في قرابة ١٥ شهر. ولو فشل أي اختبار، تتعدّل المنهجية وتنعاد المرحلة.':'I set out a validation plan with five tests, run in five phases over about 15 months. If any test fails, the method is revised and the phase repeated.'}</p>
+  <div class="tst">${tests.map((x,i)=>`<div><span>${num(i+1)}</span><b>${x[0]}</b><small>${x[1]}</small></div>`).join('')}</div>
+  <div class="mx" style="margin-top:22px">${box(a?'مستقل':'Independent',a?'مبادرة شخصية ما تتبع أي جهة حكومية أو خاصة، ولا جهة عملي. وبتمويل ذاتي يحافظ على استقلالها.':'A personal initiative, not tied to any government or private body or my employer. Self-funded to stay independent.')}${box(a?'البيانات محفوظة':'Data protected',a?'ما ينطلع أي اسم إلا بموافقة صاحبه، ووفق نظام حماية البيانات الشخصية.':'No name is published without consent, in line with the Personal Data Protection Law.')}${box(a?'مجاني':'Free',a?'للأخصائيين والشركات، عشان يوصل لأكبر عدد.':'For specialists and companies, so it reaches as many as possible.')}</div></div>
+ </div></section>
+
+ <section class="page"><div class="wrap">
+  <div class="mt-sec rv"><span class="k">${a?'وين وصل':'Where it stands'}</span><h2>${a?'مسودة أولى، وأبنيها خطوة بخطوة.':'An early draft, built step by step.'}</h2>
+  <ol class="tl mt-tl">${tl.map(x=>`<li class="${x[2]?'gosi':''}"><small>${x[0]}</small><b>${x[1]}</b></li>`).join('')}</ol>
+  <h3 class="mt-h3">${a?'المستهدفات المبدئية بنهاية ٢٠٢٧':'Initial targets by end of 2027'}</h3>
+  <div class="stats">${goals.map(g=>`<div class="stat"><b dir="ltr">${num(g[0])}</b><span>${g[1]}</span></div>`).join('')}</div></div>
+
+  <div class="mt-sec rv" id="files"><span class="k">${a?'ملفات المشروع':'Project files'}</span><h2>${a?'اقرأ بنفسك.':'Read it yourself.'}</h2>
+  <div class="fl">${files.map(f=>`<a href="${f[0]}" target="_blank" rel="noopener"><span class="fi">${I.down}</span><span><b>${f[1]}</b><small>${f[2]}</small></span><em dir="ltr">${f[3]}</em></a>`).join('')}<a href="/files/matla/matla-video.mp4" download><span class="fi">${I.down}</span><span><b>${a?'الفيديو التعريفي':'Intro video'}</b><small>${a?'نسخة جاهزة للمشاركة.':'A version ready to share.'}</small></span><em dir="ltr">MP4 · 4.4 MB</em></a></div></div>
+
+  <div class="mt-ask rv"><h2>${a?'شفت الفكرة، وش رايك؟':'You have seen the idea. What do you think?'}</h2><p class="lead">${a?'ودي أبنيها صح، مع الناس اللي يفهمون بهالمجال. أي رأي أو ملاحظة تفرق.':'I want to build it right, with people who know this field. Every comment counts.'}</p>
+  <div class="mt-btns"><a class="btn solid" href="${LI}" target="_blank" rel="noopener">LinkedIn ${I.ext}</a><a class="btn" href="mailto:mrthameralshehri@gmail.com?subject=${encodeURIComponent(a?'رأيي في مطلع':'Feedback on Matla')}">${a?'راسلني':'Email me'}</a></div></div>
+ </div></section>`}
+
+const SLUG=document.documentElement.dataset.slug||'';
+const SITE='https://thameralshehri.sa';
+function shareBox(path){const a=A();return `<div class="share" data-path="${path}"><span>${a?'شارك الرابط':'Share the link'}</span><button type="button" data-sh="ar" lang="ar">${ic('M7 9l2-2M6.5 10.5l-1 1a2 2 0 0 1-3-3l2-2a2 2 0 0 1 3 0M9.5 5.5l1-1a2 2 0 0 1 3 3l-2 2a2 2 0 0 1-3 0')}<b>عربي</b></button><button type="button" data-sh="en" lang="en">${ic('M7 9l2-2M6.5 10.5l-1 1a2 2 0 0 1-3-3l2-2a2 2 0 0 1 3 0M9.5 5.5l1-1a2 2 0 0 1 3 3l-2 2a2 2 0 0 1-3 0')}<b>English</b></button><em aria-live="polite"></em></div>`}
+function bindShare(){$$('.share').forEach(box=>{$$('button',box).forEach(b=>b.addEventListener('click',async()=>{const l=b.dataset.sh,url=SITE+box.dataset.path+'?lang='+l,em=$('em',box);
+ const ok=()=>{em.textContent=l==='ar'?'انسخ الرابط العربي':'English link copied';em.textContent=A()?(l==='ar'?'نسخت الرابط العربي':'نسخت الرابط الإنجليزي'):(l==='ar'?'Arabic link copied':'English link copied');clearTimeout(em._t);em._t=setTimeout(()=>em.textContent='',2600)};
+ try{if(navigator.share&&matchMedia('(hover:none)').matches){await navigator.share({title:document.title,url});return}}catch(e){return}
+ try{await navigator.clipboard.writeText(url);ok()}catch(e){const t=document.createElement('textarea');t.value=url;document.body.appendChild(t);t.select();try{document.execCommand('copy');ok()}catch(_){}t.remove()}}))})}
+function proj(){const a=A(),i=PROJECTS.findIndex(p=>p.slug===SLUG),p=PROJECTS[i];if(!p)return '';
+ const lab=[{ar:'وش المشكلة',en:'The problem'},{ar:'كيف سويته',en:'How I built it'},p.l3||{ar:'وين وصل',en:'Where it stands'}];
+ const prev=PROJECTS[(i-1+PROJECTS.length)%PROJECTS.length],next=PROJECTS[(i+1)%PROJECTS.length];
+ const nb=(q,t)=>`<a class="pj-nb" href="${q.page}"><img src="/img/${q.img[0]}.webp" alt="" loading="lazy"><span><small>${t}</small><b>${L(q.n)}</b><em>${L(q.cat)}</em></span></a>`;
+ return `<section class="pj-hero"><div class="wrap pj-hg"><div class="rv"><span class="st ${p.st}">${L(STATUS[p.st])}</span><h1>${L(p.n)}</h1><div class="pj-cat">${L(p.cat)}</div><p class="mt-one">${L(p.d)}</p>
+  <div class="mt-btns">${p.url?`<a class="btn gold" href="${p.url}" target="_blank" rel="noopener">${p.urlLbl?L(p.urlLbl):(a?'جرّب المشروع':'Try it live')} ${I.ext}</a>`:''}</div>${shareBox(p.page)}</div>
+  <figure class="pj-cover rv"><img src="/img/${p.img[0]}.webp" alt="${L(p.n)}"></figure></div></section>
+ <section class="page"><div class="wrap"><div class="pj-ss">${p.s.map((x,j)=>`<div class="pj-s rv"><span class="pj-n">${num(j+1)}</span><span class="k">${L(lab[j])}</span><p>${L(x)}</p></div>`).join('')}</div>
+  ${p.img.length>1?`<div class="pj-gal rv">${p.img.slice(1).map(m=>`<img src="/img/${m}.webp" alt="${L(p.n)}" loading="lazy">`).join('')}</div>`:''}
+  <div class="pj-nav rv">${nb(prev,a?'المشروع السابق':'Previous project')}${nb(next,a?'المشروع التالي':'Next project')}</div>
+  <p style="text-align:center;margin-top:22px"><a class="btn" href="/home/projects/">${a?'كل المشاريع':'All projects'}</a></p></div></section>`}
+
+const R={hub,about,journey,projects,resume,contact,matla,project:proj};
+
+/* ---------- branch wires (hub) ---------- */
+function wires(){
+ const svg=$('#wires'), br=$('#branches'), node=$('#node'); if(!svg||!br||!node)return;
+ svg.querySelectorAll('path,circle').forEach(n=>n.remove());
+ const b=br.getBoundingClientRect(), n=$('.pick').getBoundingClientRect(); const mobile=innerWidth<=760;
+ svg.setAttribute('viewBox',`0 0 ${b.width} ${b.height}`);
+ const sx=n.left+n.width/2-b.left, sy=n.bottom-b.top+10;
+ $$('.card',br).forEach((c,i)=>{const r=c.getBoundingClientRect(); let d;
+  if(!mobile){const ex=r.left+r.width/2-b.left, ey=r.top-b.top; const my=(sy+ey)/2; d=`M${sx} ${sy} C ${sx} ${my}, ${ex} ${my}, ${ex} ${ey}`}
+  else{const tx=A()?b.width-18:18, ex=A()?r.right-b.left:r.left-b.left, ey=r.top-b.top+r.height/2; d=`M${sx} ${sy} C ${sx} ${sy+24}, ${tx} ${sy+4}, ${tx} ${Math.min(sy+34,ey-30)} L ${tx} ${ey-24} Q ${tx} ${ey}, ${ex} ${ey}`}
+  const p=document.createElementNS('http://www.w3.org/2000/svg','path'); p.setAttribute('d',d); p.dataset.i=i; svg.appendChild(p); const len=p.getTotalLength(); p.style.setProperty('--len',len);
+  if(!RM){const dot=document.createElementNS('http://www.w3.org/2000/svg','circle'); dot.setAttribute('r','3'); const am=document.createElementNS('http://www.w3.org/2000/svg','animateMotion'); am.setAttribute('dur',(3.2+i*.35)+'s'); am.setAttribute('repeatCount','indefinite'); am.setAttribute('path',d); dot.appendChild(am); svg.appendChild(dot)}
+ });
+ $$('.card',br).forEach(c=>{c.onmouseenter=()=>{const p=svg.querySelector(`path[data-i="${c.dataset.i}"]`);p&&p.classList.add('hot')};c.onmouseleave=()=>$$('path',svg).forEach(p=>p.classList.remove('hot'));
+  c.onpointermove=e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')}});
+}
+
+/* ---------- chrome ---------- */
+function render(){
+ const d=document.documentElement; d.lang=lang; d.dir=A()?'rtl':'ltr';
+ const PJ=PAGE==='project'?PROJECTS.find(p=>p.slug===SLUG):(PAGE==='matla'?PROJECTS[0]:null); const MT=!!PJ; const sec=SECS.find(s=>s.id===(MT?'projects':PAGE));
+ document.title=(MT?L(PJ.n)+' — ':sec?L(sec.t)+' — ':'')+L(T.name);
+ $$('[data-t]').forEach(e=>e.textContent=L(T[e.dataset.t]));
+ $$('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===lang));
+ $('#storyBtn').innerHTML=`${I.play}<span>${A()?'شاهد القصة':'Watch the story'}</span>`; $('#storyBtn').setAttribute('aria-label',A()?'شاهد القصة':'Watch the story');
+ $('#crumb').innerHTML=MT?`${I.sep}<a href="/home/">${L(T.home)}</a>${I.sep}<a href="/home/projects/">${L(sec.t)}</a>${I.sep}<b>${L(PJ.n)}</b>`:sec?`${I.sep}<a href="/home/">${L(T.home)}</a>${I.sep}<b>${L(sec.t)}</b>`:'';
+ $('#main').innerHTML=R[PAGE]();
+ const nx=$('#next');
+ if(sec){const i=SECS.indexOf(sec); nx.innerHTML=`<div class="wrap"><h3>${A()?'كمّل لقسم ثاني':'Continue to another section'}</h3><div class="others"><a class="hub-l" href="/home/">${I.home} ${A()?'كل الأقسام':'All sections'}</a>${SECS.filter(s=>MT||s!==sec).map(s=>`<a href="/home/${s.id}/"><span class="n">${num(SECS.indexOf(s)+1)}</span>${L(s.t)}</a>`).join('')}<a href="/#play">${I.play} ${A()?'القصة':'The story'}</a></div></div>`; nx.hidden=false}
+ else nx.hidden=true;
+ $('#foot').textContent=A()?'© ٢٠٢٦ ثامر الشهري':'© 2026 Thamer Alshehri';
+ $$('button.pc').forEach(b=>b.addEventListener('click',()=>openP(+b.dataset.p,b)));bindShare();
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
+ $$('.rv').forEach(el=>io.observe(el));
+ if(PAGE==='hub'){requestAnimationFrame(()=>{wires();requestAnimationFrame(()=>$('#branches').classList.add('drawn'))})}
+}
+let rt; addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(wires,120)});
+if(document.fonts)document.fonts.ready.then(()=>{if(PAGE==='hub')wires()});
+/* sheet */
+let lastBtn=null;
+function openP(i,btn){lastBtn=btn;const p=PROJECTS[i];let k=0;const sec=[{ar:'وش المشكلة',en:'The problem'},{ar:'كيف سويته',en:'How I built it'},p.l3||{ar:'وين وصل',en:'Where it stands'}];
+ const draw=()=>{$('#sbox').innerHTML=`<div class="media"><img src="/img/${p.img[k]}.webp" alt="${L(p.n)}">${p.img.length>1?`<div class="thumbs">${p.img.map((m,j)=>`<button type="button" aria-pressed="${j===k}" data-k="${j}" aria-label="${j+1}"><img src="/img/${m}.webp" alt=""></button>`).join('')}</div>`:''}</div>
+ <div class="info"><button class="x" type="button" aria-label="${L(T.close)}">${I.x}</button><span class="st ${p.st}">${L(STATUS[p.st])}</span><h3 id="pT">${L(p.n)}</h3><div class="cat">${L(p.cat)}</div><p>${L(p.d)}</p><dl>${p.s.map((x,j)=>`<dt>${L(sec[j])}</dt><dd>${L(x)}</dd>`).join('')}</dl><div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px">${p.page?`<a class="btn gold" href="${p.page}">${A()?'اقرأ المشروع كامل':'Read the full project'}</a>`:''}${p.url?`<a class="btn ${p.page?'':'gold'}" href="${p.url}" target="_blank" rel="noopener">${p.urlLbl?L(p.urlLbl):(A()?'جرّب المشروع':'Try it live')} ${I.ext}</a>`:''}</div></div>`;
+ $('.x',$('#sbox')).addEventListener('click',closeP);$$('.thumbs button',$('#sbox')).forEach(b=>b.addEventListener('click',()=>{k=+b.dataset.k;draw()}));};
+ draw();$('#sheet').classList.add('open');setTimeout(()=>$('.x',$('#sbox')).focus(),60)}
+function closeP(){$('#sheet').classList.remove('open');lastBtn&&lastBtn.focus()}
+$('#sheet').addEventListener('click',e=>{if(e.target.id==='sheet')closeP()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeP()});
+$$('.lang button').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.l===lang)return;lang=b.dataset.l;store.set('ta-lang',lang);render()}));
+render();
+})();
+</script>
+</body>
+</html>
