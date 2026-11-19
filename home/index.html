@@ -268,6 +268,12 @@ a.pc{text-decoration:none;color:inherit}
 @media(max-width:860px){.pj-hg{grid-template-columns:minmax(0,1fr)}.pj-cover{order:-1}.pj-ss,.pj-gal,.pj-nav{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:480px){.pj-nb{grid-template-columns:90px minmax(0,1fr)}.pj-nb img{width:90px}}
 
+.hstats{position:relative;z-index:1;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:26px auto 0;opacity:0;transform:translateY(8px);transition:opacity .8s var(--e),transform .8s var(--e)}
+.hstats.on{opacity:1;transform:none}
+.hs{display:flex;align-items:center;gap:10px;padding:10px 18px 10px 12px;border-radius:999px;background:rgba(255,253,248,.75);border:1px solid var(--line);min-width:220px}
+.hs .hi{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--night);color:var(--gold);flex:none}
+.hs b{font-size:1.35rem;font-weight:900;line-height:1}.hs small{color:var(--muted);font-size:.9rem}
+@media(max-width:560px){.hs{min-width:0;flex:1 1 140px;flex-direction:column;align-items:center;text-align:center;border-radius:18px;padding:12px;gap:4px}}
 footer{color:var(--muted);padding:20px 0 30px;font-size:.88rem}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.001ms!important;animation-duration:.001ms!important;transition-delay:0s!important}.rv{opacity:1;transform:none}}
 </style>
@@ -374,6 +380,7 @@ function hub(){return `<section class="hub"><div class="wrap">
   <span class="pick"><i></i>${A()?'اختار من وين تبدأ':'Choose where to start'}</span></div>
  <div class="branches" id="branches"><svg class="wires" id="wires" aria-hidden="true"><defs><linearGradient id="wg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D4A85A"/><stop offset="1" stop-color="#4FB3A5"/></linearGradient></defs></svg>
   <div class="cards">${SECS.map((s,i)=>`<a class="card" href="/home/${s.id}/" data-i="${i}"><span class="no">${num(i+1)}</span><span class="art">${ART[s.id]}</span><b>${L(s.t)}</b><small>${L(s.s)}</small><span class="go">${A()?'ادخل':'Enter'} ${I.arr}</span></a>`).join('')}</div>
+  <div class="hstats" id="hstats" aria-live="polite"></div>
   <a class="story-strip" href="/#play"><span class="p">${I.play}</span><span><b>${A()?'أو شاهد القصة: ورا التفاصيل':'Or watch the story: Behind the details'}</b><small>${A()?'قصة قصيرة عن أول يوم لسارة، والشغل اللي كان وراه.':"A short story about Sara's first day, and the work behind it."}</small></span></a>
  </div></div></section>`}
 function head(id,k,h,p,dark){return `<div class="page-head rv"><span class="k">${k}</span><h2>${h}</h2>${p?`<p class="lead">${p}</p>`:''}</div>`}
@@ -474,9 +481,12 @@ function proj(){const a=A(),i=PROJECTS.findIndex(p=>p.slug===SLUG),p=PROJECTS[i]
   <div class="pj-nav rv">${nb(prev,a?'المشروع السابق':'Previous project')}${nb(next,a?'المشروع التالي':'Next project')}</div>
   <p style="text-align:center;margin-top:22px"><a class="btn" href="/home/projects/">${a?'كل المشاريع':'All projects'}</a></p></div></section>`}
 
-let VC=0;const VMIN=500;
-function foot(){$('#foot').innerHTML=(A()?'© ٢٠٢٦ ثامر الشهري':'© 2026 Thamer Alshehri')+(VC>=VMIN?` · <span class="vc">${A()?`عدد زيارات الموقع: ${num(VC)}`:`${VC} visits so far`}</span>`:'')}
-fetch('https://thameralshehri.goatcounter.com/counter/TOTAL.json').then(r=>r.ok?r.json():null).then(j=>{if(!j)return;VC=+String(j.count).replace(/\D/g,'')||0;if(VC>=VMIN)foot()}).catch(()=>{});
+const GC='https://thameralshehri.goatcounter.com/counter/';let STATS2=null;
+function gcGet(path){return fetch(GC+encodeURIComponent(path)+'.json').then(r=>r.status===404?{count:'0'}:(r.ok?r.json():null)).then(j=>j?(+String(j.count).replace(/\D/g,'')||0):null).catch(()=>null)}
+function foot(){$('#foot').textContent=A()?'© ٢٠٢٦ ثامر الشهري':'© 2026 Thamer Alshehri'}
+function drawStats(){const el=$('#hstats');if(!el||!STATS2)return;const[h,st]=STATS2;if(h==null&&st==null)return;const a=A();
+ el.innerHTML=`${h!=null?`<div class="hs"><span class="hi">${ic('M1.5 8s2.5-4.5 6.5-4.5S14.5 8 14.5 8 12 12.5 8 12.5 1.5 8 1.5 8z M8 6a2 2 0 1 0 0 4a2 2 0 1 0 0-4')}</span><b>${num(h)}</b><small>${a?'زيارة للصفحة الرئيسية':'home page visits'}</small></div>`:''}${st!=null?`<div class="hs"><span class="hi">${I.play}</span><b>${num(st)}</b><small>${a?'شخص شاف القصة':'people watched the story'}</small></div>`:''}`;el.classList.add('on')}
+if(PAGE==='hub')Promise.all([gcGet('/home/'),gcGet('story-start')]).then(v=>{STATS2=v;drawStats()});
 const R={hub,about,journey,projects,resume,contact,matla,project:proj};
 
 /* ---------- branch wires (hub) ---------- */
@@ -509,7 +519,7 @@ function render(){
  const nx=$('#next');
  if(sec){const i=SECS.indexOf(sec); nx.innerHTML=`<div class="wrap"><h3>${A()?'كمّل لقسم ثاني':'Continue to another section'}</h3><div class="others"><a class="hub-l" href="/home/">${I.home} ${A()?'كل الأقسام':'All sections'}</a>${SECS.filter(s=>MT||s!==sec).map(s=>`<a href="/home/${s.id}/"><span class="n">${num(SECS.indexOf(s)+1)}</span>${L(s.t)}</a>`).join('')}<a href="/#play">${I.play} ${A()?'القصة':'The story'}</a></div></div>`; nx.hidden=false}
  else nx.hidden=true;
- foot();
+ foot();if(PAGE==='hub')drawStats();
  $$('button.pc').forEach(b=>b.addEventListener('click',()=>openP(+b.dataset.p,b)));bindShare();
  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
  $$('.rv').forEach(el=>io.observe(el));
